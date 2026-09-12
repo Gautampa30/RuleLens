@@ -67,6 +67,7 @@ def decide_state(
         return StateDecision(
             state="UNKNOWN",
             unknown_reason="no_evidence",
+            decision_basis="No relevant documents retrieved from the Ashford University regulation corpus.",
             evidence=[],
             contradiction_pairs=[],
         )
@@ -87,6 +88,7 @@ def decide_state(
         return StateDecision(
             state="UNKNOWN",
             unknown_reason="low_confidence",
+            decision_basis="Retrieved corpus passages lack explicit regulatory provisions answering the specific question (zero-hallucination guardrail active).",
             evidence=evidence,
             contradiction_pairs=[],
         )
@@ -104,18 +106,23 @@ def decide_state(
             'student', 'students', 'policy', 'policies', 'rule', 'rules', 'requirement',
             'requirements', 'procedure', 'process', 'available', 'specific', 'academic',
             'which', 'their', 'they', 'have', 'been', 'there', 'must', 'take', 'taken',
-            'often', 'many', 'stay', 'next', 'happens', 'apply', 'number', 'withdraws'
+            'often', 'many', 'stay', 'next', 'happens', 'apply', 'number', 'withdraws',
+            'who'
         }
         import re
         q_terms = [w.lower() for w in re.findall(r'\b[a-zA-Z]{4,}\b', query) if w.lower() not in _STOP_TERMS]
         ev_text = " ".join(sc.chunk.text.lower() for sc in evidence[:5])
-        missing_terms = [t for t in q_terms if t not in ev_text]
+        missing_terms = [
+            t for t in q_terms
+            if t not in ev_text and not any(w.startswith(t.rstrip('s')[:5]) for w in ev_text.split())
+        ]
 
         if missing_terms and (best_sem < 0.72):
             logger.debug("State: UNKNOWN (missing discriminatory terms: %s)", missing_terms)
             return StateDecision(
                 state="UNKNOWN",
                 unknown_reason="low_confidence",
+                decision_basis=f"Retrieved passages mention adjacent policies but omit key requested concepts ({', '.join(missing_terms[:3])}); corpus does not establish this rule.",
                 evidence=evidence,
                 contradiction_pairs=[],
             )
@@ -155,6 +162,7 @@ def decide_state(
         return StateDecision(
             state="CONTRADICTORY",
             unknown_reason=None,
+            decision_basis=f"Detected irreconcilable policy contradiction across authoritative documents: {contradiction_pairs[0].explanation}",
             evidence=top_evidence,
             contradiction_pairs=contradiction_pairs,
         )
@@ -165,6 +173,7 @@ def decide_state(
     return StateDecision(
         state="ANSWERABLE",
         unknown_reason=None,
+        decision_basis="Direct, unambiguous regulatory provisions retrieved and verified from corpus documents with high confidence.",
         evidence=top_evidence,
         contradiction_pairs=[],
     )

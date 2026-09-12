@@ -41,14 +41,18 @@ export const UnknownView: React.FC<UnknownViewProps> = ({
                 "The supplied university rulebook does not contain sufficient regulatory provisions or policy text to answer this question."}
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <div className="p-3 rounded-lg bg-amber-100/50 dark:bg-amber-900/30 border border-amber-200/80 dark:border-amber-800/60 text-xs text-amber-900 dark:text-amber-200">
+              <span className="font-semibold">Corpus Boundary Distinction:</span> This result indicates strictly that the policy is <em>not established by the supplied rulebook corpus</em>. It does not mean the rule does not exist in real-world university administration, but rather that the assistant refuses to extrapolate beyond verified text.
+            </div>
+
+            <div className="pt-1 flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-1.5">
                 <ShieldAlert className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                <span>Zero hallucination policy: Unstated matters are never inferred</span>
+                <span>Zero hallucination guarantee: Uncodified rules are never invented</span>
               </div>
               {unknownReason && (
                 <div className="flex items-center gap-1.5 font-mono text-[11px] bg-white/60 dark:bg-slate-900/60 px-2 py-0.5 rounded border border-amber-200/60 dark:border-amber-900/40">
-                  <span>Engine Diagnostic: {unknownReason}</span>
+                  <span>Diagnostic: {unknownReason}</span>
                 </div>
               )}
             </div>

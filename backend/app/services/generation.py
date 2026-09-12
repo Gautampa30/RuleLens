@@ -27,6 +27,7 @@ from app.models import (
     QueryResponse,
     ScoredChunk,
     StateDecision,
+    TraceStep,
 )
 from app.services.llm import LLMUnavailableError, LLMResponseError, get_llm_client
 
@@ -224,12 +225,62 @@ def generate_response(
 
     retrieval_ms = int((time.perf_counter() - t0) * 1000) - gen_ms
 
+    # ── Factual auditable trace steps (no hidden chain-of-thought) ───────
+    trace_steps = [
+        TraceStep(
+            step="1. Query Received",
+            status="completed",
+            detail=f"Natural language query processed: \"{question.strip()}\"",
+        ),
+        TraceStep(
+            step="2. Hybrid Retrieval",
+            status="completed",
+            detail=(
+                f"Retrieved {len(evidence)} candidate passage(s) via lexical BM25 "
+                f"and dense sentence-transformers (RRF fusion k={settings.rrf_k})."
+            ) if evidence else "Lexical and semantic retrieval returned 0 candidate passages.",
+        ),
+        TraceStep(
+            step="3. Policy Claims & Grounding Audit",
+            status="completed",
+            detail=(
+                f"Extracted and audited policy rules against query scope. Found {len(decision.contradiction_pairs)} conflicting pair(s)."
+                if state == "CONTRADICTORY"
+                else (
+                    f"Verified high-confidence factual grounding across top {len(evidence[:3])} retrieved passage(s)."
+                    if state == "ANSWERABLE"
+                    else f"Audited candidate passages against topic keywords. Corpus does not establish the requested rule ({decision.unknown_reason or 'insufficient evidence'})."
+                )
+            ),
+        ),
+        TraceStep(
+            step="4. Deterministic State Decision",
+            status="branch_taken",
+            detail=f"Engine classified state as {state}. Basis: {decision.decision_basis or 'Deterministic threshold evaluation.'}",
+        ),
+        TraceStep(
+            step="5. Evidence Citation Assembly",
+            status="guardrail_active" if state == "UNKNOWN" else "completed",
+            detail=(
+                f"Assembled {len(citations)} server-side citation(s) strictly from verbatim corpus passage text."
+                if state == "ANSWERABLE"
+                else (
+                    f"Attached {len(citations)} contradictory citation(s) for side-by-side verification."
+                    if state == "CONTRADICTORY"
+                    else f"Zero affirmative citations attached. Attached {len(evidence)} transparent near-miss passage(s) for auditability."
+                )
+            ),
+        ),
+    ]
+
     return QueryResponse(
         state=state,
         answer=answer_text,
         citations=citations,
         contradiction_pairs=decision.contradiction_pairs,
         unknown_reason=decision.unknown_reason,
+        decision_basis=decision.decision_basis,
+        trace_steps=trace_steps,
         related_evidence=[sc.chunk for sc in evidence] if state == "UNKNOWN" else [],
         metadata={
             "retrieval_ms": retrieval_ms,

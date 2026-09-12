@@ -243,6 +243,18 @@ class Citation(BaseModel):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Explainability and Trace Models
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TraceStep(BaseModel):
+    """A factual, auditable pipeline step showing the evidence reasoning chain."""
+
+    step: str = Field(description="Step name, e.g. 'Query Analysis', 'Hybrid Retrieval'")
+    status: Literal["completed", "branch_taken", "guardrail_active"] = "completed"
+    detail: str = Field(description="Factual description of what occurred during this stage")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # State decision intermediate result
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -256,6 +268,7 @@ class StateDecision(BaseModel):
 
     state: Literal["ANSWERABLE", "UNKNOWN", "CONTRADICTORY"]
     unknown_reason: Optional[Literal["no_evidence", "low_confidence", "llm_insufficient"]] = None
+    decision_basis: Optional[str] = None
     evidence: list[ScoredChunk] = Field(default_factory=list)
     contradiction_pairs: list[ContradictionPair] = Field(default_factory=list)
 
@@ -282,6 +295,8 @@ class QueryResponse(BaseModel):
     citations: list[Citation] = Field(default_factory=list)
     contradiction_pairs: list[ContradictionPair] = Field(default_factory=list)
     unknown_reason: Optional[str] = None
+    decision_basis: Optional[str] = None
+    trace_steps: list[TraceStep] = Field(default_factory=list)
     related_evidence: list[EvidenceChunk] = Field(
         default_factory=list,
         description="For UNKNOWN: relevant-but-insufficient passages shown to user",

@@ -54,12 +54,20 @@ export interface QueryMetadata {
   llm_error?: string | null;
 }
 
+export interface TraceStep {
+  step: string;
+  status: "completed" | "branch_taken" | "guardrail_active";
+  detail: string;
+}
+
 export interface QueryResponse {
   state: QueryState;
   answer: string;
   citations: Citation[];
   contradiction_pairs: ContradictionPair[];
   unknown_reason?: string | null;
+  decision_basis?: string | null;
+  trace_steps?: TraceStep[];
   related_evidence: EvidenceChunk[];
   metadata: QueryMetadata;
 }

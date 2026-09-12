@@ -6,6 +6,7 @@ import { QueryInput } from "@/components/QueryInput";
 import { AnswerCard } from "@/components/AnswerCard";
 import { ContradictionView } from "@/components/ContradictionView";
 import { UnknownView } from "@/components/UnknownView";
+import { EvidenceTrace } from "@/components/EvidenceTrace";
 import { StateBadge } from "@/components/StateBadge";
 import {
   checkBackendHealth,
@@ -193,6 +194,12 @@ export default function Home() {
                 </div>
               </div>
             )}
+
+            {/* Evidence Trace Audit Trail */}
+            <EvidenceTrace
+              traceSteps={response.trace_steps || []}
+              decisionBasis={response.decision_basis}
+            />
           </section>
         )}
 

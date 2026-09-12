@@ -16,33 +16,33 @@ interface ExampleQuery {
 
 const EXAMPLE_QUERIES: ExampleQuery[] = [
   {
-    label: "Tuition Deadline",
+    label: "Tuition Deadline (Canonical)",
+    query: "When is the tuition payment deadline?",
+    expectedState: "ANSWERABLE",
+  },
+  {
+    label: "Military Leave Deadline (Canonical)",
+    query: "What is the deadline for submitting a military leave request?",
+    expectedState: "UNKNOWN",
+  },
+  {
+    label: "Withdrawal Approval (Canonical)",
+    query: "Who approves a late course withdrawal?",
+    expectedState: "CONTRADICTORY",
+  },
+  {
+    label: "Autumn Tuition Specifics",
     query: "What is the tuition payment deadline for the Autumn semester?",
     expectedState: "ANSWERABLE",
   },
   {
-    label: "Honors GPA",
+    label: "Honors GPA Threshold",
     query: "What is the minimum cumulative GPA required for Latin honors at graduation?",
     expectedState: "ANSWERABLE",
   },
   {
-    label: "Military Leave",
-    query: "What is the university policy on leave of absence for military service?",
-    expectedState: "UNKNOWN",
-  },
-  {
-    label: "ID Card Replacement",
-    query: "What is the fee for replacing a lost student ID card?",
-    expectedState: "UNKNOWN",
-  },
-  {
-    label: "Withdrawal Approval (Conflict)",
-    query: "Who must approve a graduate student late course withdrawal after week 8?",
-    expectedState: "CONTRADICTORY",
-  },
-  {
-    label: "Leave Duration (Conflict)",
-    query: "How many consecutive semesters may a student remain on approved leave of absence?",
+    label: "Thesis Extension Duration (Conflict)",
+    query: "What is the maximum duration of a formal thesis submission extension for a research degree student?",
     expectedState: "CONTRADICTORY",
   },
 ];
