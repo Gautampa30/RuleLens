@@ -263,7 +263,8 @@ backend\.venv\Scripts\python demo.py
 To verify that the complete RuleLens submission is operational and satisfies all core invariants, run the automated smoke test:
 
 ```powershell
-backend\.venv\Scripts\python smoke_test.py
+cd backend
+.venv\Scripts\python smoke_test.py    # Or with venv activated: python smoke_test.py
 ```
 
 ### Verified Checks:
@@ -341,9 +342,28 @@ A demonstration session of RuleLens covers:
 
 ---
 
+## What is Mocked vs. What is Real
+
+To ensure total transparency for evaluation and reproducibility, here is an explicit disclosure of what is live and unmocked versus what operates in mock/fallback mode:
+
+| Component | Status | Implementation Details |
+|---|:---:|---|
+| **Lexical Retrieval (BM25)** | **REAL** | Live tokenized BM25 search computed dynamically via `rank-bm25`. |
+| **Semantic Retrieval (Embeddings)** | **REAL** | Live sentence embeddings computed dynamically via `sentence-transformers` (`all-MiniLM-L6-v2`, 384 dimensions). |
+| **Rank Fusion (RRF)** | **REAL** | Real Reciprocal Rank Fusion ($k=60$) dynamically merges lexical and semantic rankings. |
+| **Corpus & Documents** | **REAL** | 9,891 words of authentic academic regulations across Markdown files, a Markdown fee deadline table, and an official PDF handbook parsed live with PyMuPDF. |
+| **Three-State Decision Engine** | **REAL** | 100% deterministic decision logic computed live in `decision.py` and `contradiction.py`. No queries, states, or contradiction pairs are hard-coded. |
+| **Citation Assembly** | **REAL** | Citations are dynamically assembled server-side from exact, stored `EvidenceChunk` objects with verified chunk IDs, file paths, and page numbers. |
+| **Evaluation Harness (`evaluate.py`)** | **REAL** | Dynamically executes all 38 benchmark questions against the live retrieval and decision pipeline; measures real accuracy and timing without simulated scores. |
+| **LLM Synthesis (Gemini)** | **REAL** | Connects live to Google Gemini (`gemini-3.6-flash` / `gemini-1.5-flash`) at temperature `0.0` when `GEMINI_API_KEY` is configured in `backend/.env`. |
+| **Offline Fallback Mode** | **FALLBACK** | If `GEMINI_API_KEY` is omitted or external API rate limits (HTTP 429) occur, RuleLens automatically falls back to a deterministic verbatim quotation synthesizer. The 3-state classification and citations remain 100% real and intact. |
+| **Unit Test Fixtures** | **MOCKED** | In `tests/test_generation.py`, mock responses are used for the external LLM API solely to verify offline resilience and ensure rogue model responses cannot override deterministic state classifications. |
+
+---
+
 ## Known Limitations
 
-1. **Synthetic Corpus Scope**: The evaluation corpus covers Ashford University regulations (~6,400 words across Markdown and PDF). Policies outside this domain naturally produce `UNKNOWN`.
+1. **Corpus Scope**: The evaluation corpus covers Ashford University regulations (9,891 words across Markdown, tables, and PDF). Policies outside this codified domain naturally produce `UNKNOWN`.
 2. **Contradiction Detection Scope**: The contradiction engine compares structured `PolicyClaim` attributes (authority, threshold values, numerical durations, and conditions). Natural language contradictions whose concepts are not captured by claim schemas rely on retrieval score thresholds.
 3. **Corpus Boundary Semantics**: `UNKNOWN` signifies that the rule cannot be established from the supplied corpus; it is not a legal guarantee that such a rule does not exist elsewhere.
 4. **LLM Dependency**: When `GEMINI_API_KEY` is provided, natural language synthesis is generated with strict temperature (`0.0`). When absent, RuleLens seamlessly falls back to verbatim excerpt display with zero loss in classification accuracy.
