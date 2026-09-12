@@ -1,0 +1,316 @@
+{
+  "version": "1.0",
+  "description": "RuleLens evaluation dataset — Ashford University corpus",
+  "total_questions": 38,
+  "categories": {
+    "answerable": 10,
+    "unanswerable-25": 25,
+    "contradictory": 3
+  },
+  "questions": [
+    {
+      "id": "A001",
+      "category": "answerable",
+      "question": "What is the tuition payment deadline for the Autumn semester?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "Fee table: 15 September deadline for Autumn tuition payment — fee_schedule.md Part C"
+    },
+    {
+      "id": "A002",
+      "category": "answerable",
+      "question": "What is the late payment fee and how often is it applied?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §7.3 and fee_schedule.md Part C: $75 per 30 days, max 3 charges"
+    },
+    {
+      "id": "A003",
+      "category": "answerable",
+      "question": "What is the refund percentage for tuition if a student withdraws in week 5?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §7.2: 50% refund for Weeks 5-6 withdrawal"
+    },
+    {
+      "id": "A004",
+      "category": "answerable",
+      "question": "What cumulative GPA must a graduate student maintain to stay in good academic standing?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §6.1 and graduate_policies.md §2.2: 3.0 GPA minimum"
+    },
+    {
+      "id": "A005",
+      "category": "answerable",
+      "question": "By what date must a student apply for May Commencement graduation?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §8.2 and fee_schedule.md Part C: 1 February"
+    },
+    {
+      "id": "A006",
+      "category": "answerable",
+      "question": "What are the valid grounds for an academic appeal?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "appeals_and_conduct.md §1.2: procedural irregularity, new evidence, inadequate consideration"
+    },
+    {
+      "id": "A007",
+      "category": "answerable",
+      "question": "What is the maximum number of credit hours a standard student can register for per semester?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §3.2: 18 credit hours maximum without special permission"
+    },
+    {
+      "id": "A008",
+      "category": "answerable",
+      "question": "How many examiners must be on a PhD thesis examination panel?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "research_degrees_handbook.pdf §7.2 and graduate_policies.md §5.2: at least two, one must be external"
+    },
+    {
+      "id": "A009",
+      "category": "answerable",
+      "question": "What happens to an Incomplete grade if not resolved within eight weeks of the next semester?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "academic_regulations.md §4.3: automatically converted to F"
+    },
+    {
+      "id": "A010",
+      "category": "answerable",
+      "question": "What is the late graduation application fee?",
+      "expected_state": "ANSWERABLE",
+      "expected_chunk_ids": [],
+      "notes": "fee_schedule.md Part C: $85 non-refundable late graduation application fee"
+    },
+    {
+      "id": "U001",
+      "category": "unanswerable-25",
+      "question": "What is the university's policy on leave of absence for military service?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus has leave of absence policy (§5.4) but no military service carve-out"
+    },
+    {
+      "id": "U002",
+      "category": "unanswerable-25",
+      "question": "Can a student appeal a plagiarism finding to an external independent body outside the university?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus describes internal appeal stages only; no external body mentioned"
+    },
+    {
+      "id": "U003",
+      "category": "unanswerable-25",
+      "question": "What accommodation is available for students with temporary physical disabilities?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus covers disability accommodations generally (§10) but not specifically temporary physical injuries"
+    },
+    {
+      "id": "U004",
+      "category": "unanswerable-25",
+      "question": "Is there a specific university-issued form required to declare a double major?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions programme requirements but not double major declaration forms"
+    },
+    {
+      "id": "U005",
+      "category": "unanswerable-25",
+      "question": "What is the maximum number of transfer credits accepted from a community college?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus covers graduate transfer credits (§1.3 of GSP) but not undergraduate transfer from community colleges"
+    },
+    {
+      "id": "U006",
+      "category": "unanswerable-25",
+      "question": "Does the university offer a tuition instalment payment plan and how does it work?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Fee schedule mentions instalment option deadlines but no operational description of how to activate it"
+    },
+    {
+      "id": "U007",
+      "category": "unanswerable-25",
+      "question": "What is the refund policy for laboratory equipment deposits?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus has tuition refund policy but no lab equipment deposit policy"
+    },
+    {
+      "id": "U008",
+      "category": "unanswerable-25",
+      "question": "Are graduate students eligible to apply for undergraduate merit scholarships?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus describes Dean's List (undergrad) and assistantships but does not address cross-level scholarship eligibility"
+    },
+    {
+      "id": "U009",
+      "category": "unanswerable-25",
+      "question": "What is the policy on jointly supervised or co-authored thesis submissions?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Co-supervision is covered (§3.3 RDH) but not joint student authorship of a single thesis"
+    },
+    {
+      "id": "U010",
+      "category": "unanswerable-25",
+      "question": "Can a student be simultaneously enrolled in two separate degree programmes at Ashford University?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus does not address concurrent degree enrolment"
+    },
+    {
+      "id": "U011",
+      "category": "unanswerable-25",
+      "question": "What is the procedure for requesting an official transcript to be sent directly to a foreign university?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus covers transcript requests (§9.1) but not international delivery procedures"
+    },
+    {
+      "id": "U012",
+      "category": "unanswerable-25",
+      "question": "What happens to a student's financial aid if they reduce their course load below full-time status?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions full-time status but has no financial aid adjustment policy"
+    },
+    {
+      "id": "U013",
+      "category": "unanswerable-25",
+      "question": "Is there a deadline by which a graduate student must identify and formally register their thesis supervisor?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus says supervisor assigned within first semester (§3.1 GSP) but no formal student-initiated registration deadline"
+    },
+    {
+      "id": "U014",
+      "category": "unanswerable-25",
+      "question": "What English language test score is required for international graduate admission?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions English proficiency evidence required (§1.1 GSP) but specifies no minimum test scores"
+    },
+    {
+      "id": "U015",
+      "category": "unanswerable-25",
+      "question": "Can a student change their declared major after they have already submitted a graduation application?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus covers graduation applications but does not address post-application major changes"
+    },
+    {
+      "id": "U016",
+      "category": "unanswerable-25",
+      "question": "What are the university's policies on intellectual property rights for student research?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions data retention and publication but no IP ownership policy"
+    },
+    {
+      "id": "U017",
+      "category": "unanswerable-25",
+      "question": "Are there residency requirements for a student to qualify for domestic (in-state) tuition rates?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus lists domestic vs international tuition rates but states no residency eligibility criteria"
+    },
+    {
+      "id": "U018",
+      "category": "unanswerable-25",
+      "question": "What is the minimum waiting period before a dismissed student may re-apply for admission?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus says two years for reinstatement (§6.4 AR, §3.5 AACP) but conflates dismissal/reinstatement vs. fresh admission"
+    },
+    {
+      "id": "U019",
+      "category": "unanswerable-25",
+      "question": "Does the university have a formal policy on student use of social media?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus has academic integrity and conduct policies but no social media policy"
+    },
+    {
+      "id": "U020",
+      "category": "unanswerable-25",
+      "question": "Can a student take a course at another institution and have it count toward their Ashford degree?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Graduate transfer credits covered (§1.3 GSP) but not undergraduate cross-institutional credits"
+    },
+    {
+      "id": "U021",
+      "category": "unanswerable-25",
+      "question": "What is the process for requesting a posthumous degree for a student who died before completing their programme?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions posthumous award (§6.2 GSP) only for students who completed requirements; not for incomplete programmes"
+    },
+    {
+      "id": "U022",
+      "category": "unanswerable-25",
+      "question": "Is there a cap on the number of independent study credits that can count toward an undergraduate degree?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus does not address independent study credit limits"
+    },
+    {
+      "id": "U023",
+      "category": "unanswerable-25",
+      "question": "What is the university's policy on paid internships taken for academic credit?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus mentions internship components as programme requirements but has no paid internship policy"
+    },
+    {
+      "id": "U024",
+      "category": "unanswerable-25",
+      "question": "Can a doctoral student request that their thesis oral defence be held in a closed session without observers?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus says observers may attend with panel's consent (§7.3 RDH) but does not specify a formal student-initiated closed defence request process"
+    },
+    {
+      "id": "U025",
+      "category": "unanswerable-25",
+      "question": "Is there a policy on retroactive withdrawal from courses taken in a previous academic year?",
+      "expected_state": "UNKNOWN",
+      "expected_chunk_ids": [],
+      "notes": "Corpus covers late withdrawal within current semester; no retroactive withdrawal mechanism described"
+    },
+    {
+      "id": "C001",
+      "category": "contradictory",
+      "question": "Who must approve a graduate student's request to withdraw from a course after Week 8?",
+      "expected_state": "CONTRADICTORY",
+      "expected_chunk_ids": [],
+      "notes": "C-001: academic_regulations.md §5.3 (Dean) vs graduate_policies.md §2.6 (Graduate Studies Committee)"
+    },
+    {
+      "id": "C002",
+      "category": "contradictory",
+      "question": "What GPA must an undergraduate student achieve in the probationary semester to return to Good Academic Standing?",
+      "expected_state": "CONTRADICTORY",
+      "expected_chunk_ids": [],
+      "notes": "C-002: academic_regulations.md §6.1 (2.0 cumulative) vs appeals_and_conduct.md §3.2 (2.3 term GPA required)"
+    },
+    {
+      "id": "C003",
+      "category": "contradictory",
+      "question": "What is the maximum duration of a formal thesis submission extension for a research degree student?",
+      "expected_state": "CONTRADICTORY",
+      "expected_chunk_ids": [],
+      "notes": "C-003: graduate_policies.md §5.4 (one academic term, 16 weeks) vs research_degrees_handbook.pdf §8.3 (six months)"
+    }
+  ]
+}
