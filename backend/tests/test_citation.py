@@ -165,8 +165,8 @@ def test_gemini_mock_answer_generation_and_citation_assembly(monkeypatch):
     assert cit.source_file == "fee_schedule.md"
 
 
-def test_gemini_insufficient_evidence_triggers_unknown(monkeypatch):
-    """Test that LLM returning INSUFFICIENT_EVIDENCE overrides tentative ANSWERABLE to UNKNOWN."""
+def test_deterministic_state_cannot_be_overridden_by_llm_output(monkeypatch):
+    """Test that LLM returning INSUFFICIENT_EVIDENCE CANNOT override deterministic ANSWERABLE state."""
     chunk = EvidenceChunk(
         id="c_leave_gen",
         source_file="academic_regulations.md",
@@ -193,11 +193,13 @@ def test_gemini_insufficient_evidence_triggers_unknown(monkeypatch):
     monkeypatch.setattr("app.services.generation.get_llm_client", lambda: MockLLMClient())
 
     response = generate_response(
-        question="What is the policy for military leave?",
+        question="What is the policy for leave?",
         decision=decision,
         chunks_by_id=chunks_by_id,
     )
 
-    assert response.state == "UNKNOWN"
-    assert "Ashford University rulebook does not contain sufficient information" in response.answer
-    assert len(response.citations) == 0
+    # Invariant: deterministic state engine is authoritative — LLM cannot mutate state
+    assert response.state == "ANSWERABLE"
+    assert len(response.citations) > 0
+    assert response.citations[0].chunk_id == chunk.id
+    assert response.citations[0].passage_text == chunk.text

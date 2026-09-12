@@ -139,6 +139,8 @@ def generate_response(
     fallback is used. State is NEVER overridden toward ANSWERABLE.
     """
     t0 = time.perf_counter()
+    # INVARIANT: State is determined strictly by the deterministic decision engine.
+    # The LLM generates explanatory prose only and can NEVER override or alter the state.
     state = decision.state
     evidence = decision.evidence
 
@@ -156,20 +158,24 @@ def generate_response(
     try:
         client = get_llm_client()
         t_gen = time.perf_counter()
-        answer_text, answer_claims = client.generate_explanation(question, decision)
+        llm_answer, answer_claims = client.generate_explanation(question, decision)
         gen_ms = int((time.perf_counter() - t_gen) * 1000)
 
-        # Check if LLM indicated insufficient evidence
-        if "INSUFFICIENT_EVIDENCE" in answer_text.upper():
-            logger.info(
-                "LLM indicated INSUFFICIENT_EVIDENCE for state=%s → overriding to UNKNOWN",
-                state,
-            )
-            state = "UNKNOWN"
-            answer_text = "The Ashford University rulebook does not contain sufficient information to answer this question."
-            citations = []
-        else:
-            citations = _build_citations(answer_claims, evidence, chunks_by_id, answer_text=answer_text)
+        if state == "ANSWERABLE":
+            if "INSUFFICIENT_EVIDENCE" in llm_answer.upper():
+                logger.info("LLM reported insufficient evidence for ANSWERABLE state; preserving deterministic state and using fallback answer.")
+                # Preserve deterministic state ANSWERABLE, do not let LLM override
+            else:
+                answer_text = llm_answer
+                citations = _build_citations(answer_claims, evidence, chunks_by_id, answer_text=answer_text)
+        elif state == "CONTRADICTORY":
+            # For contradictory queries, ensure the response always clearly summarizes the conflict
+            # and does not pick a side.
+            if llm_answer and "INSUFFICIENT_EVIDENCE" not in llm_answer.upper():
+                answer_text = llm_answer
+        elif state == "UNKNOWN":
+            # For UNKNOWN queries, never let LLM fabricate a rule.
+            answer_text = _FALLBACK_ANSWERS["UNKNOWN"]
 
     except LLMUnavailableError as exc:
         logger.warning("LLM unavailable: %s", exc)
