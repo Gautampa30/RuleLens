@@ -48,13 +48,13 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="border-t-2 border-[#183b56] dark:border-sky-500 border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0b0f17]/95 backdrop-blur-md sticky top-0 z-30 transition-colors shadow-xs">
+    <header className="border-t-2 border-[#183b56] dark:border-sky-500 border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#090b10]/95 backdrop-blur-md sticky top-0 z-30 transition-colors shadow-xs">
       {/* Upper Primary Tier */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Left: Brand + Ashford University Institutional Presence */}
+        {/* Left: Brand */}
         <div className="flex items-center gap-3.5 sm:gap-5">
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded bg-[#183b56] dark:bg-sky-500 flex items-center justify-center text-white dark:text-slate-950 font-serif font-bold text-sm tracking-tight shadow-xs">
+            <div className="w-8 h-8 rounded-lg bg-[#183b56] dark:bg-sky-500 flex items-center justify-center text-white dark:text-slate-950 font-serif font-bold text-sm tracking-tight shadow-xs">
               RL
             </div>
             <div className="flex flex-col">
@@ -66,18 +66,6 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             </div>
           </a>
-
-          <div className="hidden sm:block h-6 w-[1px] bg-slate-200 dark:bg-slate-800" />
-
-          {/* Prominent Ashford University Indicator */}
-          <div className="hidden sm:flex flex-col">
-            <span className="text-xs font-bold text-slate-900 dark:text-slate-100 tracking-wider font-mono uppercase text-[#183b56] dark:text-sky-400">
-              Ashford University
-            </span>
-            <span className="text-[10px] text-slate-500 dark:text-slate-400 font-sans">
-              Official Regulation Corpus
-            </span>
-          </div>
         </div>
 
         {/* Right Navigation & Status */}
@@ -134,12 +122,13 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       {/* Secondary Institutional Sub-Strip */}
-      <div className="border-t border-slate-200/70 dark:border-slate-800/70 bg-slate-100/60 dark:bg-[#0e131d]/60 py-1 px-4 sm:px-6 lg:px-8">
+      <div className="border-t border-slate-200/70 dark:border-slate-800/70 bg-slate-100/70 dark:bg-[#0a0d14]/80 py-1.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-mono tracking-wider text-slate-500 dark:text-slate-400">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#183b56] dark:bg-sky-400" />
-            <span className="font-medium text-slate-700 dark:text-slate-300">ASHFORD UNIVERSITY</span>
-            <span>· ACADEMIC REGULATIONS 2024–2025</span>
+            <span className="font-semibold text-slate-900 dark:text-slate-200">ASHFORD UNIVERSITY</span>
+            <span className="text-slate-400 dark:text-slate-600">·</span>
+            <span>OFFICIAL REGULATION CORPUS (2024–2025)</span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-[10px]">
             <span>HYBRID RETRIEVAL (BM25 + EMBEDDINGS)</span>

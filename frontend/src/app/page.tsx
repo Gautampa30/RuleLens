@@ -99,7 +99,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f4f7fa] dark:bg-[#0b0f17] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors antialiased selection:bg-slate-200 dark:selection:bg-slate-800">
+    <div className="min-h-screen bg-[#f4f7fa] dark:bg-[#090b10] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors antialiased selection:bg-slate-200 dark:selection:bg-slate-800">
       {/* 01 — Institutional Header with Two-Level Hierarchy */}
       <Header
         health={health}
@@ -112,8 +112,8 @@ export default function Home() {
         <section id="query-section" className="space-y-8">
           <div className="space-y-4 max-w-4xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#183b56] dark:bg-sky-400" />
-              <span>Ashford University · Academic Regulations 2024–2025</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              <span>Evidence-Grounded Verification · 5 Publications Indexed</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight text-slate-950 dark:text-slate-50 leading-[1.12]">
