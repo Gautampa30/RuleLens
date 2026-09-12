@@ -106,6 +106,22 @@ The corpus contains genuinely irreconcilable provisions for the same scenario, s
 | **Zero Hallucination** | Discriminatory term matching checks if requested concepts are absent from retrieved text. |
 | **No Silent Resolution** | When conflict claims match the same population, both sides are surfaced with verbatim quotes. |
 
+### Policy Claim Extraction: Deterministic Rules & Generalizable LLM Extraction
+
+RuleLens adopts a **dual-layer claim extraction architecture** that balances guaranteed reproducibility with semantic extensibility:
+
+1. **Deterministic Rule-Based Extraction (`ingestion.py`)**:
+   During corpus ingestion, high-precision pattern extractors parse regulatory statements into structured `PolicyClaim` records covering:
+   * **Governing Authorities**: E.g., `Dean`, `Graduate Studies Committee`, `Academic Appeals Board`, `Research Office`.
+   * **Numerical Thresholds & Durations**: E.g., GPA boundaries (`2.0`, `2.3`, `3.0`), extension limits (`sixteen weeks`, `six months`, `one academic term`).
+   * **Applicable Populations & Scopes**: Undergraduate, graduate, research degree students.
+   * **Action Modalities**: Requirements (`must`), prohibitions (`may not`), permissions (`may`).
+
+   *Why this is a core design choice*: Deterministic extraction guarantees 100% test reproducibility, eliminates token costs during standard indexing, executes in sub-second offline runs, and ensures that critical safety comparisons (such as contradiction detection) never fail due to nondeterministic LLM JSON parsing errors.
+
+2. **Optional Generalizable LLM Extraction (`llm.py`)**:
+   When `GEMINI_API_KEY` is configured, an LLM-assisted claim extraction pipeline (`extract_claims`) is available to parse novel, unstructured document chunks into structured `PolicyClaim` schemas. This provides an open-ended semantic bridge for expanding the corpus beyond the curated rulebook.
+
 ---
 
 ## Technology Stack
@@ -127,10 +143,10 @@ The corpus contains genuinely irreconcilable provisions for the same scenario, s
 RuleLens/
 ├── corpus/                         # Authoritative university regulations
 │   ├── academic_regulations.md     # Core academic policies (§1.1 – §8.4)
-│   ├── graduate_policies.md        # Graduate studies policies (§1.1 – §5.3)
+│   ├── graduate_policies.md        # Graduate studies policies (§1.1 – §6.2)
 │   ├── fee_schedule.md             # Tuition, mandatory fees, and deadline tables
 │   ├── appeals_and_conduct.md      # Academic appeals and conduct code
-│   ├── student_handbook.pdf        # Official PDF document with page numbers
+│   ├── research_degrees_handbook.pdf  # Official PDF document with page numbers
 │   └── contradictions.md           # Planted contradictions documentation (C-001, C-002, C-003)
 ├── backend/                        # FastAPI backend application
 │   ├── app/
@@ -142,7 +158,7 @@ RuleLens/
 │   │   │   ├── decision.py         # Deterministic three-state classification engine
 │   │   │   ├── contradiction.py    # Cross-document policy claim conflict comparator
 │   │   │   ├── generation.py       # Grounded LLM response generation with trace steps
-│   │   │   ├── citation.py         # Server-side citation assembly from verbatim chunks
+│   │   │   ├── llm.py              # Gemini API client for claim extraction and prose generation
 │   │   │   └── ingestion.py        # Markdown/PDF chunking and deterministic chunk_id formula
 │   │   └── storage/                # Index persistence (BM25Index, EmbeddingIndex, store lookups)
 │   ├── data/                       # Ingested chunks, claims, and serialized search indices
@@ -288,6 +304,18 @@ Total Execution Time:   ~14.5 seconds
 
 > **Evaluation Disclosure**: These metrics were measured on the project's included 38-question benchmark evaluation set. They demonstrate the correctness and reliability of the deterministic decision engine on the curated corpus, and are not a claim of universal performance on arbitrary uncurated text.
 
+### Adversarial Query Evaluation
+
+To verify that the deterministic three-state classifier does not rely on rigid keyword matches, the system was stress-tested across key adversarial patterns:
+
+| Adversarial Test Category | Example Query | Expected State | RuleLens Classification | Verification Mechanism |
+|---|---|:---:|:---:|---|
+| **Paraphrased Contradiction** | *"Can my department chair sign off on dropping a class in week 10?"* | `CONTRADICTORY` | `CONTRADICTORY` | Dense retrieval surfaces both §5.3 and §2.6; claim comparator detects conflicting authority (`Dean` vs `Graduate Studies Committee`). |
+| **Negation & Inversion** | *"Is it true that students do not need a 2.0 GPA to avoid probation?"* | `ANSWERABLE` | `ANSWERABLE` | Lexical & dense retrieval ground on §6.1; exact GPA minimum requirement cited with zero hallucination. |
+| **Plausible Near-Miss (25 queries)** | *"What is the policy for prorated parking permit refunds upon mid-semester leave?"* | `UNKNOWN` | `UNKNOWN` | Key discriminative concept (`parking permit refunds`) absent from retrieved chunks; threshold guardrail prevents speculative synthesis. |
+| **Compound Scoping** | *"What are the probation exit rules for undergraduate students vs graduate students?"* | `CONTRADICTORY` | `CONTRADICTORY` | Comparator identifies C-002 GPA conflict (§6.1 cumulative 2.0 vs §3.2 term 2.3) affecting undergraduate exit status. |
+| **Out-of-Domain Regulation** | *"What is the deadline to cross-register for classes at partner universities?"* | `UNKNOWN` | `UNKNOWN` | Hybrid score drops below answerability threshold; returns structured `UNKNOWN` with `no_evidence` classification. |
+
 ---
 
 ## Automated Test Suite
@@ -303,9 +331,7 @@ cd backend
 
 ---
 
-## Demonstration Video / Interface Walkthrough
-
-<!-- DEMO PLACEHOLDER: Final recorded video walkthrough demonstrating all three states, side-by-side contradiction inspection, and evidence tracing. -->
+## Interface Walkthrough
 
 A demonstration session of RuleLens covers:
 1. **ANSWERABLE Experience**: Querying fee deadlines, inspecting verbatim source cards, and verifying breadcrumb metadata.

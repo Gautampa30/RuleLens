@@ -119,8 +119,6 @@ Undergraduate students placed on Academic Probation under Section 6.2 of the Aca
 
 ### 3.2 Minimum GPA to Exit Probation — Undergraduate Students
 
-**[C-002 — Source B]**
-
 **An undergraduate student on Academic Probation must achieve a term GPA of at least 2.3 in the probationary semester to be removed from probationary status. A term GPA of 2.3 or higher in the probationary semester will result in the student being returned to Good Academic Standing, provided their cumulative GPA has also risen to 2.0 or above.**
 
 If the student achieves a term GPA between 2.0 and 2.29, they remain on probation for one additional semester. If the student does not achieve a cumulative GPA of 2.0 or above within two consecutive probationary semesters, they shall be subject to Academic Dismissal.

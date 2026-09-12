@@ -1,0 +1,3537 @@
+[
+  {
+    "id": "5abd7b62355a9f9d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations"
+    ],
+    "page_number": null,
+    "char_offset": 42,
+    "text": "Document Reference: AUR-2024-001 Effective Date: 1 September 2024 Version: 14.2 Approved by: Academic Senate, 12 June 2024 Review Date: 31 August 2026",
+    "word_count": 22
+  },
+  {
+    "id": "7a3e6b46403ae71e",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.1 Purpose and Scope"
+    ],
+    "page_number": null,
+    "char_offset": 288,
+    "text": "These Academic Regulations govern all students enrolled at Ashford University in undergraduate and graduate programmes. They set out the rights and obligations of students and the University with respect to academic matters, including registration, assessment, progression, withdrawal, and graduation. These regulations apply to all campuses and all modes of study unless an explicit exemption is stated.",
+    "word_count": 56
+  },
+  {
+    "id": "ae7621177a6349e0",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.1 Purpose and Scope"
+    ],
+    "page_number": null,
+    "char_offset": 694,
+    "text": "Where a conflict exists between these regulations and programme-specific handbooks, these regulations shall take precedence unless the programme-specific document has been explicitly approved as a superseding instrument by the Academic Senate.",
+    "word_count": 31
+  },
+  {
+    "id": "b4ed2836f2c6a151",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.2 Definitions"
+    ],
+    "page_number": null,
+    "char_offset": 960,
+    "text": "For the purposes of these regulations:",
+    "word_count": 6
+  },
+  {
+    "id": "f768226e91753364",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.2 Definitions"
+    ],
+    "page_number": null,
+    "char_offset": 1000,
+    "text": "- Academic Year means the period from 1 September to 31 August of the following calendar year, comprising two standard semesters (Autumn and Spring) and one Summer session. - Semester means either the Autumn Semester (early September to late December) or the Spring Semester (early January to late April), each consisting of fifteen teaching weeks plus one examination period of up to three weeks. - Summer Session means the condensed teaching period from May to August. - Full-Time Student means a student registered for twelve or more credit hours per semester. - Part-Time Student means a student registered for fewer than twelve credit hours per semester. - Good Academic Standing means the academic status of a student who satisfies the minimum cumulative GPA requirement specified in Chapter 6 and has no unresolved academic integrity findings. - Academic Probation means the status assigned to a student whose cumulative GPA falls below the minimum threshold, as described in Chapter 6. - Programme Director means the academic staff member responsible for oversight of a named degree programme. - Dean means the senior academic officer of a faculty, responsible for academic governance within that faculty. - Registrar means the administrative officer responsible for maintaining academic records and overseeing registration processes. - Credit Hour means one hour of scheduled instruction per week over one semester, together with a minimum of two hours of independent study per week.",
+    "word_count": 232
+  },
+  {
+    "id": "a6afe34219ebfaa9",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.3 Amendments to These Regulations"
+    ],
+    "page_number": null,
+    "char_offset": 2579,
+    "text": "These regulations may be amended by the Academic Senate. Amendments take effect from the date specified in the amendment notice. Students who commenced their programme before an amendment takes effect shall be governed by the regulations in force at the time of their commencement unless they choose to opt in to the revised regulations or unless the amendment is required for compliance with external statutory or accreditation requirements.",
+    "word_count": 68
+  },
+  {
+    "id": "cdb1e6b98bb14bd5",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.3 Amendments to These Regulations"
+    ],
+    "page_number": null,
+    "char_offset": 3023,
+    "text": "The Registrar shall maintain a publicly accessible archive of all prior versions of these regulations, each version clearly dated.",
+    "word_count": 19
+  },
+  {
+    "id": "1de57e59131eb012",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 1: General Provisions",
+      "1.4 Student Responsibility"
+    ],
+    "page_number": null,
+    "char_offset": 3187,
+    "text": "Students are responsible for familiarising themselves with these regulations and with any additional requirements of their programme. Ignorance of a regulation shall not constitute grounds for exemption from its application. The University will make these regulations readily accessible on the student portal and in printed form at the Registrar's Office.",
+    "word_count": 50
+  },
+  {
+    "id": "d66377adecf523ff",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.1 Publication of the Calendar"
+    ],
+    "page_number": null,
+    "char_offset": 3623,
+    "text": "The Academic Calendar for each year is approved by the Academic Senate and published no later than 31 March of the preceding academic year. The calendar specifies all key dates including:",
+    "word_count": 31
+  },
+  {
+    "id": "c60fbc1c782aafd9",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.1 Publication of the Calendar"
+    ],
+    "page_number": null,
+    "char_offset": 3812,
+    "text": "- Start and end of each semester and the Summer session - Registration periods and add/drop deadlines - Examination periods - Grade submission deadlines - Commencement ceremonies - Public and University holidays",
+    "word_count": 32
+  },
+  {
+    "id": "5216837d4569d0cb",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4053,
+    "text": "Each standard semester is structured as follows:",
+    "word_count": 7
+  },
+  {
+    "id": "bc3190059b4ad1ad",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4133,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Weeks 1–2 | Activity: Orientation, add/drop period",
+    "word_count": 23
+  },
+  {
+    "id": "57263b8c435f4488",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4178,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Weeks 3–8 | Activity: Teaching period",
+    "word_count": 22
+  },
+  {
+    "id": "59185c0f491a0351",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4210,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Week 8 (Friday) | Activity: Course withdrawal without academic penalty deadline",
+    "word_count": 27
+  },
+  {
+    "id": "fde8ccd96458d2ed",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4284,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Weeks 9–13 | Activity: Teaching period continues",
+    "word_count": 23
+  },
+  {
+    "id": "be2b2fbacec16744",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4327,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Week 14 | Activity: Reading week (no scheduled classes)",
+    "word_count": 25
+  },
+  {
+    "id": "2e05ec57f3e6786e",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4377,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Week 15 | Activity: Final teaching week",
+    "word_count": 23
+  },
+  {
+    "id": "a9760605d26a72b0",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.2 Semester Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4411,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 2: The Academic Calendar › 2.2 Semester Structure] Week: Weeks 16–18 | Activity: Examination period",
+    "word_count": 22
+  },
+  {
+    "id": "4a4c62c9e57d9cc3",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 2: The Academic Calendar",
+      "2.3 Summer Session Structure"
+    ],
+    "page_number": null,
+    "char_offset": 4483,
+    "text": "The Summer session runs for ten weeks of teaching followed by one week of examinations. Credit hours earned during the Summer session carry full academic weight equivalent to credits earned during a standard semester.",
+    "word_count": 34
+  },
+  {
+    "id": "afa839a64eb9eb2b",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.1 Registration Requirement"
+    ],
+    "page_number": null,
+    "char_offset": 4783,
+    "text": "All students must formally register for each semester and Summer session in which they intend to study. A student who has not completed registration by the end of the add/drop period shall not be permitted to sit examinations or receive credit for any course in that period.",
+    "word_count": 47
+  },
+  {
+    "id": "fd9ebc16cfaf708a",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.2 Course Selection and Load Limits"
+    ],
+    "page_number": null,
+    "char_offset": 5101,
+    "text": "Students may register for a maximum of eighteen credit hours per semester without special permission from the Registrar. A student wishing to take more than eighteen credit hours must obtain approval from their Programme Director and demonstrate a minimum cumulative GPA of 3.5 from the preceding semester.",
+    "word_count": 47
+  },
+  {
+    "id": "fbdb41ac5b8559a3",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.2 Course Selection and Load Limits"
+    ],
+    "page_number": null,
+    "char_offset": 5409,
+    "text": "Part-time students may register for a maximum of nine credit hours per semester.",
+    "word_count": 13
+  },
+  {
+    "id": "fc5b5f76ba900b32",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.3 Add/Drop Period"
+    ],
+    "page_number": null,
+    "char_offset": 5516,
+    "text": "Students may add or drop courses without academic or financial penalty during the add/drop period, which runs for the first two weeks of each semester. After the close of the add/drop period and up to the end of Week 8, a student may withdraw from a course with a grade of W (Withdrawal) recorded on their transcript. After Week 8, course withdrawal is governed by Section 5.3 (Late Course Withdrawal).",
+    "word_count": 70
+  },
+  {
+    "id": "1cefd2ad308c10fa",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.4 Auditing Courses"
+    ],
+    "page_number": null,
+    "char_offset": 5946,
+    "text": "A student may audit a course with the permission of the instructor and the Programme Director. An audited course does not earn credit hours and does not appear on the official transcript. Auditors may not sit examinations and are not eligible for a grade.",
+    "word_count": 44
+  },
+  {
+    "id": "6c33723ca532b939",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 3: Registration and Enrolment",
+      "3.5 Repeat Enrolment"
+    ],
+    "page_number": null,
+    "char_offset": 6229,
+    "text": "A student may repeat a course in which they received a failing grade or a grade of W. When a course is repeated, only the most recent grade is used in the calculation of the cumulative GPA, though both enrolment records appear on the official transcript. A student may not repeat a passed course for the purpose of GPA improvement without approval from the Programme Director.",
+    "word_count": 66
+  },
+  {
+    "id": "3182b2aae648ca05",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6692,
+    "text": "The University uses the following grading scale:",
+    "word_count": 7
+  },
+  {
+    "id": "63e85215e7999144",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6815,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: A+ | GPA Points: 4.0 | Percentage Range: 90–100 | Descriptor: Outstanding",
+    "word_count": 30
+  },
+  {
+    "id": "e705f441a2c56417",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6851,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: A | GPA Points: 4.0 | Percentage Range: 85–89 | Descriptor: Excellent",
+    "word_count": 30
+  },
+  {
+    "id": "1f92db1eb418e887",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6883,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: A– | GPA Points: 3.7 | Percentage Range: 80–84 | Descriptor: Very Good",
+    "word_count": 31
+  },
+  {
+    "id": "4e5b9e631a3f0c1a",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6916,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: B+ | GPA Points: 3.3 | Percentage Range: 77–79 | Descriptor: Good Plus",
+    "word_count": 31
+  },
+  {
+    "id": "33b7e69596efedcc",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6949,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: B | GPA Points: 3.0 | Percentage Range: 73–76 | Descriptor: Good",
+    "word_count": 30
+  },
+  {
+    "id": "e5f691867988413c",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 6976,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: B– | GPA Points: 2.7 | Percentage Range: 70–72 | Descriptor: Good Minus",
+    "word_count": 31
+  },
+  {
+    "id": "d0b87da1adfda85b",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7010,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: C+ | GPA Points: 2.3 | Percentage Range: 67–69 | Descriptor: Satisfactory Plus",
+    "word_count": 31
+  },
+  {
+    "id": "626d6011ef417901",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7051,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: C | GPA Points: 2.0 | Percentage Range: 63–66 | Descriptor: Satisfactory",
+    "word_count": 30
+  },
+  {
+    "id": "cde32402cedc9976",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7086,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: C– | GPA Points: 1.7 | Percentage Range: 60–62 | Descriptor: Satisfactory Minus",
+    "word_count": 31
+  },
+  {
+    "id": "a5a6853344260ba7",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7128,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: D+ | GPA Points: 1.3 | Percentage Range: 57–59 | Descriptor: Passing Plus",
+    "word_count": 31
+  },
+  {
+    "id": "0f12695b19e4bb1d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7164,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: D | GPA Points: 1.0 | Percentage Range: 50–56 | Descriptor: Passing",
+    "word_count": 30
+  },
+  {
+    "id": "1e03cae06dd8a3a3",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7194,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: F | GPA Points: 0.0 | Percentage Range: 0–49 | Descriptor: Failing",
+    "word_count": 30
+  },
+  {
+    "id": "204ff4a7586d8258",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7223,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: W | Descriptor: Withdrawal",
+    "word_count": 22
+  },
+  {
+    "id": "06708e927aa4f6e6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7250,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: I | Descriptor: Incomplete",
+    "word_count": 22
+  },
+  {
+    "id": "5201d1b56e90628b",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.1 Grading Scale"
+    ],
+    "page_number": null,
+    "char_offset": 7277,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 4: Assessment, Grading, and Academic Records › 4.1 Grading Scale] Grade: AU | Descriptor: Audit",
+    "word_count": 22
+  },
+  {
+    "id": "94ac3a158ed38ed6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.2 Grade Submission"
+    ],
+    "page_number": null,
+    "char_offset": 7327,
+    "text": "Instructors must submit final grades to the Registrar within five business days of the last scheduled examination for the course. For courses with no formal examination, the deadline is five business days after the submission deadline for the final assessment.",
+    "word_count": 40
+  },
+  {
+    "id": "c319781bf103d46b",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.3 Incomplete Grades"
+    ],
+    "page_number": null,
+    "char_offset": 7616,
+    "text": "An Incomplete (I) grade may be awarded where a student has completed at least 75% of the course requirements and is unable to complete the remaining requirements due to documented circumstances beyond the student's control. The student must request the Incomplete grade from the instructor before the last day of the examination period.",
+    "word_count": 53
+  },
+  {
+    "id": "461e3af3b095eddd",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.3 Incomplete Grades"
+    ],
+    "page_number": null,
+    "char_offset": 7954,
+    "text": "An Incomplete grade must be resolved within eight weeks of the start of the following semester. If the grade is not resolved within this period, the Incomplete shall be converted to a grade of F automatically by the Registrar.",
+    "word_count": 39
+  },
+  {
+    "id": "bdbf6fc8e8392f2f",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 4: Assessment, Grading, and Academic Records",
+      "4.4 Grade Review and Appeals"
+    ],
+    "page_number": null,
+    "char_offset": 8216,
+    "text": "A student who believes a final grade has been calculated in error may request a grade review from the instructor within ten business days of the grade being posted on the student portal. If the student remains dissatisfied after the instructor's review, they may submit a formal grade appeal to the Programme Director within a further ten business days. The Programme Director's decision is final unless procedural irregularity is alleged, in which case the matter proceeds under the Academic Appeals Procedure described in the Ashford University Appeals and Academic Conduct Policy.",
+    "word_count": 91
+  },
+  {
+    "id": "cd0cc2b81bdadc5b",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.1 Voluntary Withdrawal from the University"
+    ],
+    "page_number": null,
+    "char_offset": 8905,
+    "text": "A student wishing to withdraw from the University must notify the Registrar in writing. Withdrawal does not require the approval of a faculty member, but the Registrar will refer the student to the Student Advisory Service before processing the withdrawal. Grades of W shall be assigned for all courses in which the student is currently enrolled. Financial obligations arising from enrolment remain subject to the fee refund policy set out in the Fee Schedule and Financial Obligations Policy.",
+    "word_count": 78
+  },
+  {
+    "id": "87a70acb38474608",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.2 Withdrawal from Individual Courses"
+    ],
+    "page_number": null,
+    "char_offset": 9446,
+    "text": "Withdrawal from individual courses is subject to the timeline specified in Chapter 3. A grade of W is recorded and does not affect GPA. However, a student who accumulates more than four W grades in any single degree programme shall be subject to an academic progress review by the Programme Director.",
+    "word_count": 51
+  },
+  {
+    "id": "094ba547cb0470f6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.3 Late Course Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 9804,
+    "text": "After the course withdrawal deadline at the end of Week 8, a student wishing to withdraw from a course must submit a Late Course Withdrawal request. Such requests may be granted only on the basis of documented exceptional circumstances, which must include at least one of the following:",
+    "word_count": 48
+  },
+  {
+    "id": "43291c91cce462de",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.3 Late Course Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 10092,
+    "text": "- Serious medical illness or injury (requiring supporting documentation from a registered medical practitioner) - Bereavement of an immediate family member - Serious unforeseen personal or family emergency",
+    "word_count": 28
+  },
+  {
+    "id": "0ff3ff9af06582d2",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.3 Late Course Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 10299,
+    "text": "Late withdrawal requests must be reviewed and approved by the Dean of the student's faculty. The Dean may consult with the Programme Director but holds sole authority to approve or deny the request. Upon approval, a grade of W shall be recorded. Upon denial, the student remains enrolled and shall receive the grade earned.",
+    "word_count": 54
+  },
+  {
+    "id": "58225c6877057100",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.3 Late Course Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 10628,
+    "text": "Requests for late withdrawal must be submitted to the faculty office no later than the last day of the examination period for the semester in question.",
+    "word_count": 26
+  },
+  {
+    "id": "d7d870d0e9aa3f0e",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.4 Leave of Absence"
+    ],
+    "page_number": null,
+    "char_offset": 10807,
+    "text": "A student may apply for a Leave of Absence (LOA) for up to two consecutive semesters. Applications must be submitted to the Programme Director with supporting documentation at least four weeks before the start of the semester for which the leave is requested. A student on LOA retains their place in the programme but may not enrol in any courses during the leave period.",
+    "word_count": 64
+  },
+  {
+    "id": "f21ea0d907b4eac5",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.4 Leave of Absence"
+    ],
+    "page_number": null,
+    "char_offset": 11180,
+    "text": "A student who does not return from LOA or request an extension by the deadline specified in the LOA approval letter shall be administratively withdrawn from the University.",
+    "word_count": 28
+  },
+  {
+    "id": "3e015ce7790a43f0",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 5: Withdrawal and Leave of Absence",
+      "5.5 Medical Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 11382,
+    "text": "A student who is unable to continue studies due to medical reasons may be granted a Medical Withdrawal at any point during a semester. Medical Withdrawals require supporting documentation from a licensed medical or psychiatric practitioner and must be approved by the Dean in consultation with the Student Health Services Director. Upon approval, grades of MW (Medical Withdrawal) shall be recorded for all courses in the current semester. MW grades carry no academic penalty and are treated as W grades for progression purposes.",
+    "word_count": 83
+  },
+  {
+    "id": "5934d537a01d3b53",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.1 Minimum GPA Requirement for Good Academic Standing"
+    ],
+    "page_number": null,
+    "char_offset": 12051,
+    "text": "Undergraduate students must maintain a cumulative GPA of 2.0 or above to remain in Good Academic Standing. Graduate students must maintain a cumulative GPA of 3.0 or above. Failure to meet the minimum GPA requirement at the end of any semester will result in the student being placed on Academic Probation as described in Section 6.2.",
+    "word_count": 56
+  },
+  {
+    "id": "f400856bae9fe620",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.2 Academic Probation"
+    ],
+    "page_number": null,
+    "char_offset": 12419,
+    "text": "A student is placed on Academic Probation when their cumulative GPA falls below the programme minimum. The student will receive written notice from the Registrar within ten business days of final grades being posted for the semester.",
+    "word_count": 37
+  },
+  {
+    "id": "a993b415ccff3adb",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.2 Academic Probation"
+    ],
+    "page_number": null,
+    "char_offset": 12654,
+    "text": "During Academic Probation: - The student must meet with their academic advisor within the first three weeks of the following semester. - The student may not register for more than thirteen credit hours per semester. - The student must complete a personalised Academic Improvement Plan (AIP) approved by the Programme Director.",
+    "word_count": 51
+  },
+  {
+    "id": "1747f5a1ab127d7d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.3 Continuation on Probation"
+    ],
+    "page_number": null,
+    "char_offset": 13017,
+    "text": "A student on Academic Probation who achieves the required minimum GPA in the immediately following term will be returned to Good Academic Standing. A student on Academic Probation who does not achieve the required minimum GPA within two consecutive semesters shall be subject to Academic Dismissal as described in Section 6.4.",
+    "word_count": 51
+  },
+  {
+    "id": "ecf059d552fc1d86",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.4 Academic Dismissal"
+    ],
+    "page_number": null,
+    "char_offset": 13373,
+    "text": "Academic Dismissal is the permanent separation of a student from their degree programme. A student facing Academic Dismissal will receive a written notice from the Dean and will be afforded the opportunity to submit a written response within ten business days before the dismissal is made final. The dismissed student retains the right to appeal under the Academic Appeals Procedure.",
+    "word_count": 60
+  },
+  {
+    "id": "02135f576c1be5a4",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.4 Academic Dismissal"
+    ],
+    "page_number": null,
+    "char_offset": 13758,
+    "text": "A student who has been academically dismissed may apply for readmission after a minimum period of two years. Readmission is not guaranteed and is subject to the admissions procedures current at the time of reapplication.",
+    "word_count": 35
+  },
+  {
+    "id": "2e39d8f7afc235fb",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 6: Academic Standing and Progression",
+      "6.5 Dean's List"
+    ],
+    "page_number": null,
+    "char_offset": 14001,
+    "text": "A full-time undergraduate student who achieves a semester GPA of 3.7 or higher and has completed at least twelve credit hours in that semester, with no I (Incomplete) grades outstanding, shall be placed on the Dean's List for that semester. The Dean's List is published on the student portal and a letter of recognition is sent to the student.",
+    "word_count": 59
+  },
+  {
+    "id": "f46b1daf257b2ef6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.1 Tuition and Fees"
+    ],
+    "page_number": null,
+    "char_offset": 14414,
+    "text": "Tuition rates, mandatory fees, and the schedule of deadlines for payment are published each year in the Fee Schedule and Financial Obligations Policy. Students are responsible for payment of all applicable tuition and fees by the published deadlines. Failure to pay tuition by the deadline may result in administrative deregistration from courses.",
+    "word_count": 52
+  },
+  {
+    "id": "bb6fac8812bfc324",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 14803,
+    "text": "The tuition refund schedule applicable upon voluntary withdrawal or course withdrawal is as follows:",
+    "word_count": 14
+  },
+  {
+    "id": "1aab257bdada4069",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 14960,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 7: Financial Obligations › 7.2 Refund Policy for Withdrawal] Timing of Withdrawal: During add/drop period (Weeks 1–2) | Refund Percentage: 100%",
+    "word_count": 28
+  },
+  {
+    "id": "f93fcded12ab56ce",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 15006,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 7: Financial Obligations › 7.2 Refund Policy for Withdrawal] Timing of Withdrawal: Weeks 3–4 | Refund Percentage: 75%",
+    "word_count": 25
+  },
+  {
+    "id": "6705e49185a5f3ac",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 15026,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 7: Financial Obligations › 7.2 Refund Policy for Withdrawal] Timing of Withdrawal: Weeks 5–6 | Refund Percentage: 50%",
+    "word_count": 25
+  },
+  {
+    "id": "b8400c8ec701c3a7",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 15046,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 7: Financial Obligations › 7.2 Refund Policy for Withdrawal] Timing of Withdrawal: Week 7 | Refund Percentage: 25%",
+    "word_count": 25
+  },
+  {
+    "id": "b9767e7aabfd3fba",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 15063,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 7: Financial Obligations › 7.2 Refund Policy for Withdrawal] Timing of Withdrawal: Week 8 and beyond | Refund Percentage: 0%",
+    "word_count": 27
+  },
+  {
+    "id": "06a4159695f72305",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.2 Refund Policy for Withdrawal"
+    ],
+    "page_number": null,
+    "char_offset": 15091,
+    "text": "No tuition refund is applicable for medical withdrawals processed after the end of Week 6. Medical Withdrawal fee waivers may be considered on a case-by-case basis by the Bursar's Office with supporting documentation.",
+    "word_count": 33
+  },
+  {
+    "id": "0addf04cdd167563",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.3 Late Payment Fee"
+    ],
+    "page_number": null,
+    "char_offset": 15336,
+    "text": "A late payment fee of $75 shall be applied to any tuition balance outstanding after the published payment deadline. A further late payment fee of $75 shall be applied for each additional thirty-day period that the balance remains unpaid, up to a maximum of three such charges per semester.",
+    "word_count": 49
+  },
+  {
+    "id": "fe5af7ce5d1f3b12",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 7: Financial Obligations",
+      "7.4 Financial Holds"
+    ],
+    "page_number": null,
+    "char_offset": 15652,
+    "text": "The University may place a financial hold on a student's account where tuition, fees, or library fines are outstanding. A student with a financial hold may not register for future semesters, receive official transcripts, or participate in Commencement ceremonies until all obligations are resolved.",
+    "word_count": 44
+  },
+  {
+    "id": "dec73525f9087ac6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.1 Eligibility for Graduation"
+    ],
+    "page_number": null,
+    "char_offset": 16019,
+    "text": "To be eligible for graduation, a student must:",
+    "word_count": 8
+  },
+  {
+    "id": "325a1af3aa1d9197",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.1 Eligibility for Graduation"
+    ],
+    "page_number": null,
+    "char_offset": 16067,
+    "text": "1. Complete all courses required by their programme's curriculum with a passing grade. 2. Satisfy the minimum credit hour requirement of their programme. 3. Achieve a cumulative GPA of at least 2.0 (undergraduate) or 3.0 (graduate). 4. Resolve all Incomplete (I) grades. 5. Have no outstanding financial holds. 6. Submit an Application for Graduation by the published deadline.",
+    "word_count": 58
+  },
+  {
+    "id": "8634775986cbe45a",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.2 Application for Graduation"
+    ],
+    "page_number": null,
+    "char_offset": 16482,
+    "text": "Students must submit an Application for Graduation to the Registrar by the following deadlines:",
+    "word_count": 14
+  },
+  {
+    "id": "0c8d34d320032d7d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.2 Application for Graduation"
+    ],
+    "page_number": null,
+    "char_offset": 16579,
+    "text": "- For May Commencement: 1 February of the graduation year - For December Commencement: 1 September of the graduation year",
+    "word_count": 20
+  },
+  {
+    "id": "490f7d5d93ef22ad",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.2 Application for Graduation"
+    ],
+    "page_number": null,
+    "char_offset": 16702,
+    "text": "Late applications may be considered on payment of a Late Graduation Application Fee as listed in the Fee Schedule and Financial Obligations Policy.",
+    "word_count": 23
+  },
+  {
+    "id": "a0b682f7ac7cc736",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.3 Graduation Audit"
+    ],
+    "page_number": null,
+    "char_offset": 16879,
+    "text": "Upon receipt of an Application for Graduation, the Registrar shall conduct a graduation audit within twenty business days to verify that all programme requirements have been or are on track to be met. The Registrar will notify the student of any deficiencies. Students who fail to clear all deficiencies before the Commencement date will participate in Commencement provisionally but will not receive their degree until all requirements are met.",
+    "word_count": 69
+  },
+  {
+    "id": "5449aa7efee62189",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.4 Honours Classifications"
+    ],
+    "page_number": null,
+    "char_offset": 17359,
+    "text": "Undergraduate degrees may be awarded with one of the following honours classifications based on cumulative GPA:",
+    "word_count": 16
+  },
+  {
+    "id": "822c8c4c9cdbe230",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.4 Honours Classifications"
+    ],
+    "page_number": null,
+    "char_offset": 17518,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 8: Graduation › 8.4 Honours Classifications] Classification: Summa Cum Laude | Cumulative GPA: 3.90 – 4.00",
+    "word_count": 23
+  },
+  {
+    "id": "05d9ad1ab58f3fb6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.4 Honours Classifications"
+    ],
+    "page_number": null,
+    "char_offset": 17552,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 8: Graduation › 8.4 Honours Classifications] Classification: Magna Cum Laude | Cumulative GPA: 3.70 – 3.89",
+    "word_count": 23
+  },
+  {
+    "id": "9ca1b9ea51259902",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.4 Honours Classifications"
+    ],
+    "page_number": null,
+    "char_offset": 17586,
+    "text": "[Table: Ashford University Academic Regulations › Chapter 8: Graduation › 8.4 Honours Classifications] Classification: Cum Laude | Cumulative GPA: 3.50 – 3.69",
+    "word_count": 22
+  },
+  {
+    "id": "be07cebdf5f49e97",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 8: Graduation",
+      "8.4 Honours Classifications"
+    ],
+    "page_number": null,
+    "char_offset": 17615,
+    "text": "Graduate degrees are not subject to honours classification under these regulations but may carry distinctions as specified by individual programme regulations.",
+    "word_count": 21
+  },
+  {
+    "id": "2a8e48b8d538846a",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 9: Student Records and Privacy",
+      "9.1 Official Transcripts"
+    ],
+    "page_number": null,
+    "char_offset": 17854,
+    "text": "Official transcripts are issued only by the Registrar's Office and bear the official University seal and the signature of the Registrar. Requests for official transcripts must be submitted in writing (or through the designated student portal process) with a minimum of five business days' notice. A transcript fee applies as listed in the Fee Schedule and Financial Obligations Policy.",
+    "word_count": 59
+  },
+  {
+    "id": "852d1901e87d141c",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 9: Student Records and Privacy",
+      "9.1 Official Transcripts"
+    ],
+    "page_number": null,
+    "char_offset": 18243,
+    "text": "Students are entitled to one complimentary set of transcripts upon graduation. Additional transcripts are subject to the standard transcript fee.",
+    "word_count": 20
+  },
+  {
+    "id": "a102c26d719293e7",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 9: Student Records and Privacy",
+      "9.2 Student Record Access"
+    ],
+    "page_number": null,
+    "char_offset": 18421,
+    "text": "Students have the right to inspect their own academic records. Requests to inspect records must be submitted in writing to the Registrar. The Registrar must provide access or a copy within fifteen business days of the request. Records may not be released to third parties without the student's written consent, except where required by law or court order.",
+    "word_count": 58
+  },
+  {
+    "id": "5ba7088925d79a6f",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 9: Student Records and Privacy",
+      "9.3 Amendment of Records"
+    ],
+    "page_number": null,
+    "char_offset": 18808,
+    "text": "A student who believes their academic record contains a factual error (as distinct from a grade disagreement, which is governed by Section 4.4) may request correction by submitting evidence to the Registrar. The Registrar shall investigate and respond within twenty business days.",
+    "word_count": 42
+  },
+  {
+    "id": "2d1349f42f9e85d6",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 10: Disability and Accessibility Accommodations",
+      "10.1 Entitlement to Reasonable Accommodations"
+    ],
+    "page_number": null,
+    "char_offset": 19206,
+    "text": "Students with documented disabilities are entitled to reasonable accommodations to support their full participation in academic life. Accommodations do not alter the fundamental nature or academic standards of any programme.",
+    "word_count": 30
+  },
+  {
+    "id": "137c0a6dcdee0255",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 10: Disability and Accessibility Accommodations",
+      "10.2 Registration with Disability Services"
+    ],
+    "page_number": null,
+    "char_offset": 19480,
+    "text": "Students seeking accommodations must register with the Office of Disability Services (ODS) and provide documentation of the disability from a qualified professional. ODS will work with the student and their instructors to establish an Accommodation Plan.",
+    "word_count": 36
+  },
+  {
+    "id": "dde1aca9066171a9",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 10: Disability and Accessibility Accommodations",
+      "10.3 Examination Accommodations"
+    ],
+    "page_number": null,
+    "char_offset": 19773,
+    "text": "Examination accommodations may include extended time, a separate examination room, the use of assistive technology, or other adjustments as determined appropriate by ODS. Accommodation Plans must be communicated to instructors at least two weeks before the first scheduled examination for which accommodations are required.",
+    "word_count": 44
+  },
+  {
+    "id": "fdf396ceeb534a6d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 10: Disability and Accessibility Accommodations",
+      "10.4 Appeals Regarding Accommodations"
+    ],
+    "page_number": null,
+    "char_offset": 20141,
+    "text": "A student who believes they have been denied appropriate accommodations may file a complaint with the Office of the Vice-Chancellor (Academic Affairs) within twenty business days of the denial. The complaint procedure is set out in the Ashford University Equity and Inclusion Policy.",
+    "word_count": 43
+  },
+  {
+    "id": "b883fc8c48ab760d",
+    "source_file": "academic_regulations.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Academic Regulations",
+    "section_path": [
+      "Ashford University Academic Regulations",
+      "Chapter 10: Disability and Accessibility Accommodations",
+      "10.4 Appeals Regarding Accommodations"
+    ],
+    "page_number": null,
+    "char_offset": 20433,
+    "text": "End of Ashford University Academic Regulations (AUR-2024-001)",
+    "word_count": 7
+  },
+  {
+    "id": "b0ac34b1a535f050",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy"
+    ],
+    "page_number": null,
+    "char_offset": 59,
+    "text": "Document Reference: AACP-2024-004 Effective Date: 1 September 2024 Version: 5.3 Approved by: Academic Senate and Student Affairs Committee, 18 June 2024 Maintained by: Office of Academic Integrity and Student Conduct Review Date: 31 August 2026",
+    "word_count": 35
+  },
+  {
+    "id": "b98390d46b7e07b7",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.1 Scope of This Policy"
+    ],
+    "page_number": null,
+    "char_offset": 403,
+    "text": "This policy establishes the procedures by which students may formally appeal academic decisions, including grade appeals, programme dismissal decisions, examination results, and other matters governed by the Academic Regulations. A student who believes that an academic decision was made in error, that proper procedures were not followed, or that exceptional circumstances were not given adequate weight, may appeal under this policy.",
+    "word_count": 61
+  },
+  {
+    "id": "7558253362781add",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.1 Scope of This Policy"
+    ],
+    "page_number": null,
+    "char_offset": 840,
+    "text": "This policy does not provide a general mechanism for re-marking or re-examining submitted work. It provides a process for reviewing whether proper procedure was followed and whether relevant evidence was fairly considered.",
+    "word_count": 32
+  },
+  {
+    "id": "24b0de7f4e433f50",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.2 Grounds for Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 1092,
+    "text": "Valid grounds for an academic appeal include:",
+    "word_count": 7
+  },
+  {
+    "id": "085708a6bb449736",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.2 Grounds for Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 1139,
+    "text": "1. Procedural irregularity: A procedure required by university policy was not followed and this irregularity had a material effect on the outcome. 2. New evidence: Evidence exists that was not available at the time of the original decision and which, had it been available, may have materially changed the outcome. 3. Inadequate consideration of exceptional circumstances: The student submitted documented exceptional circumstances that were not given adequate weight in the original decision.",
+    "word_count": 72
+  },
+  {
+    "id": "1945ccc27feb7844",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.2 Grounds for Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 1646,
+    "text": "Disagreement with the academic judgement of an examiner or assessor is not by itself a valid ground for appeal unless accompanied by evidence of procedural irregularity, bias, or demonstrable factual error.",
+    "word_count": 31
+  },
+  {
+    "id": "1bd14ff4a9f6cd7e",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.3 Appeal Timeline"
+    ],
+    "page_number": null,
+    "char_offset": 1923,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 1: Academic Appeals › 1.3 Appeal Timeline] Stage: Stage 1 (Informal) | Action: Student contacts instructor or Programme Director | Deadline: Within 10 business days of decision",
+    "word_count": 38
+  },
+  {
+    "id": "3bf4599d1960c914",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.3 Appeal Timeline"
+    ],
+    "page_number": null,
+    "char_offset": 2036,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 1: Academic Appeals › 1.3 Appeal Timeline] Stage: Stage 2 (Formal Faculty) | Action: Written appeal to Dean of Faculty | Deadline: Within 10 business days of Stage 1 outcome",
+    "word_count": 41
+  },
+  {
+    "id": "32682963c84b4afd",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.3 Appeal Timeline"
+    ],
+    "page_number": null,
+    "char_offset": 2146,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 1: Academic Appeals › 1.3 Appeal Timeline] Stage: Stage 3 (University) | Action: Written appeal to Academic Appeals Panel | Deadline: Within 15 business days of Stage 2 outcome",
+    "word_count": 40
+  },
+  {
+    "id": "0bf6f257142d8ba0",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.3 Appeal Timeline"
+    ],
+    "page_number": null,
+    "char_offset": 2259,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 1: Academic Appeals › 1.3 Appeal Timeline] Stage: Stage 4 (Review) | Action: Request for procedural review by Ombudsperson | Deadline: Within 10 business days of Stage 3 outcome",
+    "word_count": 40
+  },
+  {
+    "id": "e05b1fdee0ed0337",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.3 Appeal Timeline"
+    ],
+    "page_number": null,
+    "char_offset": 2374,
+    "text": "Appeals submitted outside the applicable deadline will not normally be considered unless the student can demonstrate that circumstances beyond their control prevented timely submission.",
+    "word_count": 24
+  },
+  {
+    "id": "3235f5388999de98",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.4 Academic Appeals Panel"
+    ],
+    "page_number": null,
+    "char_offset": 2593,
+    "text": "The Academic Appeals Panel is a standing body convened by the Vice-Chancellor (Academic Affairs). Its composition for each hearing is:",
+    "word_count": 20
+  },
+  {
+    "id": "5593c02678a0edfe",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.4 Academic Appeals Panel"
+    ],
+    "page_number": null,
+    "char_offset": 2729,
+    "text": "- One senior academic staff member nominated by the Academic Senate (Chair) - One academic staff member from a faculty not involved in the original decision - One student representative from the Student Union",
+    "word_count": 34
+  },
+  {
+    "id": "7b5303c68b4ff584",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.4 Academic Appeals Panel"
+    ],
+    "page_number": null,
+    "char_offset": 2939,
+    "text": "Panel members who have a conflict of interest with the appealing student or the matter under appeal must recuse themselves. Panel decisions are reached by majority vote and are communicated to the student in writing within fifteen business days of the hearing.",
+    "word_count": 42
+  },
+  {
+    "id": "6465799354c7ba02",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.5 Outcomes of an Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 3232,
+    "text": "The Academic Appeals Panel may:",
+    "word_count": 5
+  },
+  {
+    "id": "123dd4200aae3174",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.5 Outcomes of an Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 3265,
+    "text": "- Uphold the original decision - Overturn the original decision - Remit the matter to the original decision-maker for reconsideration with specified guidance - Order a fresh assessment or examination",
+    "word_count": 30
+  },
+  {
+    "id": "5543165a4c9b64bb",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 1: Academic Appeals",
+      "1.5 Outcomes of an Appeal"
+    ],
+    "page_number": null,
+    "char_offset": 3466,
+    "text": "The Panel may not directly award a grade or substitute its academic judgement for that of the original assessor. If the Panel overturns a decision, the matter is referred to the appropriate academic authority for determination.",
+    "word_count": 36
+  },
+  {
+    "id": "713731823ae4a2c0",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.1 Standards of Academic Integrity"
+    ],
+    "page_number": null,
+    "char_offset": 3772,
+    "text": "Ashford University upholds the principle that all assessed work submitted by students must be the student's own work, produced in accordance with the rules of the course and the assessment task. Violations of academic integrity undermine the value of awards and are treated seriously.",
+    "word_count": 44
+  },
+  {
+    "id": "bfe766b8e67c6d87",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.2 Definitions of Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 4102,
+    "text": "The following constitute academic misconduct:",
+    "word_count": 5
+  },
+  {
+    "id": "8d1619805581c2c5",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.2 Definitions of Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 4149,
+    "text": "- Plagiarism: Presenting another person's words, ideas, or work as one's own without proper attribution. - Fabrication: Inventing or falsifying data, sources, results, or other information in assessed work. - Collusion: Working with another student on an assessment intended to be completed individually, where such collaboration has not been authorised. - Contract Cheating: Paying, arranging, or requesting another person to complete assessed work on one's behalf. - Exam Misconduct: Possessing or attempting to use unauthorised materials or devices during an examination; communicating with another student during an examination without authorisation. - Self-Plagiarism: Submitting work that has been previously assessed in another course, at Ashford University or elsewhere, without proper disclosure and approval.",
+    "word_count": 112
+  },
+  {
+    "id": "fc46a06ae166e7a1",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.3 Investigation Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 5026,
+    "text": "All suspected academic misconduct must be reported to the Academic Integrity Officer (AIO) by the instructor or any other member of the University community who becomes aware of it. The AIO will conduct a preliminary review within ten business days to determine whether the matter warrants a formal investigation.",
+    "word_count": 49
+  },
+  {
+    "id": "1987e395ec35cb7e",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.3 Investigation Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 5341,
+    "text": "If a formal investigation is opened, the student will be notified in writing and provided: - A description of the alleged misconduct - Copies of any evidence gathered - An invitation to submit a written response within fifteen business days",
+    "word_count": 40
+  },
+  {
+    "id": "bc889cbc4a5e7237",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.3 Investigation Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 5583,
+    "text": "A formal hearing may be convened at the discretion of the AIO.",
+    "word_count": 12
+  },
+  {
+    "id": "5368d63a6fd74173",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 5699,
+    "text": "Where academic misconduct is confirmed, sanctions may include, but are not limited to:",
+    "word_count": 13
+  },
+  {
+    "id": "ad6c2697616b5a6b",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 5832,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Written warning | Typical Application: Minor or first-time infringement",
+    "word_count": 31
+  },
+  {
+    "id": "f71b1ee14a351cfe",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 5887,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Grade reduction for the assessment | Typical Application: Moderate plagiarism or unauthorised collaboration",
+    "word_count": 35
+  },
+  {
+    "id": "8c191bc2d0f24eb7",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 5978,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Grade of zero for the assessment | Typical Application: Serious or deliberate misconduct",
+    "word_count": 35
+  },
+  {
+    "id": "a8dec3a482a12230",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 6050,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Grade of F for the course | Typical Application: Persistent or aggravated misconduct",
+    "word_count": 35
+  },
+  {
+    "id": "9f9f4b7844e10ab6",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 6118,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Notation on academic transcript | Typical Application: Confirmed contract cheating or fabrication",
+    "word_count": 34
+  },
+  {
+    "id": "4cac02c6b4b9156a",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 6199,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Suspension from the University | Typical Application: Egregious or repeated misconduct",
+    "word_count": 33
+  },
+  {
+    "id": "88ef6392a02b64da",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 6269,
+    "text": "[Table: Ashford University — Appeals and Academic Conduct Policy › Part 2: Academic Integrity › 2.4 Possible Sanctions for Academic Misconduct] Sanction: Expulsion from the University | Typical Application: Extreme or repeated egregious misconduct",
+    "word_count": 34
+  },
+  {
+    "id": "54793877825dcc7c",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 2: Academic Integrity",
+      "2.4 Possible Sanctions for Academic Misconduct"
+    ],
+    "page_number": null,
+    "char_offset": 6347,
+    "text": "Sanctions are applied proportionately to the severity and circumstances of the misconduct. A student's disciplinary history at the University will be taken into account.",
+    "word_count": 24
+  },
+  {
+    "id": "3820c18a54465530",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.1 Probationary Requirements for Undergraduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 6646,
+    "text": "Undergraduate students placed on Academic Probation under Section 6.2 of the Academic Regulations must meet the following conditions:",
+    "word_count": 18
+  },
+  {
+    "id": "f720c41ee57db09f",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.1 Probationary Requirements for Undergraduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 6781,
+    "text": "- Register for no more than thirteen credit hours in the probationary semester. - Meet with their academic advisor at least twice during the probationary semester. - Complete and adhere to an Academic Improvement Plan approved by the Programme Director.",
+    "word_count": 40
+  },
+  {
+    "id": "7d4c2dbbb81bf1f2",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.2 Minimum GPA to Exit Probation — Undergraduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 7124,
+    "text": "An undergraduate student on Academic Probation must achieve a term GPA of at least 2.3 in the probationary semester to be removed from probationary status. A term GPA of 2.3 or higher in the probationary semester will result in the student being returned to Good Academic Standing, provided their cumulative GPA has also risen to 2.0 or above.",
+    "word_count": 58
+  },
+  {
+    "id": "0b10e7219897f652",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.2 Minimum GPA to Exit Probation — Undergraduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 7473,
+    "text": "If the student achieves a term GPA between 2.0 and 2.29, they remain on probation for one additional semester. If the student does not achieve a cumulative GPA of 2.0 or above within two consecutive probationary semesters, they shall be subject to Academic Dismissal.",
+    "word_count": 44
+  },
+  {
+    "id": "6bf43c325101ca8f",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.3 Minimum GPA to Exit Probation — Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 7801,
+    "text": "A graduate student on Academic Probation must achieve a term GPA of at least 3.0 in the probationary semester. If the student does not raise their cumulative GPA to 3.0 or above within two consecutive probationary semesters, they shall be subject to Academic Dismissal under the procedures in Section 2.5 of the Graduate Studies Policy.",
+    "word_count": 55
+  },
+  {
+    "id": "5f9b78db7fcb34a1",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.4 Academic Dismissal Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 8177,
+    "text": "Upon determination that a student meets the criteria for Academic Dismissal:",
+    "word_count": 11
+  },
+  {
+    "id": "c30d75e4343cdef7",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.4 Academic Dismissal Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 8255,
+    "text": "1. The Dean (or Graduate Studies Committee for graduate students) issues a formal Notice of Intent to Dismiss. 2. The student may submit a written statement within ten business days. 3. The Dean (or Committee) reviews the statement and makes a final determination. 4. The student is notified of the outcome in writing.",
+    "word_count": 53
+  },
+  {
+    "id": "825b71fa138b95fa",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.4 Academic Dismissal Procedure"
+    ],
+    "page_number": null,
+    "char_offset": 8575,
+    "text": "A dismissed student who believes the dismissal procedure was not followed correctly may appeal under Part 1 of this policy.",
+    "word_count": 20
+  },
+  {
+    "id": "13ccb66248c373b9",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.5 Reinstatement After Dismissal"
+    ],
+    "page_number": null,
+    "char_offset": 8739,
+    "text": "An undergraduate student who has been academically dismissed may apply for reinstatement after two years from the date of dismissal. Reinstatement is not automatic and is considered on the merits of the application, including evidence of changed circumstances and academic readiness.",
+    "word_count": 41
+  },
+  {
+    "id": "3434b3cfc3067aaa",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 3: Academic Probation, Dismissal, and Reinstatement",
+      "3.5 Reinstatement After Dismissal"
+    ],
+    "page_number": null,
+    "char_offset": 9024,
+    "text": "A reinstated student is subject to the academic regulations and programme requirements in force at the time of reinstatement, not those in force at the time of original admission.",
+    "word_count": 29
+  },
+  {
+    "id": "6546840847a0174e",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 4: Student Conduct Outside Academic Matters",
+      "4.1 Scope"
+    ],
+    "page_number": null,
+    "char_offset": 9278,
+    "text": "This Part applies to student conduct that falls outside the academic integrity framework but that may affect the University community, including conduct at University events, on University premises, and online activity that is directed at or significantly impacts University community members.",
+    "word_count": 41
+  },
+  {
+    "id": "c1a5faa7b6ee5ae1",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 4: Student Conduct Outside Academic Matters",
+      "4.2 Student Conduct Officer"
+    ],
+    "page_number": null,
+    "char_offset": 9606,
+    "text": "The Office of Academic Integrity and Student Conduct appoints a Student Conduct Officer (SCO) who is responsible for investigating and resolving non-academic conduct matters. The SCO works in coordination with Campus Security, the Student Advisory Service, and, where relevant, external authorities.",
+    "word_count": 41
+  },
+  {
+    "id": "3e4077ce8d8761f2",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 4: Student Conduct Outside Academic Matters",
+      "4.3 Sanctions for Non-Academic Conduct"
+    ],
+    "page_number": null,
+    "char_offset": 9951,
+    "text": "Sanctions may include a formal warning, restrictions on access to University facilities, community service requirements, mandatory participation in educational programmes, suspension, or expulsion. Conduct resulting in the commission of a criminal offence will be reported to the relevant authorities.",
+    "word_count": 39
+  },
+  {
+    "id": "954ec651b4c49270",
+    "source_file": "appeals_and_conduct.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Appeals and Academic Conduct Policy",
+    "section_path": [
+      "Ashford University — Appeals and Academic Conduct Policy",
+      "Part 4: Student Conduct Outside Academic Matters",
+      "4.3 Sanctions for Non-Academic Conduct"
+    ],
+    "page_number": null,
+    "char_offset": 10259,
+    "text": "End of Ashford University Appeals and Academic Conduct Policy (AACP-2024-004)",
+    "word_count": 10
+  },
+  {
+    "id": "79c048100a111526",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy"
+    ],
+    "page_number": null,
+    "char_offset": 69,
+    "text": "Document Reference: FSP-2024-003 Effective Date: 1 September 2024 Version: 9.0 Approved by: Board of Trustees, Finance Committee, 15 July 2024 Maintained by: Bursar's Office Review Date: 31 August 2025",
+    "word_count": 29
+  },
+  {
+    "id": "293530934c59946d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 370,
+    "text": "All tuition rates are expressed per credit hour unless otherwise stated.",
+    "word_count": 11
+  },
+  {
+    "id": "fd0be884eef4fafc",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 559,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part A: Annual Tuition Rates (2024–2025 Academic Year)] Programme Level: Undergraduate (Years 1–2) | Domestic Students (per credit hour): $485 | International Students (per credit hour): $1,120",
+    "word_count": 38
+  },
+  {
+    "id": "0180595e5b8d3fc5",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 605,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part A: Annual Tuition Rates (2024–2025 Academic Year)] Programme Level: Undergraduate (Years 3–4) | Domestic Students (per credit hour): $520 | International Students (per credit hour): $1,195",
+    "word_count": 38
+  },
+  {
+    "id": "7a641acbb6337ebc",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 651,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part A: Annual Tuition Rates (2024–2025 Academic Year)] Programme Level: Graduate (Master's) | Domestic Students (per credit hour): $890 | International Students (per credit hour): $1,740",
+    "word_count": 37
+  },
+  {
+    "id": "1d963058b177a0f1",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 691,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part A: Annual Tuition Rates (2024–2025 Academic Year)] Programme Level: Graduate (Doctoral) | Domestic Students (per credit hour): $960 | International Students (per credit hour): $1,890",
+    "word_count": 37
+  },
+  {
+    "id": "f3b6b1449f9992c5",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 731,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part A: Annual Tuition Rates (2024–2025 Academic Year)] Programme Level: Non-Degree / Continuing Education | Domestic Students (per credit hour): $295 | International Students (per credit hour): $680",
+    "word_count": 39
+  },
+  {
+    "id": "892c8fd973ba8af6",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part A: Annual Tuition Rates (2024–2025 Academic Year)"
+    ],
+    "page_number": null,
+    "char_offset": 784,
+    "text": "Full-time undergraduate students registered for 12–18 credit hours may opt for the Flat-Rate Full-Time Tuition Package at $5,820 (domestic) or $13,440 (international) per semester.",
+    "word_count": 24
+  },
+  {
+    "id": "6b6fd4b4aea74b3d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1007,
+    "text": "The following mandatory fees are charged each semester to all enrolled students. These fees are non-refundable after the close of the add/drop period.",
+    "word_count": 23
+  },
+  {
+    "id": "951c43748c94e4a7",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1206,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Student Activity Fee | Amount: $195 | Applicability: All students",
+    "word_count": 27
+  },
+  {
+    "id": "4fbdb9308fa36205",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1253,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Technology Infrastructure Fee | Amount: $145 | Applicability: All students",
+    "word_count": 27
+  },
+  {
+    "id": "f0cdfb6382cbcf7d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1309,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Health and Wellness Fee | Amount: $115 | Applicability: Full-time students",
+    "word_count": 28
+  },
+  {
+    "id": "d144c0e194646bdc",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1365,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Library Resource Fee | Amount: $75 | Applicability: All students",
+    "word_count": 27
+  },
+  {
+    "id": "0223d4bae1376c68",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1411,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Student Services Fee | Amount: $85 | Applicability: All students",
+    "word_count": 27
+  },
+  {
+    "id": "0a0efec66fedcd80",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1457,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Athletic and Recreation Fee | Amount: $90 | Applicability: Undergraduate students",
+    "word_count": 28
+  },
+  {
+    "id": "562c6b14f1ec04b9",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part B: Mandatory Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 1520,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part B: Mandatory Academic Fees] Fee: Graduate Studies Administration Fee | Amount: $120 | Applicability: Graduate students",
+    "word_count": 28
+  },
+  {
+    "id": "4308432a2406a06a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 1619,
+    "text": "The following table sets out all critical deadlines related to tuition payment, fee waivers, application fees, and related financial obligations. Students are responsible for adhering to these deadlines regardless of whether they receive individual reminders.",
+    "word_count": 35
+  },
+  {
+    "id": "92d332c47d78f224",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2016,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Tuition payment — full balance | Autumn Semester Deadline: 15 September | Spring Semester Deadline: 15 January | Summer Session Deadline: 10 June | Amount / Notes: Full balance due; late fee applies after deadline",
+    "word_count": 53
+  },
+  {
+    "id": "ae009fb6b5fa1d19",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2141,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Tuition payment — instalment option (1st payment) | Autumn Semester Deadline: 15 September | Spring Semester Deadline: 15 January | Summer Session Deadline: 10 June | Amount / Notes: 50% of balance; instalment plan must be activated by this date",
+    "word_count": 58
+  },
+  {
+    "id": "c7ace882a53547dc",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2298,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Tuition payment — instalment option (2nd payment) | Autumn Semester Deadline: 15 October | Spring Semester Deadline: 15 February | Amount / Notes: Remaining 50%; $30 instalment management fee applies",
+    "word_count": 48
+  },
+  {
+    "id": "8dd1efcaa2c3261d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2438,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Late payment fee application | Autumn Semester Deadline: 16 September | Spring Semester Deadline: 16 January | Summer Session Deadline: 11 June | Amount / Notes: $75 assessed per month until balance cleared (max 3 months)",
+    "word_count": 54
+  },
+  {
+    "id": "2ffb1d7eb55e45d9",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2571,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Add/drop period closes | Autumn Semester Deadline: End of Week 2 | Spring Semester Deadline: End of Week 2 | Summer Session Deadline: End of Week 2 | Amount / Notes: 100% refund available up to this date",
+    "word_count": 56
+  },
+  {
+    "id": "a5d92afc7458959b",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2686,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: 75% tuition refund deadline | Autumn Semester Deadline: End of Week 4 | Spring Semester Deadline: End of Week 4 | Summer Session Deadline: End of Week 3 | Amount / Notes: Withdrawal processed weeks 3–4",
+    "word_count": 54
+  },
+  {
+    "id": "452a4c9812218a3d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2799,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: 50% tuition refund deadline | Autumn Semester Deadline: End of Week 6 | Spring Semester Deadline: End of Week 6 | Summer Session Deadline: End of Week 5 | Amount / Notes: Withdrawal processed weeks 5–6",
+    "word_count": 54
+  },
+  {
+    "id": "ae3a2ba3f44cec3d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 2912,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: 25% tuition refund deadline | Autumn Semester Deadline: End of Week 7 | Spring Semester Deadline: End of Week 7 | Summer Session Deadline: End of Week 6 | Amount / Notes: Withdrawal processed in Week 7 only",
+    "word_count": 56
+  },
+  {
+    "id": "7f4c01fa49ec7257",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3030,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: No refund after | Autumn Semester Deadline: Start of Week 8 | Spring Semester Deadline: Start of Week 8 | Summer Session Deadline: Start of Week 7 | Amount / Notes: 0% refund",
+    "word_count": 51
+  },
+  {
+    "id": "3163e20dc640644e",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3116,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Application for Graduation — May Commencement | Spring Semester Deadline: 1 February | Amount / Notes: Late fee: $85 if submitted after deadline",
+    "word_count": 41
+  },
+  {
+    "id": "5533550a8cfb12bb",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3231,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Application for Graduation — December Commencement | Autumn Semester Deadline: 1 September | Amount / Notes: Late fee: $85 if submitted after deadline",
+    "word_count": 41
+  },
+  {
+    "id": "9af9db452b9073d5",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3352,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Late Graduation Application Fee | Autumn Semester Deadline: Per deadline above | Spring Semester Deadline: Per deadline above | Amount / Notes: $85 non-refundable",
+    "word_count": 42
+  },
+  {
+    "id": "dfd2f43b78db0dce",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3455,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Transcript request (standard processing) | Autumn Semester Deadline: Rolling | Spring Semester Deadline: Rolling | Summer Session Deadline: Rolling | Amount / Notes: $18 per transcript; 5 business day processing",
+    "word_count": 48
+  },
+  {
+    "id": "a7fe9bb4125f842d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3578,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Transcript request (expedited processing) | Autumn Semester Deadline: Rolling | Spring Semester Deadline: Rolling | Summer Session Deadline: Rolling | Amount / Notes: $40 per transcript; 2 business day processing",
+    "word_count": 48
+  },
+  {
+    "id": "bfda05e5d7e9630c",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3702,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Thesis submission fee | Autumn Semester Deadline: See Thesis Deadlines below | Amount / Notes: $55 one-time submission processing fee",
+    "word_count": 38
+  },
+  {
+    "id": "d258e6fe66054e33",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part C: Fee Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3802,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part C: Fee Deadlines] Fee / Action: Thesis resubmission fee | Autumn Semester Deadline: Per examination outcome | Amount / Notes: $35 resubmission processing fee",
+    "word_count": 36
+  },
+  {
+    "id": "b682d6384280ef4b",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part D: Thesis and Dissertation Submission Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 3957,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part D: Thesis and Dissertation Submission Deadlines] Fee / Action: Semester of Intended Award | Autumn Semester Deadline: Thesis/Dissertation Submission Deadline | Spring Semester Deadline: Late Submission Surcharge",
+    "word_count": 39
+  },
+  {
+    "id": "b564aaf8ce563580",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part D: Thesis and Dissertation Submission Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 4072,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part D: Thesis and Dissertation Submission Deadlines] Fee / Action: Autumn (December award) | Autumn Semester Deadline: 15 October | Spring Semester Deadline: $95 surcharge applies; subject to examiner availability",
+    "word_count": 41
+  },
+  {
+    "id": "8f6bd60a74db581a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part D: Thesis and Dissertation Submission Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 4171,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part D: Thesis and Dissertation Submission Deadlines] Fee / Action: Spring (May award) | Autumn Semester Deadline: 15 February | Spring Semester Deadline: $95 surcharge applies; subject to examiner availability",
+    "word_count": 41
+  },
+  {
+    "id": "16ae5fa5b97f599a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part D: Thesis and Dissertation Submission Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 4266,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part D: Thesis and Dissertation Submission Deadlines] Fee / Action: Summer (August award) | Autumn Semester Deadline: 15 June | Spring Semester Deadline: $95 surcharge applies; subject to examiner availability",
+    "word_count": 41
+  },
+  {
+    "id": "9f782b390e726bdf",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part D: Thesis and Dissertation Submission Deadlines"
+    ],
+    "page_number": null,
+    "char_offset": 4361,
+    "text": "Students who miss the thesis submission deadline without an approved extension will not be examined in the intended semester and must reapply for examination in the following semester. The $95 late submission surcharge is charged regardless of whether the thesis is ultimately accepted in that examination cycle.",
+    "word_count": 47
+  },
+  {
+    "id": "bd2e52bf6c07e031",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 4752,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Late Course Registration | Fee: $65 | Notes: After close of add/drop period, per course",
+    "word_count": 32
+  },
+  {
+    "id": "cd483372c6708c44",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 4832,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Course Repeat Administration Fee | Fee: $45 | Notes: Per course repeated",
+    "word_count": 29
+  },
+  {
+    "id": "160edb4309285a2a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 4897,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Credential Verification Letter | Fee: $25 | Notes: Per request",
+    "word_count": 27
+  },
+  {
+    "id": "30bdb6472e729450",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 4952,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Duplicate Diploma | Fee: $75 | Notes: Standard; $110 for rush (10 business days)",
+    "word_count": 31
+  },
+  {
+    "id": "eabcb8163bf2257a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5025,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Examination Deferral Fee | Fee: $85 | Notes: Per examination deferred; subject to eligibility",
+    "word_count": 31
+  },
+  {
+    "id": "3576cf967cc32509",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5111,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Replacement Student ID | Fee: $20",
+    "word_count": 23
+  },
+  {
+    "id": "ae849e02519eae43",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5146,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Official Enrolment Verification Letter | Fee: $15",
+    "word_count": 24
+  },
+  {
+    "id": "76cd83732a7509c9",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5197,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Parking Permit — Academic Year | Fee: $540 | Notes: Surface lots; $780 for covered parking",
+    "word_count": 33
+  },
+  {
+    "id": "ac25f14f088709bf",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5280,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Parking Permit — Semester | Fee: $310 | Notes: Surface lots",
+    "word_count": 28
+  },
+  {
+    "id": "1d96df7c25be2760",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5332,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Library Fine — Overdue Items | Fee: $0.50/day | Notes: Maximum $25 per item",
+    "word_count": 31
+  },
+  {
+    "id": "668b5861992ec5b6",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part E: Other Academic Fees"
+    ],
+    "page_number": null,
+    "char_offset": 5400,
+    "text": "[Table: Ashford University — Fee Schedule and Financial Obligations Policy › Part E: Other Academic Fees] Service: Library Fine — Lost or Damaged Item | Fee: Replacement cost + $25 processing",
+    "word_count": 31
+  },
+  {
+    "id": "d0bdc11f28b2fbf7",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part F: Payment Methods and Procedures"
+    ],
+    "page_number": null,
+    "char_offset": 5527,
+    "text": "Tuition and fees may be paid by:",
+    "word_count": 7
+  },
+  {
+    "id": "24a2b1d2d4124696",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part F: Payment Methods and Procedures"
+    ],
+    "page_number": null,
+    "char_offset": 5561,
+    "text": "- Online via the student portal (credit/debit card, bank transfer) - In person at the Bursar's Office (cheque, money order, or cash) - International wire transfer (additional bank fee may apply)",
+    "word_count": 31
+  },
+  {
+    "id": "d9542d55f0e9c58a",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part F: Payment Methods and Procedures"
+    ],
+    "page_number": null,
+    "char_offset": 5757,
+    "text": "Students experiencing financial hardship should contact the Financial Aid Office at least six weeks before the applicable deadline to discuss options. The University does not guarantee emergency funding, but a limited Emergency Bursary Fund is available for eligible students in crisis.",
+    "word_count": 41
+  },
+  {
+    "id": "d4b6820b530d2733",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part G: Consequences of Non-Payment"
+    ],
+    "page_number": null,
+    "char_offset": 6090,
+    "text": "A student whose account remains unpaid after all late payment fees have been applied may be:",
+    "word_count": 16
+  },
+  {
+    "id": "38965571225b701d",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part G: Consequences of Non-Payment"
+    ],
+    "page_number": null,
+    "char_offset": 6184,
+    "text": "1. Placed on a Financial Hold (blocking registration, transcripts, and participation in Commencement). 2. Reported to a collections agency for accounts outstanding beyond ninety days. 3. Administratively deregistered from current courses at the discretion of the Bursar in consultation with the Registrar.",
+    "word_count": 42
+  },
+  {
+    "id": "8d01b97aae70888e",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part G: Consequences of Non-Payment"
+    ],
+    "page_number": null,
+    "char_offset": 6491,
+    "text": "The University reserves the right to withhold degree conferral until all outstanding balances are cleared.",
+    "word_count": 15
+  },
+  {
+    "id": "6457bad8f2228ef6",
+    "source_file": "fee_schedule.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University — Fee Schedule and Financial Obligations Policy",
+    "section_path": [
+      "Ashford University — Fee Schedule and Financial Obligations Policy",
+      "Part G: Consequences of Non-Payment"
+    ],
+    "page_number": null,
+    "char_offset": 6604,
+    "text": "End of Ashford University Fee Schedule and Financial Obligations Policy (FSP-2024-003)",
+    "word_count": 11
+  },
+  {
+    "id": "d79522a8a122684c",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy"
+    ],
+    "page_number": null,
+    "char_offset": 45,
+    "text": "Document Reference: GSP-2024-002 Effective Date: 1 September 2024 Version: 7.1 Approved by: Graduate Studies Committee, 20 May 2024 Maintained by: Office of Graduate Studies Review Date: 31 August 2026",
+    "word_count": 29
+  },
+  {
+    "id": "a1bdba5c4555bbe8",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Preamble"
+    ],
+    "page_number": null,
+    "char_offset": 300,
+    "text": "This policy governs all matters specific to graduate study at Ashford University that are not fully addressed by the Ashford University Academic Regulations (AUR-2024-001). Where this policy and the Academic Regulations address the same matter, the applicable rule is determined by Section 1.1 of the Academic Regulations. Graduate students should read this policy in conjunction with the Academic Regulations and their programme-specific Graduate Programme Handbook.",
+    "word_count": 65
+  },
+  {
+    "id": "0c8842ad4a94aff0",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.1 General Admission Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 862,
+    "text": "Admission to a graduate programme at Ashford University requires:",
+    "word_count": 9
+  },
+  {
+    "id": "e2bbe907f6d8e105",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.1 General Admission Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 929,
+    "text": "- An undergraduate degree from a recognised institution, normally with a minimum final GPA of 3.0 or equivalent. - Submission of all required documentation by the published application deadline. - Two academic references from persons qualified to assess the applicant's readiness for graduate-level study. - A statement of research intent or professional objectives, as specified by the programme. - Evidence of English language proficiency where applicable.",
+    "word_count": 66
+  },
+  {
+    "id": "bddc6f89cf1fbbd0",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.1 General Admission Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 1389,
+    "text": "Individual programmes may specify additional or more stringent admission requirements through their Graduate Programme Handbooks. The Graduate Studies Committee retains the right to admit applicants on the basis of demonstrated professional or research experience in lieu of any single standard criterion, subject to approval by the Dean of Graduate Studies.",
+    "word_count": 50
+  },
+  {
+    "id": "219bde1aa84612a2",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.2 Conditional Admission"
+    ],
+    "page_number": null,
+    "char_offset": 1780,
+    "text": "An applicant who does not fully satisfy the standard admission criteria may be offered Conditional Admission. A Conditional Admission offer specifies:",
+    "word_count": 21
+  },
+  {
+    "id": "d803da1f96c00619",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.2 Conditional Admission"
+    ],
+    "page_number": null,
+    "char_offset": 1932,
+    "text": "- The conditions that must be met before full admission is granted. - The deadline by which conditions must be met. - The consequences of failing to satisfy the conditions, which may include withdrawal of the offer of admission.",
+    "word_count": 39
+  },
+  {
+    "id": "042f674bae5f684a",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.2 Conditional Admission"
+    ],
+    "page_number": null,
+    "char_offset": 2162,
+    "text": "Conditional Admission students may register for courses and are bound by all academic regulations. They may not be awarded a graduate degree while conditions remain outstanding.",
+    "word_count": 26
+  },
+  {
+    "id": "1c200eac4a5efd4b",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.3 Transfer of Credit"
+    ],
+    "page_number": null,
+    "char_offset": 2369,
+    "text": "Graduate students may apply to transfer a maximum of twelve credit hours earned at another institution toward their Ashford University graduate programme, subject to the following:",
+    "word_count": 26
+  },
+  {
+    "id": "7e0bb26d7d227002",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.3 Transfer of Credit"
+    ],
+    "page_number": null,
+    "char_offset": 2551,
+    "text": "- The credits were earned at a graduate level at a recognised institution. - The credits were earned within the preceding five years. - The prior coursework is assessed as equivalent to a required or elective course in the graduate programme. - A grade of B or higher was achieved in the relevant course.",
+    "word_count": 54
+  },
+  {
+    "id": "0938f187191b75ea",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 1: Admission to Graduate Programmes",
+      "1.3 Transfer of Credit"
+    ],
+    "page_number": null,
+    "char_offset": 2857,
+    "text": "Transfer credit applications must be submitted to the Graduate Studies Committee within the first year of enrolment.",
+    "word_count": 17
+  },
+  {
+    "id": "87a9d1b68f2bab61",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.1 Registration and Full-Time Equivalency"
+    ],
+    "page_number": null,
+    "char_offset": 3083,
+    "text": "Graduate students are considered full-time if registered for nine or more credit hours per semester. Part-time graduate registration is permitted but may affect eligibility for certain funding arrangements. Graduate students funded by University assistantships must maintain full-time registration unless a specific exception is approved in writing by the Dean of Graduate Studies.",
+    "word_count": 52
+  },
+  {
+    "id": "711713dff15e5cab",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.2 Minimum GPA and Academic Standing"
+    ],
+    "page_number": null,
+    "char_offset": 3509,
+    "text": "Graduate students must maintain a cumulative GPA of 3.0 or above, consistent with Section 6.1 of the Academic Regulations. A graduate student whose cumulative GPA falls below 3.0 at the end of any semester will be placed on Academic Probation. The student must raise their GPA to 3.0 or above within two consecutive semesters to avoid Academic Dismissal.",
+    "word_count": 58
+  },
+  {
+    "id": "0a5627d43a40b281",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.3 Academic Improvement Plan for Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 3922,
+    "text": "A graduate student placed on Academic Probation must meet with their faculty supervisor (where applicable) and their Programme Director within the first two weeks of the following semester to develop an Academic Improvement Plan (AIP). The AIP is reviewed by the Graduate Studies Committee. A student who fails to engage with the AIP process may be referred for Academic Dismissal without further warning.",
+    "word_count": 63
+  },
+  {
+    "id": "269be96b43143ebe",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.4 Course Load During Probation"
+    ],
+    "page_number": null,
+    "char_offset": 4367,
+    "text": "A graduate student on Academic Probation may not register for more than nine credit hours per semester until they have returned to Good Academic Standing.",
+    "word_count": 25
+  },
+  {
+    "id": "158e3b42da3b4041",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.5 Academic Dismissal of Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 4572,
+    "text": "A graduate student who fails to meet the minimum GPA requirement within the allowed probationary period is subject to Academic Dismissal. Unlike undergraduate dismissal (which takes effect following a Dean's review), graduate dismissal requires approval by the Graduate Studies Committee and ratification by the Dean of Graduate Studies. The student shall receive written notice and is entitled to submit a written statement within ten business days before the decision is finalised.",
+    "word_count": 71
+  },
+  {
+    "id": "944d196752e50987",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.6 Late Course Withdrawal for Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 5135,
+    "text": "Graduate students seeking to withdraw from a course after the end of Week 8 must submit their Late Course Withdrawal request to the Office of Graduate Studies. Such requests must be reviewed and approved by the Graduate Studies Committee, which meets bi-weekly. The Graduate Studies Committee is the sole approving authority for graduate late withdrawals; requests may not be approved by a faculty Dean acting alone.",
+    "word_count": 66
+  },
+  {
+    "id": "d10cb6db315df061",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.6 Late Course Withdrawal for Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 5557,
+    "text": "Approval decisions of the Graduate Studies Committee are communicated to the student within five business days of the relevant Committee meeting. A student seeking an urgent decision between Committee meetings may request an expedited review by the Chair of the Graduate Studies Committee.",
+    "word_count": 43
+  },
+  {
+    "id": "1e8d810958f6cf3a",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 2: Academic Progress for Graduate Students",
+      "2.6 Late Course Withdrawal for Graduate Students"
+    ],
+    "page_number": null,
+    "char_offset": 5848,
+    "text": "Documentation requirements for graduate late withdrawal are identical to those described in Section 5.3 of the Academic Regulations (serious medical illness, bereavement, or serious unforeseen emergency).",
+    "word_count": 26
+  },
+  {
+    "id": "e86477da66be5b9a",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.1 Appointment of Supervisors"
+    ],
+    "page_number": null,
+    "char_offset": 6135,
+    "text": "Graduate students undertaking thesis or research-based programmes must be assigned a primary supervisor within the first semester of enrolment. The supervisor is responsible for:",
+    "word_count": 24
+  },
+  {
+    "id": "283a818efed97290",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.1 Appointment of Supervisors"
+    ],
+    "page_number": null,
+    "char_offset": 6315,
+    "text": "- Providing academic guidance and feedback on research work. - Monitoring the student's progress toward completion. - Certifying that the thesis or research project meets the required scholarly standard.",
+    "word_count": 29
+  },
+  {
+    "id": "0863358960f128be",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.1 Appointment of Supervisors"
+    ],
+    "page_number": null,
+    "char_offset": 6520,
+    "text": "A student who has not been assigned a supervisor by the end of the first semester should report this to the Programme Director immediately.",
+    "word_count": 24
+  },
+  {
+    "id": "417b6b3185ca1360",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.2 Change of Supervisor"
+    ],
+    "page_number": null,
+    "char_offset": 6691,
+    "text": "A graduate student may request a change of supervisor by submitting a written request to the Programme Director. Requests will be considered by the Graduate Studies Committee. A change of supervisor does not extend the programme duration or adjust any thesis submission deadline without a separate formal application.",
+    "word_count": 48
+  },
+  {
+    "id": "cd37610524ac0865",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.3 Co-Supervision"
+    ],
+    "page_number": null,
+    "char_offset": 7034,
+    "text": "Some graduate programmes permit or require co-supervision. Where a student has two supervisors, one shall be designated the primary supervisor and one the secondary supervisor. All formal approvals requiring supervisor sign-off require the signature of the primary supervisor. The secondary supervisor may provide input and shall be listed on the thesis.",
+    "word_count": 51
+  },
+  {
+    "id": "6d14526b103a9823",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 3: Supervision and Research",
+      "3.4 Supervisory Meetings"
+    ],
+    "page_number": null,
+    "char_offset": 7420,
+    "text": "Students and supervisors are expected to meet at minimum once per month during the active research period. A record of meetings should be maintained and made available to the Programme Director upon request. Persistent failure to maintain this meeting schedule by either party should be reported to the Programme Director.",
+    "word_count": 50
+  },
+  {
+    "id": "d7d75978d2a10563",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 4: Research Integrity",
+      "4.1 Obligations"
+    ],
+    "page_number": null,
+    "char_offset": 7804,
+    "text": "Graduate students are expected to conduct research according to the highest ethical and scholarly standards. This includes:",
+    "word_count": 17
+  },
+  {
+    "id": "c584a425f1d68a87",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 4: Research Integrity",
+      "4.1 Obligations"
+    ],
+    "page_number": null,
+    "char_offset": 7929,
+    "text": "- Obtaining all necessary ethics approvals before commencing data collection. - Correctly and fully attributing all sources. - Maintaining accurate and reproducible research records. - Reporting any suspected breach of research integrity to the Research Integrity Officer.",
+    "word_count": 37
+  },
+  {
+    "id": "2db9a49fbdc7c2c0",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 4: Research Integrity",
+      "4.2 Ethics Review"
+    ],
+    "page_number": null,
+    "char_offset": 8226,
+    "text": "Research involving human participants, animals, or sensitive data must be approved by the University Research Ethics Board (UREB) before commencement. Ethics approval must be obtained before any data collection begins, without exception.",
+    "word_count": 32
+  },
+  {
+    "id": "62b2ee0d626c802d",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 4: Research Integrity",
+      "4.2 Ethics Review"
+    ],
+    "page_number": null,
+    "char_offset": 8465,
+    "text": "Retrospective ethics approval is not available. Data collected without prior ethics approval may not be used in a thesis or publication and may be subject to investigation under the Academic Integrity policy.",
+    "word_count": 32
+  },
+  {
+    "id": "eac24a49f283bc60",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 4: Research Integrity",
+      "4.3 Data Retention"
+    ],
+    "page_number": null,
+    "char_offset": 8699,
+    "text": "Research data supporting a thesis or publication must be retained by the student and the University for a minimum of ten years after the completion or abandonment of the project. Procedures for data storage and transfer upon graduation are set out in the University Research Data Management Policy.",
+    "word_count": 48
+  },
+  {
+    "id": "99d65ff36af6632b",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.1 Thesis Format and Submission Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 9107,
+    "text": "All graduate theses and dissertations must conform to the format requirements specified in the Ashford University Thesis Formatting Guide, which is maintained by the Office of Graduate Studies. Deviations from the formatting guide must be approved by the Programme Director before submission.",
+    "word_count": 42
+  },
+  {
+    "id": "430333551e845bf9",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.1 Thesis Format and Submission Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 9403,
+    "text": "Theses must be submitted to the Office of Graduate Studies by the published thesis submission deadline for the relevant semester. A thesis received after the deadline shall not be forwarded for examination until the following semester, unless an extension has been granted under Section 5.4.",
+    "word_count": 45
+  },
+  {
+    "id": "27949bc106c0e980",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.2 Thesis Examination"
+    ],
+    "page_number": null,
+    "char_offset": 9724,
+    "text": "A thesis shall be examined by a panel of at least two examiners, one of whom must be external to the University. The examination typically includes a written component (examiners' reports) and an oral defence. The outcome of the examination is one of:",
+    "word_count": 43
+  },
+  {
+    "id": "614b5aa381f497ed",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.2 Thesis Examination"
+    ],
+    "page_number": null,
+    "char_offset": 9977,
+    "text": "- Pass with no corrections required - Pass with minor corrections (to be completed within twelve weeks) - Pass with major corrections (to be completed within one academic year) - Resubmission required (a revised thesis to be submitted within one academic year) - Fail",
+    "word_count": 44
+  },
+  {
+    "id": "c540ba2c70971a99",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.3 Oral Defence"
+    ],
+    "page_number": null,
+    "char_offset": 10268,
+    "text": "The oral defence (viva voce) must be held within three months of the thesis being circulated to the examination panel. The student must be notified of the date at least four weeks in advance. The primary supervisor may attend the oral defence as an observer but may not participate in questioning or deliberations.",
+    "word_count": 53
+  },
+  {
+    "id": "74ec22dd86b34480",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.4 Thesis Submission Extension"
+    ],
+    "page_number": null,
+    "char_offset": 10645,
+    "text": "A registered thesis student may apply to the Graduate Studies Committee for an extension to the approved thesis submission deadline. Extensions are granted only in circumstances of documented, exceptional difficulty that could not reasonably have been anticipated or avoided. The maximum extension that may be granted under this provision is one academic term (sixteen weeks).",
+    "word_count": 55
+  },
+  {
+    "id": "e5474a7690c825ba",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.4 Thesis Submission Extension"
+    ],
+    "page_number": null,
+    "char_offset": 11027,
+    "text": "Extension applications must be submitted at least four weeks before the current thesis submission deadline and must include:",
+    "word_count": 18
+  },
+  {
+    "id": "c17a17ca876a921a",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.4 Thesis Submission Extension"
+    ],
+    "page_number": null,
+    "char_offset": 11153,
+    "text": "- A written statement from the student explaining the exceptional circumstances. - A statement from the primary supervisor assessing the student's progress and the likelihood of completing within the requested extension period. - Relevant supporting documentation (e.g., medical certificates, evidence of significant technical difficulty affecting the research).",
+    "word_count": 47
+  },
+  {
+    "id": "669bd64d6f38b127",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.4 Thesis Submission Extension"
+    ],
+    "page_number": null,
+    "char_offset": 11517,
+    "text": "Only one extension may be granted per student per thesis. A student who cannot complete the thesis within the approved extension period must apply for a Leave of Absence or voluntarily withdraw.",
+    "word_count": 32
+  },
+  {
+    "id": "3a52e53b07e96754",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 5: Thesis and Dissertation Requirements",
+      "5.5 Thesis Repository"
+    ],
+    "page_number": null,
+    "char_offset": 11740,
+    "text": "All approved theses are deposited in the Ashford University Thesis Repository and are made publicly accessible, subject to any embargo period approved by the Graduate Studies Committee. Embargoes may be granted for a maximum of two years where there are documented commercial sensitivity or patent considerations.",
+    "word_count": 46
+  },
+  {
+    "id": "d94a3096bd95aca2",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 6: Graduation and Credential Award for Graduate Students",
+      "6.1 Graduation Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 12162,
+    "text": "In addition to the requirements specified in Chapter 8 of the Academic Regulations, graduate students must:",
+    "word_count": 16
+  },
+  {
+    "id": "888f7f28d497e05d",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 6: Graduation and Credential Award for Graduate Students",
+      "6.1 Graduation Requirements"
+    ],
+    "page_number": null,
+    "char_offset": 12271,
+    "text": "- Complete all programme-specific requirements including any required colloquia, residencies, or internship components. - Successfully pass the thesis or dissertation examination (where applicable). - Clear any outstanding corrections flagged by the examination panel within the specified period. - Obtain the formal certification of completion from the Programme Director.",
+    "word_count": 48
+  },
+  {
+    "id": "e91bb8bee58976ac",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 6: Graduation and Credential Award for Graduate Students",
+      "6.2 Posthumous and In Absentia Awards"
+    ],
+    "page_number": null,
+    "char_offset": 12689,
+    "text": "A graduate degree may be awarded in absentia where the student is physically unable to attend the Commencement ceremony. The student must notify the Registrar in writing at least three weeks before the ceremony. A degree may be awarded posthumously to a student who has completed all academic requirements prior to death. The posthumous award process is managed by the Dean of Graduate Studies in consultation with the family.",
+    "word_count": 69
+  },
+  {
+    "id": "d1f4331b682705f7",
+    "source_file": "graduate_policies.md",
+    "source_type": "markdown",
+    "doc_title": "Ashford University Graduate Studies Policy",
+    "section_path": [
+      "Ashford University Graduate Studies Policy",
+      "Section 6: Graduation and Credential Award for Graduate Students",
+      "6.2 Posthumous and In Absentia Awards"
+    ],
+    "page_number": null,
+    "char_offset": 13122,
+    "text": "End of Ashford University Graduate Studies Policy (GSP-2024-002)",
+    "word_count": 8
+  },
+  {
+    "id": "ddab04a7b28805b4",
+    "source_file": "research_degrees_handbook.pdf",
+    "source_type": "pdf",
+    "doc_title": "Research Degrees Handbook",
+    "section_path": [],
+    "page_number": 1,
+    "char_offset": 0,
+    "text": "Ashford University Research Degrees Handbook Document Reference: RDH-2024-005 Effective Date: 1 September 2024 Version: 3.2 Approved by: Research and Innovation Committee, 30 April 2024 Maintained by: Research Office Review Date: 31 August 2026 Foreword This handbook is produced by the Ashford University Research Office and is intended as a practical guide for students enrolled in research degree programmes, including Master of Research (MRes), Master of Philosophy (MPhil), and Doctor of Philosophy (PhD) programmes. It should be read alongside the Ashford University Graduate Studies Policy and Academic Regulations. Where this handbook provides operational guidance that is consistent with those documents, it takes precedence as a practical procedural reference. Where substantive policy matters are addressed differently, students should seek clarification from the Office of Graduate Studies. This handbook is updated annually. Students should ensure they are consulting the version current for their academic year of enrolment. Chapter 1: Research Degree Structures 1.1 Master of Research (MRes) The MRes is a twelve-month full-time (or twenty-four month part-time) programme combining taught elements with a substantial research project. The research component typically constitutes 60% of the total credit hours. Students completing an MRes are expected to demonstrate the ability to conduct independent research and to present findings in a format that meets scholarly standards. 1.2 Master of Philosophy (MPhil) The MPhil is a research-only degree, normally completed in two years full-time (or four years part-time). The programme centres on an original research thesis examined by internal and external examiners. MPhil students may, with the approval of the Graduate Studies Committee, upgrade their registration to PhD candidacy, provided they demonstrate that the scope and originality of the work meets doctoral standards. 1.3 Doctor of Philosophy (PhD) The PhD programme requires the completion of a thesis that makes an original and substantial contribution to knowledge in the field. The standard duration is three years full-time (or six years part-time). Students are expected to reach the stage of thesis submission within the standard duration. The Graduate Studies Committee may approve extensions under the conditions set out in Chapter 8 of this handbook. Chapter 2: Enrolment and Registration 2.1 Annual Re-Registration Research degree students must re-register annually at the start of each academic year. Re-registration is not automatic; students must confirm their continued enrolment through the student portal and pay the applicable programme continuation fee listed in the Fee Schedule (FSP-2024-003). Failure to re-register within four weeks of the start of the academic year will result in lapse of registration. A student whose registration lapses must apply for reinstatement through the Office of Graduate Studies. Reinstatement is not guaranteed and may require a new ethics clearance for ongoing research. 2.2 Part-Time Registration Students registered as part-time research students have all the same rights and obligations as full-time students but with adjusted expected progression timelines. Part-time students should note that funding arrangements, including assistantships and scholarships, are typically structured for full-time registration. 2.3 Registration Status and Thesis Completion 1",
+    "word_count": 489
+  },
+  {
+    "id": "54c621d36f242677",
+    "source_file": "research_degrees_handbook.pdf",
+    "source_type": "pdf",
+    "doc_title": "Research Degrees Handbook",
+    "section_path": [],
+    "page_number": 2,
+    "char_offset": 3445,
+    "text": "A student who has submitted their thesis for examination but has not yet received the outcome remains registered as a student and retains access to University facilities. A student whose thesis has been examined with a result of pass (with or without corrections) will remain registered until any required corrections are certified complete. Chapter 3: Supervision 3.1 Role of the Primary Supervisor The primary supervisor is the principal academic contact for the research student. The supervisor's responsibilities include: •  Meeting with the student regularly (at least monthly during active research phases and at least twice per term during writing-up phases). •  Providing written feedback on chapter drafts within four weeks of submission. •  Certifying the student's Annual Progress Review. •  Advising on the suitability of the thesis for submission. Students who experience difficulties with supervision should raise the matter with the Programme Director in the first instance, and with the Research Office if the matter is not resolved. 3.2 Absence of Supervisor Where a supervisor is temporarily unavailable (e.g., due to sabbatical, illness, or other leave), the Programme Director will arrange for interim supervisory support. Where a supervisor's absence is expected to exceed three months, a formal interim supervisor shall be appointed by the Graduate Studies Committee. Chapter 4: Annual Progress Review 4.1 Purpose Research degree students must undergo an Annual Progress Review (APR) at the end of each academic year. The APR assesses whether the student is making adequate progress toward the completion of their research degree within the expected timeframe. 4.2 APR Components A standard APR includes: •  A written progress report submitted by the student. •  A supervisor's assessment. •  An oral review with a panel of at least two academic staff (neither of whom is the student's supervisor). 4.3 APR Outcomes The panel may determine: •  Satisfactory progress: Student continues at the current registration level. •  Conditional progress: Student is set specific targets to be reviewed at a mid-year check-in. •  Transfer to lower degree: Where doctoral progress is not demonstrated, the student may be transferred to MPhil registration. •  Referral for withdrawal: Where progress is so seriously deficient that continuation cannot be justified. Chapter 5: Research Integrity and Ethics 5.1 Ethics Approval All research involving human participants, animal subjects, or sensitive personal data must obtain ethics approval from the University Research Ethics Board before any research activity begins. The requirement for ethics approval is absolute; no exceptions are granted on the grounds of time pressure or supervisory advice. Research carried out without the required ethics approval is not eligible for inclusion in a thesis or for publication under the University's name. 5.2 Research Data Management 2",
+    "word_count": 441
+  },
+  {
+    "id": "ff9aa2ec376ad7d7",
+    "source_file": "research_degrees_handbook.pdf",
+    "source_type": "pdf",
+    "doc_title": "Research Degrees Handbook",
+    "section_path": [],
+    "page_number": 3,
+    "char_offset": 6383,
+    "text": "Research students are required to comply with the Ashford University Research Data Management Policy. In summary: •  A Data Management Plan must be submitted within three months of commencing research. •  All primary research data must be stored in a University-approved repository. •  Data underlying a thesis must be retained for a minimum of ten years. 5.3 Authorship and Publication Where research students publish or co-author work arising from their research, they must comply with the University's Authorship Policy. Guest or gift authorship is prohibited. Supervisors who contribute substantively to a publication may be listed as co-authors with the student's agreement. Chapter 6: Progression Milestones 6.1 MPhil/PhD Transfer MPhil students seeking to transfer to PhD registration must demonstrate that their research has doctoral scope and originality. The transfer assessment includes: •  Submission of a transfer report (typically 5,000–10,000 words) describing the research question, methodology, preliminary findings, and proposed thesis structure. •  An oral assessment with a panel of two academic staff members. Transfer decisions must be approved by the Graduate Studies Committee. Students must apply for transfer no later than eighteen months into full-time registration (thirty-six months for part-time). 6.2 Thesis Completion Stage A student who has completed data collection and analysis and has begun full-time thesis writing may apply to be designated at the Completion Stage. At the Completion Stage: •  The student's primary obligation is thesis writing. •  The student may reduce their supervisory contact to a minimum of once per month. •  The student's registration fee may be reduced (see FSP-2024-003 for completion stage fees). Chapter 7: Examination 7.1 Notice of Submission A student must submit a Notice of Intention to Submit to the Office of Graduate Studies at least two months before they intend to submit the thesis. This notice triggers the appointment of the examination panel by the Graduate Studies Committee. 7.2 Examination Panel Composition The examination panel for a PhD must include: •  At least one external examiner (from outside the University). •  At least one internal examiner (from within the University, but not the student's supervisor or co-supervisor). The Graduate Studies Committee appoints all examiners. Students may suggest potential external examiners but must declare any relationship that might constitute a conflict of interest. 7.3 The Oral Defence The oral defence is conducted in person at the University's main campus unless special circumstances are approved in advance by the Dean of Graduate Studies. Remote oral defences may be approved where the student is based overseas or faces significant documented travel constraints. The oral defence is conducted by the examination panel and is an opportunity for the student to defend the contribution and findings of their thesis. The oral typically lasts two to four hours. Observers (including supervisors) may attend with the panel's consent but may not participate. Chapter 8: Extensions to Thesis Submission Deadlines 3",
+    "word_count": 471
+  },
+  {
+    "id": "ec41cd356e9302de",
+    "source_file": "research_degrees_handbook.pdf",
+    "source_type": "pdf",
+    "doc_title": "Research Degrees Handbook",
+    "section_path": [],
+    "page_number": 4,
+    "char_offset": 9533,
+    "text": "8.1 General Policy Research degree students are expected to complete and submit their thesis within the standard duration of their programme. The University recognises that research is inherently unpredictable, and provision is made for extensions in genuine cases of documented difficulty. 8.2 Short Extensions Where a student requires a short extension of fewer than four weeks to complete final revisions to their thesis, the primary supervisor may grant this directly without formal committee approval. The supervisor must notify the Office of Graduate Studies in writing within five business days of granting such an extension. 8.3 Formal Extensions [C-003 — Source B] Where a research degree student requires a more substantial extension due to circumstances beyond their control — such as prolonged illness, equipment failure affecting experimental work, or significant unexpected obstacles to fieldwork — the Dean of Graduate Studies may grant an extension of up to six months upon recommendation of the Graduate Studies Committee. The application for a formal extension must be submitted to the Research Office, accompanied by a supervisor's supporting statement and appropriate documentary evidence. The Dean of Graduate Studies has sole authority to approve or deny formal extension requests exceeding four weeks, and may grant extensions up to a maximum of six months. An extension of more than six months may be granted only in truly exceptional circumstances, requires the approval of the Research and Innovation Committee, and will normally result in a temporary change in the student's registration status. 8.4 Extensions and Financial Obligations A student who is granted a formal extension remains registered and is subject to applicable continuation fees for the duration of the extension period. Fee obligations during an approved extension are set out in FSP-2024-003. The Research Office will notify the Bursar's Office of the revised expected completion date. Chapter 9: Completion, Award, and Alumni Status 9.1 Certification of Thesis Corrections Where the examination panel requires minor or major corrections, the primary supervisor is responsible for certifying that corrections have been completed to the required standard. The supervisor must submit certification to the Office of Graduate Studies within the deadline set by the examination panel. Failure to certify corrections within the required period will cause the award to be withheld until certification is received. 9.2 Thesis Deposit and Open Access All approved theses must be deposited in the Ashford University Thesis Repository. Open access to the thesis is the default. An embargo may be requested at the time of submission for a period of up to two years where there is a documented and compelling reason (e.g., pending patent application, commercial sensitivity of findings, or imminent publication in a peer-reviewed journal). Embargoes beyond two years require Research and Innovation Committee approval and are granted only in exceptional circumstances. 9.3 Conferral of Award The degree is formally conferred at the next Commencement ceremony following the Registrar's confirmation of completion. A student who has completed all requirements may request interim certification of completion for professional purposes before the formal conferral date. 9.4 Alumni Status Upon conferral of the degree, graduates of research programmes become alumni of Ashford University and are entitled to access alumni services, the library's digital collections (read-only), and the University's career development resources for a period of three years post-graduation. End of Ashford University Research Degrees Handbook (RDH-2024-005) This document is produced by the Research Office. For administrative queries, contact 4",
+    "word_count": 561
+  }
+]

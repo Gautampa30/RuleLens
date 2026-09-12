@@ -173,8 +173,6 @@ Where a student requires a short extension of fewer than four weeks to complete 
 
 ### 8.3 Formal Extensions
 
-**[C-003 — Source B]**
-
 **Where a research degree student requires a more substantial extension due to circumstances beyond their control — such as prolonged illness, equipment failure affecting experimental work, or significant unexpected obstacles to fieldwork — the Dean of Graduate Studies may grant an extension of up to six months upon recommendation of the Graduate Studies Committee.**
 
 **The application for a formal extension must be submitted to the Research Office, accompanied by a supervisor's supporting statement and appropriate documentary evidence. The Dean of Graduate Studies has sole authority to approve or deny formal extension requests exceeding four weeks, and may grant extensions up to a maximum of six months.**

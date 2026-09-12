@@ -155,8 +155,6 @@ Withdrawal from individual courses is subject to the timeline specified in Chapt
 
 ### 5.3 Late Course Withdrawal
 
-**[C-001 — Source A]**
-
 After the course withdrawal deadline at the end of Week 8, a student wishing to withdraw from a course must submit a Late Course Withdrawal request. Such requests may be granted only on the basis of documented exceptional circumstances, which must include at least one of the following:
 
 - Serious medical illness or injury (requiring supporting documentation from a registered medical practitioner)
@@ -182,8 +180,6 @@ A student who is unable to continue studies due to medical reasons may be grante
 ## Chapter 6: Academic Standing and Progression
 
 ### 6.1 Minimum GPA Requirement for Good Academic Standing
-
-**[C-002 — Source A]**
 
 **Undergraduate students must maintain a cumulative GPA of 2.0 or above to remain in Good Academic Standing.** Graduate students must maintain a cumulative GPA of 3.0 or above. Failure to meet the minimum GPA requirement at the end of any semester will result in the student being placed on Academic Probation as described in Section 6.2.
 

@@ -93,7 +93,6 @@ export interface HealthResponse {
   chunk_count: number;
   claim_count: number;
   bm25_ready: boolean;
-  embedding_ready: boolean;
-  llm_ready: boolean;
-  llm_model: string;
+  embeddings_ready: boolean;
+  gemini_configured: boolean;
 }

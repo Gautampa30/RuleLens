@@ -230,9 +230,6 @@ class LLMClient:
             raise LLMResponseError(
                 f"LLM returned invalid JSON: {exc}\nRaw output: {raw[:500]}"
             ) from exc
-            raise LLMResponseError(
-                f"LLM returned invalid JSON: {exc}\nRaw output: {raw[:500]}"
-            ) from exc
 
     def extract_claims(self, chunk: "EvidenceChunk") -> list["PolicyClaim"]:
         """
@@ -244,7 +241,7 @@ class LLMClient:
         """
         from app.models import PolicyClaim
 
-        if not settings.gemini_api_key:
+        if not get_gemini_api_key():
             return []
 
         prompt = _CLAIM_EXTRACTION_PROMPT.format(chunk_text=chunk.text[:2000])

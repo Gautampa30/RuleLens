@@ -76,8 +76,6 @@ A graduate student who fails to meet the minimum GPA requirement within the allo
 
 ### 2.6 Late Course Withdrawal for Graduate Students
 
-**[C-001 — Source B]**
-
 **Graduate students seeking to withdraw from a course after the end of Week 8 must submit their Late Course Withdrawal request to the Office of Graduate Studies. Such requests must be reviewed and approved by the Graduate Studies Committee, which meets bi-weekly. The Graduate Studies Committee is the sole approving authority for graduate late withdrawals; requests may not be approved by a faculty Dean acting alone.**
 
 Approval decisions of the Graduate Studies Committee are communicated to the student within five business days of the relevant Committee meeting. A student seeking an urgent decision between Committee meetings may request an expedited review by the Chair of the Graduate Studies Committee.
@@ -158,8 +156,6 @@ A thesis shall be examined by a panel of at least two examiners, one of whom mus
 The oral defence (viva voce) must be held within three months of the thesis being circulated to the examination panel. The student must be notified of the date at least four weeks in advance. The primary supervisor may attend the oral defence as an observer but may not participate in questioning or deliberations.
 
 ### 5.4 Thesis Submission Extension
-
-**[C-003 — Source A]**
 
 **A registered thesis student may apply to the Graduate Studies Committee for an extension to the approved thesis submission deadline. Extensions are granted only in circumstances of documented, exceptional difficulty that could not reasonably have been anticipated or avoided. The maximum extension that may be granted under this provision is one academic term (sixteen weeks).**
 

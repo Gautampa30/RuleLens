@@ -176,7 +176,32 @@ def generate_response(
                 answer_text = llm_answer
         elif state == "UNKNOWN":
             # For UNKNOWN queries, never let LLM fabricate a rule.
-            answer_text = _FALLBACK_ANSWERS["UNKNOWN"]
+            # But enrich the fallback with "why UNKNOWN" detail from the decision engine.
+            basis = decision.decision_basis or ""
+            reason = decision.unknown_reason or "no_evidence"
+            if reason == "no_evidence":
+                answer_text = (
+                    "The Ashford University rulebook does not contain sufficient "
+                    "information to answer this question. No relevant regulatory "
+                    "provisions were found in the corpus."
+                )
+            elif reason == "low_confidence":
+                answer_text = (
+                    "The Ashford University rulebook does not contain sufficient "
+                    "information to answer this question. Some related passages were "
+                    "retrieved but they do not directly address the specific question asked."
+                )
+            elif reason == "missing_key_terms":
+                answer_text = (
+                    "The Ashford University rulebook does not contain sufficient "
+                    "information to answer this question. While related topics appear in "
+                    "the corpus, the specific subject of this question is not covered by "
+                    "any regulatory provision."
+                )
+            else:
+                answer_text = _FALLBACK_ANSWERS["UNKNOWN"]
+            if basis:
+                answer_text += f" (Decision basis: {basis})"
 
     except LLMUnavailableError as exc:
         logger.warning("LLM unavailable: %s", exc)
