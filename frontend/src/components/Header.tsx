@@ -48,80 +48,85 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-30 transition-colors">
+    <header className="border-b border-zinc-200 dark:border-zinc-800 bg-stone-50/95 dark:bg-zinc-950/95 backdrop-blur-md sticky top-0 z-30 transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo & Academic Registry Brand */}
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 via-indigo-950 to-indigo-900 border border-indigo-700/30 flex items-center justify-center text-white shadow-md shadow-indigo-950/20">
-            <BookOpen className="w-5 h-5 text-indigo-300" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-extrabold text-lg tracking-tight text-slate-900 dark:text-slate-100">
+        {/* Left: Brand + Ashford University Institutional Presence */}
+        <div className="flex items-center gap-3.5 sm:gap-4">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded bg-zinc-900 dark:bg-zinc-100 flex items-center justify-center text-stone-50 dark:text-zinc-950 font-serif font-bold text-sm tracking-tight shadow-xs">
+              RL
+            </div>
+            <div className="flex flex-col">
+              <span className="font-semibold text-base tracking-tight text-zinc-950 dark:text-zinc-50 leading-tight">
                 RuleLens
               </span>
-              <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                Ashford Registry
+              <span className="text-[11px] font-normal text-zinc-500 dark:text-zinc-400 leading-tight">
+                Academic Policy Verification
               </span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Authoritative Academic Regulations & Policy Invariants
-            </p>
+          </a>
+
+          <div className="hidden sm:block h-6 w-[1px] bg-zinc-200 dark:bg-zinc-800" />
+
+          {/* Prominent but Tasteful Ashford University Indicator */}
+          <div className="hidden sm:flex flex-col">
+            <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 tracking-wide font-sans">
+              Ashford University
+            </span>
+            <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono">
+              Official Regulation Corpus
+            </span>
           </div>
         </div>
 
-        {/* Directory Button & Live Corpus Status Pill */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          {onOpenDirectory && (
-            <button
-              onClick={onOpenDirectory}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 border border-indigo-200 dark:border-indigo-800/80 transition-all cursor-pointer shadow-2xs"
+        {/* Right Navigation & Status */}
+        <div className="flex items-center gap-6 text-xs text-zinc-600 dark:text-zinc-400 font-medium">
+          <nav className="hidden md:flex items-center gap-6">
+            <a
+              href="#query-section"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
             >
-              <BookOpen className="w-3.5 h-3.5" />
-              <span>Browse Rulebooks (§)</span>
-            </button>
-          )}
+              Ask RuleLens
+            </a>
+            <a
+              href="#decision-standards"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              How It Works
+            </a>
+            <a
+              href="#regulation-library"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              Rulebook
+            </a>
+          </nav>
 
-          {healthLoading ? (
-            <div className="flex items-center gap-2 text-xs text-slate-400 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 animate-pulse">
-              <div className="w-2 h-2 rounded-full bg-slate-400" />
-              <span>Checking corpus...</span>
-            </div>
-          ) : health?.index_ready ? (
+          {/* Subtle Corpus Status */}
+          {health?.index_ready ? (
             <button
               onClick={() => setShowStatusModal(!showStatusModal)}
-              className="group flex items-center gap-2 text-xs font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-50/50 dark:bg-emerald-950/20 hover:border-emerald-500/60 transition-all cursor-pointer"
-              title="Click to view loaded corpus details"
+              className="hidden lg:flex items-center gap-1.5 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors cursor-pointer"
+              title="Click to view loaded corpus inventory"
             >
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="hidden sm:inline">Corpus Online:</span>
-              <span className="font-semibold text-emerald-700 dark:text-emerald-400">
-                {health.chunk_count} Chunks
-              </span>
-              <span className="text-slate-400">•</span>
-              <span className="hidden md:inline text-slate-600 dark:text-slate-400">
-                {health.claim_count} Policy Claims
-              </span>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:translate-y-0.5 transition-transform" />
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              <span>Corpus verified · {health.chunk_count} chunks</span>
             </button>
-          ) : (
-            <div className="flex items-center gap-2 text-xs text-rose-600 dark:text-rose-400 px-3 py-1.5 rounded-full border border-rose-200 dark:border-rose-900 bg-rose-50 dark:bg-rose-950/30">
-              <AlertCircle className="w-3.5 h-3.5" />
-              <span>Index Offline</span>
-            </div>
-          )}
+          ) : healthLoading ? (
+            <span className="hidden lg:inline text-zinc-400">Verifying corpus...</span>
+          ) : null}
 
-          {/* Theme Toggle (Light / Dark) */}
+          {/* Theme Switcher */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all cursor-pointer shadow-2xs"
+            className="p-1.5 rounded-md text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors cursor-pointer"
             title={theme === "light" ? "Switch to Dark Theme" : "Switch to Light Theme"}
             aria-label="Toggle Theme"
           >
             {theme === "light" ? (
-              <Moon className="w-4 h-4 text-slate-700" />
+              <Moon className="w-4 h-4" />
             ) : (
-              <Sun className="w-4 h-4 text-amber-400" />
+              <Sun className="w-4 h-4" />
             )}
           </button>
         </div>
@@ -129,66 +134,52 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Corpus Status Dropdown / Drawer */}
       {showStatusModal && corpusStatus && (
-        <div className="border-t border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-slate-900/95 backdrop-blur-md px-4 sm:px-6 lg:px-8 py-4 shadow-lg animate-in slide-in-from-top-2 duration-150">
+        <div className="border-t border-zinc-200 dark:border-zinc-800 bg-stone-50/98 dark:bg-zinc-950/98 backdrop-blur-md px-4 sm:px-6 lg:px-8 py-5 shadow-lg animate-in slide-in-from-top-2 duration-150">
           <div className="max-w-6xl mx-auto">
-            <div className="flex items-center justify-between mb-3">
-              <div className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-slate-100">
-                <Database className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-                <span>Authoritative Corpus Inventory</span>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                <Database className="w-4 h-4 text-zinc-600 dark:text-zinc-400" />
+                <span>Authoritative Corpus Inventory — Ashford University</span>
               </div>
               <button
                 onClick={() => setShowStatusModal(false)}
-                className="text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 font-medium"
+                className="text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 font-medium"
               >
                 Close ✕
               </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
-              {corpusStatus.documents.map((doc) => (
-                <div
-                  key={doc.file}
-                  className="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/60 flex flex-col justify-between"
-                >
-                  <div className="flex items-start gap-2 mb-2">
-                    <FileText className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-semibold text-slate-800 dark:text-slate-200 line-clamp-1">
-                        {doc.doc_title}
-                      </h4>
-                      <p className="text-[11px] font-mono text-slate-400">
-                        {doc.file}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-700/50">
-                    <span>{doc.chunks} passages</span>
-                    {doc.claims > 0 && (
-                      <span className="font-medium text-indigo-600 dark:text-indigo-400">
-                        {doc.claims} rule claims
-                      </span>
-                    )}
-                  </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+              <div className="p-3 bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800">
+                <div className="text-zinc-400 text-[11px] mb-1">Indexed Passages</div>
+                <div className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">
+                  {corpusStatus.total_chunks} chunks
                 </div>
-              ))}
-            </div>
+                <div className="text-[10px] text-emerald-600 dark:text-emerald-400 mt-1">✓ Statutory threshold met</div>
+              </div>
 
-            <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Lexical BM25 (k1=1.5, b=0.75)</span>
+              <div className="p-3 bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800">
+                <div className="text-zinc-400 text-[11px] mb-1">Policy Claims</div>
+                <div className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">
+                  {corpusStatus.total_claims} claims
+                </div>
+                <div className="text-[10px] text-zinc-500 mt-1">Deterministic Rules</div>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Semantic Embeddings (all-MiniLM-L6-v2, 384-dim)</span>
+
+              <div className="p-3 bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800">
+                <div className="text-zinc-400 text-[11px] mb-1">Document Count</div>
+                <div className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">
+                  {corpusStatus.documents.length} instruments
+                </div>
+                <div className="text-[10px] text-zinc-500 mt-1">Markdown + PDF</div>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Reciprocal Rank Fusion (k=60)</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Deterministic Contradiction Engine</span>
+
+              <div className="p-3 bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800">
+                <div className="text-zinc-400 text-[11px] mb-1">Retrieval Engines</div>
+                <div className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">
+                  {corpusStatus.bm25_ready && corpusStatus.embeddings_loaded ? "Operational" : "Initializing"}
+                </div>
+                <div className="text-[10px] text-emerald-600 dark:text-emerald-400 mt-1">BM25 + Dense Vectors</div>
               </div>
             </div>
           </div>

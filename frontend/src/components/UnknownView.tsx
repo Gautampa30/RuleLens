@@ -2,19 +2,7 @@
 
 import React, { useState } from "react";
 import { EvidenceChunk } from "@/types/api";
-import {
-  HelpCircle,
-  Info,
-  ShieldAlert,
-  FileText,
-  ChevronDown,
-  ChevronUp,
-  Bookmark,
-  Building2,
-  Copy,
-  Check,
-  Compass,
-} from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface UnknownViewProps {
   unknownReason?: string | null;
@@ -40,24 +28,21 @@ export const UnknownView: React.FC<UnknownViewProps> = ({
       .join("\n");
 
     const brief = `======================================================================
-ASHFORD UNIVERSITY — UNCODIFIED REGULATORY INQUIRY BRIEF
-Status: UNCODIFIED IN OFFICIAL REGULATIONS
-Date: ${new Date().toISOString()}
+ASHFORD UNIVERSITY — UNCODIFIED REGULATORY INQUIRY RECORD
+Status: UNKNOWN (NO AUTHORITATIVE RULE FOUND)
+Timestamp: ${new Date().toISOString()}
 ----------------------------------------------------------------------
 INQUIRY ASSESSMENT:
 ${answer}
 
 REGULATORY BOUNDARY AUDIT:
-The University Rulebook (241 passages across 5 statutory publications) does
-not contain codified provisions answering this specific circumstance.
+The supplied academic regulations corpus does not contain codified provisions
+establishing a governing rule for this question.
 
-CLOSEST RELATED PROVISIONS AUDITED (NON-EXHAUSTIVE):
+CANDIDATE PROVISIONS AUDITED (NON-EXHAUSTIVE):
 ${inspectedSources || "  (No closely related candidate provisions)"}
-
-RECOMMENDED STUDENT ACTION:
-In the absence of codified Senate regulations, discretionary jurisdiction
-rests with the Academic Registrar (Room AD-104) or the Faculty Senior Tutor.
-Submit this inquiry brief when requesting an administrative ruling.
+----------------------------------------------------------------------
+Source: Verified university academic regulations corpus. Zero AI extrapolation.
 ======================================================================`;
 
     navigator.clipboard.writeText(brief);
@@ -66,127 +51,100 @@ Submit this inquiry brief when requesting an administrative ruling.
   };
 
   return (
-    <div className="space-y-4">
-      {/* Neutral informative banner — deliberately designed as a valid authoritative answer state, NOT an error */}
-      <div className="rounded-2xl border-2 border-amber-300 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 p-5 sm:p-6 shadow-sm space-y-4">
-        <div className="flex items-start justify-between flex-wrap gap-3">
-          <div className="flex items-start gap-3.5">
-            <div className="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 shrink-0">
-              <HelpCircle className="w-6 h-6" />
-            </div>
-
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-slate-100 tracking-tight">
-                  Uncodified Matter — No Published Regulation Found
-                </h3>
-                <span className="text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800">
-                  Grounding Guardrail Active
-                </span>
-              </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                Audited against 241 official university passages with zero speculative hallucination.
-              </p>
-            </div>
+    <div className="space-y-8">
+      {/* 1. Header: VERIFICATION RESULT · UNKNOWN */}
+      <div className="flex flex-wrap items-baseline justify-between gap-4 pb-4 border-b border-zinc-200/80 dark:border-zinc-800">
+        <div className="space-y-1">
+          <div className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+            Verification Result
           </div>
-
-          <button
-            onClick={handleCopyInquiryBrief}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-2xs no-print"
-            title="Copy formal inquiry brief to send to Academic Registrar or Advisor"
-          >
-            {copiedBrief ? (
-              <>
-                <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span className="text-emerald-700 dark:text-emerald-400">Inquiry Brief Copied!</span>
-              </>
-            ) : (
-              <>
-                <Copy className="w-3.5 h-3.5 text-slate-500" />
-                <span>Copy Departmental Inquiry Brief</span>
-              </>
-            )}
-          </button>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-amber-600 dark:bg-amber-500 inline-block" />
+            <span className="text-sm font-semibold tracking-tight text-amber-800 dark:text-amber-400">
+              UNKNOWN
+            </span>
+            <span className="text-xs text-zinc-400">·</span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+              No authoritative rule found in university statute
+            </span>
+          </div>
         </div>
 
-        <div className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed font-normal">
-          {answer ||
-            "The supplied university rulebook does not contain sufficient regulatory provisions or policy text to answer this question."}
-        </div>
+        {/* Secondary Action Tool */}
+        <button
+          onClick={handleCopyInquiryBrief}
+          className="text-xs text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors underline underline-offset-4 cursor-pointer no-print"
+        >
+          {copiedBrief ? "Inquiry note copied" : "Copy inquiry note"}
+        </button>
+      </div>
 
-        {/* Practical Student Guidance Box */}
-        <div className="p-4 rounded-xl bg-amber-100/60 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800/60 text-xs sm:text-sm text-slate-800 dark:text-slate-200 space-y-1.5">
-          <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-300">
-            <Compass className="w-4 h-4 text-amber-700 dark:text-amber-400" />
-            <span>Student Next Steps: Where to File</span>
-          </div>
-          <p className="text-xs leading-relaxed">
-            In the absence of a published regulation, standard university administrative procedure reserves discretionary authority to the <strong>Academic Registrar (Room AD-104)</strong> or your <strong>Faculty Senior Tutor</strong>. You should not assume that silence indicates either approval or prohibition.
+      {/* 2. Formal No Determination & Your Answer */}
+      <div className="space-y-4 pt-2">
+        <div className="space-y-1.5">
+          <h2 className="text-xl sm:text-2xl font-serif font-medium text-zinc-950 dark:text-zinc-50 tracking-tight">
+            No authoritative rule found.
+          </h2>
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+            The supplied rulebook does not establish an answer to this question.
           </p>
         </div>
 
-        <div className="pt-2 border-t border-amber-200/60 dark:border-amber-900/40 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
-          <div className="flex items-center gap-1.5 text-amber-800 dark:text-amber-300 font-medium">
-            <ShieldAlert className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-            <span>Zero-hallucination guarantee: The assistant strictly refuses to invent rules.</span>
+        <div className="pt-2">
+          <div className="text-xs font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
+            Your Answer
           </div>
-          {unknownReason && (
-            <span className="font-mono text-[11px] bg-white/60 dark:bg-slate-900/60 px-2 py-0.5 rounded border border-amber-200 dark:border-amber-900">
-              Diagnostic: {unknownReason}
-            </span>
-          )}
+          <div className="text-base sm:text-lg text-zinc-800 dark:text-zinc-200 leading-relaxed font-normal">
+            {answer ||
+              "The supplied university rulebook does not establish a rule for this question."}
+          </div>
+        </div>
+
+        {/* Why Unknown / Guardrail note */}
+        <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/60">
+          <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
+            RuleLens will not infer or invent a policy beyond the verified corpus.
+            {unknownReason && <span className="ml-2 font-mono">[{unknownReason}]</span>}
+          </p>
         </div>
       </div>
 
-      {/* Transparent Related Passages (Near-Miss Evidence) */}
-      {relatedEvidence && relatedEvidence.length > 0 && (
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm">
+      {/* 3. Compact Expandable Near-Miss Candidate Passages Audit */}
+      {relatedEvidence.length > 0 && (
+        <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800 space-y-3">
           <button
+            type="button"
             onClick={() => setShowRelated(!showRelated)}
-            className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors cursor-pointer"
           >
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
-              <Info className="w-4 h-4 text-indigo-500" />
-              <span>
-                Transparent Retrieval Audit ({relatedEvidence.length} near-miss corpus passages inspected)
-              </span>
-            </div>
-            {showRelated ? (
-              <ChevronUp className="w-4 h-4 text-slate-400" />
-            ) : (
-              <ChevronDown className="w-4 h-4 text-slate-400" />
-            )}
+            <span>Evidence audit · {relatedEvidence.length} related passages inspected</span>
+            {showRelated ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
           </button>
 
           {showRelated && (
-            <div className="p-4 border-t border-slate-200 dark:border-slate-800 space-y-3 bg-slate-50/50 dark:bg-slate-900/30">
-              <p className="text-xs text-slate-500 dark:text-slate-400 italic">
-                The hybrid retrieval engine checked these closely ranked candidate passages, but verified that none contain the specific rule requested:
+            <div className="space-y-3 pt-2 animate-in fade-in-50 duration-150">
+              <p className="text-xs text-zinc-500 italic">
+                The retrieval engine audited these closely related provisions, but deterministically verified that none establish an authoritative rule for the inquiry:
               </p>
 
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {relatedEvidence.map((chunk) => (
                   <div
                     key={chunk.id}
-                    className="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs space-y-1.5"
+                    className="p-3.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 space-y-1.5 text-xs"
                   >
-                    <div className="flex items-center justify-between font-mono text-[11px] text-indigo-600 dark:text-indigo-400">
-                      <div className="flex items-center gap-1.5">
-                        <FileText className="w-3.5 h-3.5" />
-                        <span>{chunk.source_file}</span>
-                        {chunk.page_number && (
-                          <span className="text-slate-400">• Page {chunk.page_number}</span>
-                        )}
-                      </div>
-                      <span className="text-slate-400">Chunk ID: {chunk.id}</span>
+                    <div className="flex flex-wrap items-baseline justify-between text-zinc-500">
+                      <span className="font-semibold text-zinc-800 dark:text-zinc-200">
+                        {chunk.source_file} {chunk.page_number ? `· p. ${chunk.page_number}` : ""}
+                      </span>
+                      <span className="font-mono text-[10px] text-zinc-400">ID: {chunk.id}</span>
                     </div>
-                    {chunk.section_path.length > 0 && (
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                        <Bookmark className="w-3 h-3 text-slate-400 shrink-0" />
-                        <span>{chunk.section_path.join(" > ")}</span>
+                    {chunk.section_path?.length > 0 && (
+                      <div className="text-[11px] text-zinc-400">
+                        {chunk.section_path.join(" > ")}
                       </div>
                     )}
-                    <p className="text-slate-600 dark:text-slate-300 font-mono text-[11px] leading-relaxed line-clamp-2">
+                    <p className="text-xs text-zinc-600 dark:text-zinc-300 font-serif italic pl-3 border-l-2 border-zinc-300 dark:border-zinc-700">
                       &ldquo;{chunk.text}&rdquo;
                     </p>
                   </div>

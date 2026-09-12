@@ -2,19 +2,6 @@
 
 import React, { useState } from "react";
 import { Citation, QueryMetadata, QueryState } from "@/types/api";
-import { StateBadge } from "./StateBadge";
-import { CitationCard } from "./CitationCard";
-import {
-  Clock,
-  ShieldCheck,
-  FileCheck,
-  Layers,
-  Copy,
-  Check,
-  Printer,
-  Compass,
-  Building2,
-} from "lucide-react";
 
 interface AnswerCardProps {
   state: QueryState;
@@ -42,7 +29,7 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
           <a
             key={index}
             href={`#citation-${citationNum}`}
-            className="inline-flex items-center justify-center font-bold text-xs text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/80 hover:bg-indigo-100 dark:hover:bg-indigo-900 px-1.5 py-0.5 mx-0.5 rounded border border-indigo-200 dark:border-indigo-800 transition-colors"
+            className="inline-flex items-center justify-center font-mono font-medium text-xs text-zinc-900 dark:text-zinc-100 bg-zinc-200/80 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 px-1.5 py-0.5 mx-0.5 rounded transition-colors"
           >
             [{citationNum}]
           </a>
@@ -56,24 +43,24 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
     const citationLines = citations
       .map(
         (c) =>
-          `• [${c.index}] ${c.doc_title} (${c.source_file}${
+          `[${c.index}] ${c.doc_title} (${c.source_file}${
             c.page_number ? `, Page ${c.page_number}` : ""
-          }${c.section_path?.length ? ` — ${c.section_path.join(" > ")}` : ""}):\n  "${c.passage_text}" [Chunk ID: ${c.chunk_id}]`
+          }${c.section_path?.length ? ` — ${c.section_path.join(" > ")}` : ""}):\n"${c.passage_text}" [Chunk ID: ${c.chunk_id}]`
       )
       .join("\n\n");
 
     const formalBlock = `======================================================================
-ASHFORD UNIVERSITY — OFFICIAL ACADEMIC REGULATION VERIFICATION MEMORANDUM
-Status: VERIFIED ANSWERABLE
+ASHFORD UNIVERSITY — ACADEMIC REGULATION EVIDENCE REPORT
+Status: ANSWERABLE
 Timestamp: ${new Date().toISOString()}
 ----------------------------------------------------------------------
 REGULATORY FINDING:
 ${answer}
 
-SUPPORTING STATUTORY PROVISIONS & CITATIONS:
+SUPPORTING STATUTORY PASSAGES:
 ${citationLines}
 ----------------------------------------------------------------------
-Grounded strictly in official published regulations. Zero AI hallucinations.
+Source: Verified university academic regulations corpus.
 ======================================================================`;
 
     navigator.clipboard.writeText(formalBlock);
@@ -86,122 +73,111 @@ Grounded strictly in official published regulations. Zero AI hallucinations.
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Print-Only Memorandum Header */}
-      <div className="print-only mb-6 border-b-2 border-slate-900 pb-4">
+      <div className="print-only mb-8 border-b border-zinc-900 pb-4">
         <h1 className="text-xl font-bold uppercase tracking-wider">
-          Ashford University • Office of the Academic Registrar
+          Ashford University · Academic Regulation Finding
         </h1>
-        <p className="text-sm text-slate-600">
-          Official Academic Regulation Verification Record • Timestamp: {new Date().toLocaleString()}
+        <p className="text-sm text-zinc-600">
+          Grounded Policy Verification Record · Timestamp: {new Date().toLocaleString()}
         </p>
       </div>
 
-      {/* Primary Answer Box */}
-      <div className="rounded-2xl border-2 border-emerald-500/30 dark:border-emerald-500/20 bg-gradient-to-b from-emerald-50/40 via-white to-white dark:from-emerald-950/20 dark:via-slate-900 dark:to-slate-900 p-6 sm:p-7 shadow-lg space-y-4">
-        {/* Header with State Badge & Utility Buttons */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-          <div className="flex items-center gap-2">
-            <StateBadge state={state} size="lg" />
-            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Verified by Academic Policy Engine
-            </span>
+      {/* 1. Header: VERIFICATION RESULT · ANSWERABLE */}
+      <div className="flex flex-wrap items-baseline justify-between gap-4 pb-4 border-b border-zinc-200/80 dark:border-zinc-800">
+        <div className="space-y-1">
+          <div className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+            Verification Result
           </div>
-
-          <div className="flex items-center gap-2 sm:gap-3 text-xs text-slate-400">
-            {metadata?.duration_ms !== undefined && (
-              <div className="flex items-center gap-1 font-mono">
-                <Clock className="w-3.5 h-3.5" />
-                <span>{metadata.duration_ms} ms</span>
-              </div>
-            )}
-            <div className="flex items-center gap-1 font-mono">
-              <Layers className="w-3.5 h-3.5" />
-              <span>{citations.length} Verified Sources</span>
-            </div>
-
-            {/* Practical Student Actions */}
-            <div className="flex items-center gap-1.5 ml-2 no-print">
-              <button
-                onClick={handleCopyFormalCitation}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-2xs"
-                title="Copy formal academic citation block ready for email or petition"
-              >
-                {copiedFormal ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="text-emerald-700 dark:text-emerald-400">Citation Copied!</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-3.5 h-3.5 text-slate-500" />
-                    <span>Copy for Advisor / Email</span>
-                  </>
-                )}
-              </button>
-
-              <button
-                onClick={handlePrint}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-2xs"
-                title="Print or save formal policy memorandum"
-              >
-                <Printer className="w-3.5 h-3.5 text-slate-500" />
-                <span className="hidden sm:inline">Print Record</span>
-              </button>
-            </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-600 dark:bg-emerald-500 inline-block" />
+            <span className="text-sm font-semibold tracking-tight text-emerald-800 dark:text-emerald-400">
+              ANSWERABLE
+            </span>
+            <span className="text-xs text-zinc-400">·</span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+              Verified against {citations.length} authoritative source passage{citations.length === 1 ? "" : "s"}
+            </span>
           </div>
         </div>
 
-        {/* Answer Content */}
-        <div className="text-slate-800 dark:text-slate-100 text-base sm:text-lg leading-relaxed font-normal">
+        {/* Secondary Action Tools */}
+        <div className="flex items-center gap-4 text-xs text-zinc-500 no-print">
+          <button
+            onClick={handleCopyFormalCitation}
+            className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors underline underline-offset-4 cursor-pointer"
+          >
+            {copiedFormal ? "Record copied to clipboard" : "Copy evidence record"}
+          </button>
+          <span className="text-zinc-300 dark:text-zinc-700">·</span>
+          <button
+            onClick={handlePrint}
+            className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors underline underline-offset-4 cursor-pointer"
+          >
+            Print record
+          </button>
+        </div>
+      </div>
+
+      {/* 2. THE MAIN VISUAL FOCUS: YOUR ANSWER */}
+      <div className="space-y-3 pt-2">
+        <div className="text-xs font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+          Your Answer
+        </div>
+        <div className="text-lg sm:text-xl text-zinc-900 dark:text-zinc-100 leading-relaxed font-normal">
           {answer.includes("LLM generation unavailable") && citations.length > 0 ? (
             <div className="space-y-3">
-              <p className="font-medium text-slate-900 dark:text-slate-50">
-                Authoritative provisions found in the university rulebook:
-              </p>
-              <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70 text-sm sm:text-base font-normal text-slate-800 dark:text-slate-200">
-                <span className="font-semibold text-indigo-600 dark:text-indigo-400 mr-2">[1]</span>
-                <span>{citations[0].passage_text}</span>
-              </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 italic">
-                Direct verbatim evidence displayed (deterministic grounded mode active).
-              </p>
+              <blockquote className="border-l-2 border-zinc-400 dark:border-zinc-600 pl-4 text-base italic text-zinc-700 dark:text-zinc-300">
+                &ldquo;{citations[0].passage_text}&rdquo;
+              </blockquote>
             </div>
           ) : (
             renderFormattedAnswer(answer)
           )}
         </div>
-
-        {/* Guarantee & Practical Student Guidance */}
-        <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
-          <div className="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-medium">
-            <ShieldCheck className="w-4 h-4 shrink-0" />
-            <span>Zero hallucination: Every claim is verified against exact cited provisions below.</span>
-          </div>
-
-          <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
-            <Building2 className="w-3.5 h-3.5 text-indigo-500" />
-            <span>Official Office: Academic Registry (Room AD-104)</span>
-          </div>
-        </div>
       </div>
 
-      {/* Supporting Evidence & Citations Section */}
+      {/* 3. SUPPORTING PROVISIONS (Citations below the answer) */}
       {citations.length > 0 && (
-        <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-slate-100 tracking-tight">
-              <FileCheck className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-              <span>Authoritative Evidence & Verbatim Passages ({citations.length})</span>
+        <div className="space-y-4 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+          <div className="flex items-baseline justify-between">
+            <div className="text-xs uppercase font-mono tracking-wider font-semibold text-zinc-500 dark:text-zinc-400">
+              Supporting Provisions ({citations.length})
             </div>
-            <span className="text-xs text-slate-400 no-print">
-              Click copy on any card to extract exact legal wording
-            </span>
+            <span className="text-xs text-zinc-400 font-mono">Verbatim statutory text</span>
           </div>
 
-          <div className="grid grid-cols-1 gap-3">
+          <div className="space-y-4">
             {citations.map((c) => (
-              <CitationCard key={c.index} citation={c} />
+              <div
+                key={c.index}
+                id={`citation-${c.index}`}
+                className="p-4 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 space-y-2 text-xs"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-2 text-zinc-500">
+                  <div className="font-medium text-zinc-900 dark:text-zinc-200">
+                    <span className="font-mono mr-1.5 font-semibold">[{c.index}]</span>
+                    <span className="font-semibold">{c.doc_title}</span>
+                    {c.section_path?.length > 0 && (
+                      <span className="text-zinc-400 dark:text-zinc-500 ml-1">
+                        · {c.section_path.join(" > ")}
+                      </span>
+                    )}
+                  </div>
+                  <div className="font-mono text-[11px] text-zinc-400">
+                    {c.source_file} {c.page_number ? `· p. ${c.page_number}` : ""}
+                  </div>
+                </div>
+
+                <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300 font-serif italic pl-3 border-l-2 border-zinc-300 dark:border-zinc-700">
+                  &ldquo;{c.passage_text}&rdquo;
+                </p>
+
+                <div className="text-[10px] font-mono text-zinc-400 pt-1">
+                  Chunk ID: {c.chunk_id}
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -209,4 +185,3 @@ Grounded strictly in official published regulations. Zero AI hallucinations.
     </div>
   );
 };
-

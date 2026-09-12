@@ -19,89 +19,78 @@ interface QueryInputProps {
 
 interface ExampleQuery {
   id: string;
-  category: "gpa" | "fees" | "withdrawal" | "appeals" | "thesis" | "unanswerable";
+  category: "fees" | "gpa" | "withdrawal" | "appeals" | "thesis" | "unanswerable";
   label: string;
   query: string;
   expectedState: "ANSWERABLE" | "UNKNOWN" | "CONTRADICTORY";
-  hint: string;
 }
 
 const CATEGORIES = [
-  { id: "all", label: "All Scenarios" },
-  { id: "fees", label: "📅 Fees & Deadlines" },
-  { id: "gpa", label: "🎓 GPA & Probation" },
-  { id: "withdrawal", label: "📝 Late Withdrawal" },
-  { id: "appeals", label: "⚖️ Appeals Code" },
-  { id: "thesis", label: "🔬 Research Degree (PDF)" },
-  { id: "unanswerable", label: "🚫 Hard Near-Misses" },
+  { id: "all", label: "All Topics" },
+  { id: "fees", label: "Fees & Deadlines" },
+  { id: "gpa", label: "GPA & Academic Standing" },
+  { id: "withdrawal", label: "Course Withdrawal" },
+  { id: "appeals", label: "Appeals Code" },
+  { id: "thesis", label: "Research Degrees (PDF)" },
+  { id: "unanswerable", label: "Uncodified / Near-Misses" },
 ] as const;
 
 const EXAMPLE_QUERIES: ExampleQuery[] = [
-  // Canonical Triad
   {
     id: "canonical-fees",
     category: "fees",
-    label: "Tuition Deadline (Canonical)",
+    label: "Tuition payment deadline",
     query: "When is the tuition payment deadline?",
     expectedState: "ANSWERABLE",
-    hint: "Verified against fee_schedule.md statutory calendar",
   },
   {
     id: "canonical-withdrawal",
     category: "withdrawal",
-    label: "Withdrawal Approval Authority (Conflict C-001)",
+    label: "Late withdrawal authority (Conflict C-001)",
     query: "Who approves a late course withdrawal?",
     expectedState: "CONTRADICTORY",
-    hint: "Academic Regs §5.3 (Dean) vs Graduate Policies §2.6 (Committee)",
   },
   {
     id: "canonical-military",
     category: "unanswerable",
-    label: "Military Leave Filing (Near-Miss U-001)",
+    label: "Military leave deadline (Near-miss U-001)",
     query: "What is the deadline for submitting a military leave request?",
     expectedState: "UNKNOWN",
-    hint: "Plausible uncodified circumstance; zero hallucination",
   },
-  // Specific Real-World Dilemmas
   {
     id: "autumn-tuition",
     category: "fees",
-    label: "Autumn Tuition Balance Due",
+    label: "Autumn semester tuition balance due date",
     query: "What is the tuition payment deadline for the Autumn semester?",
     expectedState: "ANSWERABLE",
-    hint: "Exact date: 15 September (fee_schedule.md)",
   },
   {
     id: "probation-gpa",
     category: "gpa",
-    label: "Probation Exit GPA Threshold (Conflict C-002)",
+    label: "Undergraduate probation exit GPA (Conflict C-002)",
     query: "What GPA must an undergraduate student achieve to exit academic probation?",
     expectedState: "CONTRADICTORY",
-    hint: "Academic Regs §6.1 (2.0 cumulative) vs Appeals Code §3.2 (2.3 term)",
   },
   {
     id: "thesis-extension",
     category: "thesis",
-    label: "Thesis Extension Max Duration (Conflict C-003)",
+    label: "Thesis extension duration limit (Conflict C-003)",
     query: "What is the maximum duration of a formal thesis submission extension for a research degree student?",
     expectedState: "CONTRADICTORY",
-    hint: "Graduate Policies §5.4 (16 weeks) vs Handbook PDF §8.3 (6 months)",
   },
   {
     id: "appeals-grounds",
     category: "appeals",
-    label: "Valid Academic Appeal Grounds",
+    label: "Valid statutory grounds for academic appeal",
     query: "What are the valid grounds for an academic appeal?",
     expectedState: "ANSWERABLE",
-    hint: "Appeals Code §1.2 statutory grounds",
   },
   {
-    id: "parking-refund",
+    id: "lab-deposit",
     category: "unanswerable",
-    label: "Parking Permit Refund on Leave (Near-Miss U-007)",
+    label: "Laboratory equipment deposit refund (Near-miss U-007)",
     query: "What is the refund policy for laboratory equipment deposits?",
     expectedState: "UNKNOWN",
-    hint: "Plausible fee-related near-miss absent from fee table",
   },
 ];
 
@@ -111,6 +100,7 @@ export const QueryInput: React.FC<QueryInputProps> = ({
 }) => {
   const [question, setQuestion] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("all");
+  const [showAllExamples, setShowAllExamples] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -120,7 +110,7 @@ export const QueryInput: React.FC<QueryInputProps> = ({
     }
   };
 
-  const handleSelectExample = (q: string) => {
+  const handleSelectQuery = (q: string) => {
     setQuestion(q);
     onSearch(q);
   };
@@ -131,12 +121,12 @@ export const QueryInput: React.FC<QueryInputProps> = ({
       : EXAMPLE_QUERIES.filter((ex) => ex.category === activeCategory);
 
   return (
-    <div className="w-full space-y-4">
-      {/* Registry Terminal Search Bar */}
-      <form onSubmit={handleSubmit} className="relative group">
-        <div className="relative flex items-center shadow-lg rounded-2xl overflow-hidden border-2 border-slate-200 dark:border-slate-800 focus-within:border-indigo-600 dark:focus-within:border-indigo-400 bg-white dark:bg-slate-900 transition-all">
-          <div className="pl-4 pr-2 text-slate-400">
-            <Search className="w-5 h-5 text-slate-400 group-focus-within:text-indigo-600 dark:group-focus-within:text-indigo-400 transition-colors" />
+    <div id="query-section" className="w-full space-y-6">
+      {/* Editorial Search Bar */}
+      <form onSubmit={handleSubmit} className="relative w-full">
+        <div className="relative flex items-center bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl focus-within:border-zinc-900 dark:focus-within:border-zinc-300 focus-within:ring-1 focus-within:ring-zinc-900 dark:focus-within:ring-zinc-300 transition-all shadow-xs">
+          <div className="pl-4 pr-2 text-zinc-400">
+            <Search className="w-5 h-5 text-zinc-400" />
           </div>
 
           <input
@@ -144,9 +134,9 @@ export const QueryInput: React.FC<QueryInputProps> = ({
             type="text"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            placeholder="Ask any university policy question (e.g., tuition deadlines, withdrawal approval, probation exit GPA)..."
+            placeholder="Ask an academic regulation question..."
             disabled={isLoading}
-            className="w-full py-4 pr-36 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 text-sm sm:text-base font-normal bg-transparent focus:outline-none disabled:opacity-60"
+            className="w-full py-3.5 pr-32 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 text-sm sm:text-base font-normal bg-transparent focus:outline-none disabled:opacity-60"
           />
 
           {question && !isLoading && (
@@ -156,7 +146,7 @@ export const QueryInput: React.FC<QueryInputProps> = ({
                 setQuestion("");
                 inputRef.current?.focus();
               }}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 mr-1 cursor-pointer"
+              className="p-1.5 rounded-md text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 mr-1 cursor-pointer"
               title="Clear inquiry"
             >
               <X className="w-4 h-4" />
@@ -166,99 +156,107 @@ export const QueryInput: React.FC<QueryInputProps> = ({
           <button
             type="submit"
             disabled={isLoading || !question.trim()}
-            className="absolute right-2 px-4 sm:px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-indigo-600 dark:hover:bg-indigo-700 text-white disabled:bg-slate-200 dark:disabled:bg-slate-800 disabled:text-slate-400 font-semibold text-xs sm:text-sm transition-all flex items-center gap-2 cursor-pointer disabled:cursor-not-allowed shadow-sm"
+            className="absolute right-1.5 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-white text-white dark:text-zinc-900 disabled:bg-zinc-200 dark:disabled:bg-zinc-800 disabled:text-zinc-400 dark:disabled:text-zinc-600 font-medium text-xs sm:text-sm transition-all flex items-center gap-1.5 cursor-pointer disabled:cursor-not-allowed"
           >
             {isLoading ? (
               <>
-                <Loader2 className="w-4 h-4 animate-spin" />
-                <span>Auditing...</span>
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                <span>Verifying...</span>
               </>
             ) : (
-              <>
-                <span>Inspect Rules</span>
-                <CornerDownLeft className="w-3.5 h-3.5 opacity-60 hidden sm:inline" />
-              </>
+              <span>Verify Rule</span>
             )}
           </button>
         </div>
       </form>
 
-      {/* Scenario Categories & Interactive Prompts */}
-      <div className="space-y-2.5">
-        {/* Category Filter Tabs */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
-          {CATEGORIES.map((cat) => (
-            <button
-              key={cat.id}
-              type="button"
-              onClick={() => setActiveCategory(cat.id)}
-              className={`px-3 py-1 rounded-full font-medium whitespace-nowrap transition-colors cursor-pointer ${
-                activeCategory === cat.id
-                  ? "bg-slate-900 text-white dark:bg-indigo-600 dark:text-white shadow-2xs"
-                  : "bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
+      {/* Subtle Verified Corpus Line */}
+      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-zinc-500 dark:text-zinc-400 font-normal px-1">
+        <span>241 verified passages · 13 policy claims · 5 source publications</span>
+        <button
+          type="button"
+          onClick={() => setShowAllExamples(!showAllExamples)}
+          className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors underline cursor-pointer"
+        >
+          {showAllExamples ? "Hide example library" : "Explore test cases"}
+        </button>
+      </div>
+
+      {/* Understated Primary Inline Prompts */}
+      {!showAllExamples && (
+        <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-zinc-600 dark:text-zinc-400">
+          <span className="text-zinc-400 dark:text-zinc-500">Try a question:</span>
+          <button
+            type="button"
+            onClick={() => handleSelectQuery("When is the tuition payment deadline?")}
+            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+          >
+            &ldquo;When is tuition due?&rdquo;
+          </button>
+          <span className="text-zinc-300 dark:text-zinc-700">·</span>
+          <button
+            type="button"
+            onClick={() => handleSelectQuery("Who approves a late course withdrawal?")}
+            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+          >
+            &ldquo;Who approves a late course withdrawal?&rdquo;
+          </button>
+          <span className="text-zinc-300 dark:text-zinc-700">·</span>
+          <button
+            type="button"
+            onClick={() => handleSelectQuery("What is the deadline for submitting a military leave request?")}
+            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+          >
+            &ldquo;Is there a military leave deadline?&rdquo;
+          </button>
         </div>
+      )}
 
-        {/* Example Query Chips */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {filteredExamples.map((ex) => {
-            const isSelected = question === ex.query;
-            let badgeIcon = <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />;
-            let stateBadge = (
-              <span className="px-1.5 py-0.2 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 font-mono text-[10px] font-bold border border-emerald-200 dark:border-emerald-800/60">
-                ANSWERABLE
-              </span>
-            );
+      {/* Expanded Clean Category Navigation (Scenario Explorer) */}
+      {showAllExamples && (
+        <div className="pt-2 space-y-3 border-t border-zinc-200 dark:border-zinc-800">
+          <div className="flex items-center gap-4 overflow-x-auto pb-1 text-xs font-medium text-zinc-500 scrollbar-none">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => setActiveCategory(cat.id)}
+                className={`whitespace-nowrap transition-colors cursor-pointer pb-1 border-b-2 ${
+                  activeCategory === cat.id
+                    ? "border-zinc-900 dark:border-zinc-100 text-zinc-900 dark:text-zinc-100"
+                    : "border-transparent hover:text-zinc-800 dark:hover:text-zinc-300"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
 
-            if (ex.expectedState === "UNKNOWN") {
-              badgeIcon = <HelpCircle className="w-3.5 h-3.5 text-amber-500 shrink-0" />;
-              stateBadge = (
-                <span className="px-1.5 py-0.2 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 font-mono text-[10px] font-bold border border-amber-200 dark:border-amber-800/60">
-                  UNKNOWN
-                </span>
-              );
-            } else if (ex.expectedState === "CONTRADICTORY") {
-              badgeIcon = <AlertTriangle className="w-3.5 h-3.5 text-rose-500 shrink-0" />;
-              stateBadge = (
-                <span className="px-1.5 py-0.2 rounded bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 font-mono text-[10px] font-bold border border-rose-200 dark:border-rose-800/60">
-                  CONTRADICTORY
-                </span>
-              );
-            }
-
-            return (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1">
+            {filteredExamples.map((ex) => (
               <button
                 key={ex.id}
                 type="button"
-                onClick={() => handleSelectExample(ex.query)}
-                disabled={isLoading}
-                className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer disabled:cursor-not-allowed flex items-start gap-2.5 ${
-                  isSelected
-                    ? "border-indigo-600 bg-indigo-50/70 dark:bg-indigo-950/50 text-indigo-900 dark:text-indigo-200 ring-2 ring-indigo-500/20"
-                    : "border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900/60 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-slate-50/50 dark:hover:bg-slate-800/40 text-slate-800 dark:text-slate-200 shadow-2xs"
-                }`}
+                onClick={() => handleSelectQuery(ex.query)}
+                className="group flex items-baseline justify-between p-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/60 hover:border-zinc-400 dark:hover:border-zinc-600 text-left text-xs transition-colors cursor-pointer"
               >
-                <div className="mt-0.5">{badgeIcon}</div>
-                <div className="space-y-0.5 flex-1 min-w-0">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="font-semibold text-xs text-slate-900 dark:text-slate-100 truncate">
-                      {ex.label}
-                    </span>
-                    {stateBadge}
-                  </div>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 font-normal">
-                    {ex.query}
-                  </p>
-                </div>
+                <span className="text-zinc-800 dark:text-zinc-200 font-medium group-hover:text-zinc-950 dark:group-hover:text-white">
+                  {ex.query}
+                </span>
+                <span className={`text-[10px] uppercase font-mono tracking-wider ml-2 shrink-0 ${
+                  ex.expectedState === "ANSWERABLE"
+                    ? "text-emerald-700 dark:text-emerald-400"
+                    : ex.expectedState === "CONTRADICTORY"
+                    ? "text-rose-700 dark:text-rose-400"
+                    : "text-amber-700 dark:text-amber-400"
+                }`}>
+                  {ex.expectedState}
+                </span>
               </button>
-            );
-          })}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
