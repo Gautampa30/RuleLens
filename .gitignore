@@ -1,0 +1,30 @@
+# Node
+corpus/node_modules/
+corpus/package-lock.json
+corpus/package.json
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+backend/data/
+backend/.env
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+frontend/.next/
+frontend/out/
