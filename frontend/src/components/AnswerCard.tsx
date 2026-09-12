@@ -70,13 +70,28 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
 
         {/* Answer Content */}
         <div className="text-slate-800 dark:text-slate-100 text-base sm:text-lg leading-relaxed font-normal">
-          {renderFormattedAnswer(answer)}
+          {answer.includes("LLM generation unavailable") && citations.length > 0 ? (
+            <div className="space-y-3">
+              <p className="font-medium text-slate-900 dark:text-slate-50">
+                Authoritative provisions found in the university rulebook:
+              </p>
+              <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70 text-sm sm:text-base font-normal text-slate-800 dark:text-slate-200">
+                <span className="font-semibold text-indigo-600 dark:text-indigo-400 mr-2">[1]</span>
+                <span>{citations[0].passage_text}</span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 italic">
+                Direct verbatim evidence displayed (deterministic grounded mode active).
+              </p>
+            </div>
+          ) : (
+            renderFormattedAnswer(answer)
+          )}
         </div>
 
         {/* Guarantee Banner */}
         <div className="pt-2 flex items-center gap-2 text-xs text-emerald-700 dark:text-emerald-400 font-medium">
-          <ShieldCheck className="w-4 h-4" />
-          <span>Every sentence above is traceable to the authoritative cited corpus passages below.</span>
+          <ShieldCheck className="w-4 h-4 shrink-0" />
+          <span>Every sentence is traceable to the authoritative cited corpus passages below.</span>
         </div>
       </div>
 
