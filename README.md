@@ -85,8 +85,8 @@ The corpus contains genuinely irreconcilable provisions for the same scenario, s
         │                │                │
         └────────────────┼────────────────┘
                          ▼
-            [Grounded Response Generator]
-        (Gemini 1.5 Flash or Fallback Verbatim)
+             [Grounded Response Generator]
+         (Gemini 3.6 Flash or Fallback Verbatim)
                          │
                          ▼
           [Server-Side Citation Assembly]
@@ -355,7 +355,7 @@ To ensure total transparency for evaluation and reproducibility, here is an expl
 | **Three-State Decision Engine** | **REAL** | 100% deterministic decision logic computed live in `decision.py` and `contradiction.py`. No queries, states, or contradiction pairs are hard-coded. |
 | **Citation Assembly** | **REAL** | Citations are dynamically assembled server-side from exact, stored `EvidenceChunk` objects with verified chunk IDs, file paths, and page numbers. |
 | **Evaluation Harness (`evaluate.py`)** | **REAL** | Dynamically executes all 38 benchmark questions against the live retrieval and decision pipeline; measures real accuracy and timing without simulated scores. |
-| **LLM Synthesis (Gemini)** | **REAL** | Connects live to Google Gemini (`gemini-3.6-flash` / `gemini-1.5-flash`) at temperature `0.0` when `GEMINI_API_KEY` is configured in `backend/.env`. |
+| **LLM Synthesis (Gemini)** | **REAL** | Connects live to Google Gemini (`gemini-3.6-flash`) at temperature `0.0` when `GEMINI_API_KEY` is configured in `backend/.env`. |
 | **Offline Fallback Mode** | **FALLBACK** | If `GEMINI_API_KEY` is omitted or external API rate limits (HTTP 429) occur, RuleLens automatically falls back to a deterministic verbatim quotation synthesizer. The 3-state classification and citations remain 100% real and intact. |
 | **Unit Test Fixtures** | **MOCKED** | In `tests/test_generation.py`, mock responses are used for the external LLM API solely to verify offline resilience and ensure rogue model responses cannot override deterministic state classifications. |
 
