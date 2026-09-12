@@ -165,7 +165,7 @@ export default function Home() {
 
           {response && !isLoading && (
             <section
-              className={`relative rounded-2xl bg-white dark:bg-[#111622] border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-10 lg:p-12 space-y-10 transition-all ${
+              className={`relative rounded-2xl bg-white dark:bg-[#0f131a] border border-slate-200 dark:border-white/[0.08] shadow-sm dark:shadow-2xl p-6 sm:p-10 lg:p-12 space-y-10 transition-all ${
                 response.state === "ANSWERABLE"
                   ? "border-l-4 border-l-emerald-600 dark:border-l-emerald-500"
                   : response.state === "UNKNOWN"
@@ -209,7 +209,7 @@ export default function Home() {
 
                   {/* Summary commentary */}
                   {response.answer && (
-                    <div className="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40 space-y-2">
+                    <div className="p-5 rounded-xl border border-slate-200 dark:border-white/[0.08] bg-slate-50/50 dark:bg-[#141720]/70 space-y-2">
                       <div className="text-xs font-mono uppercase tracking-wider font-bold text-slate-500">
                         Statutory Conflict Summary
                       </div>
@@ -248,7 +248,7 @@ export default function Home() {
             {/* 01 Answerable */}
             <div
               onClick={() => handleSearch("When is the tuition payment deadline?")}
-              className="group p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111622] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
+              className="group p-6 rounded-xl border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-[#0f131a] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
@@ -272,7 +272,7 @@ export default function Home() {
             {/* 02 Unknown */}
             <div
               onClick={() => handleSearch("What is the deadline for submitting a military leave request?")}
-              className="group p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111622] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
+              className="group p-6 rounded-xl border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-[#0f131a] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
@@ -296,7 +296,7 @@ export default function Home() {
             {/* 03 Contradictory */}
             <div
               onClick={() => handleSearch("Who approves a late course withdrawal?")}
-              className="group p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111622] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
+              className="group p-6 rounded-xl border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-[#0f131a] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer space-y-4 shadow-xs"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
@@ -346,12 +346,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-4 bg-white dark:bg-[#111622] p-6 rounded-xl border border-slate-200 dark:border-slate-800 text-xs shadow-xs">
+            <div className="lg:col-span-7 space-y-4 bg-white dark:bg-[#0f131a] p-6 rounded-xl border border-slate-200 dark:border-white/[0.08] text-xs shadow-xs">
               <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider font-bold">
                 Corpus Comparison Preview · Contradiction C-01
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-2">
+                <div className="p-4 rounded-lg bg-slate-50 dark:bg-[#141720] border border-slate-200 dark:border-white/[0.06] space-y-2">
                   <div className="text-xs font-bold text-slate-900 dark:text-slate-100">
                     Academic Regulations §5.3
                   </div>
@@ -361,7 +361,7 @@ export default function Home() {
                   <div className="text-[10px] font-mono text-slate-400">academic_regulations.md · §5.3</div>
                 </div>
 
-                <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-2">
+                <div className="p-4 rounded-lg bg-slate-50 dark:bg-[#141720] border border-slate-200 dark:border-white/[0.06] space-y-2">
                   <div className="text-xs font-bold text-slate-900 dark:text-slate-100">
                     Graduate Policies §2.6
                   </div>

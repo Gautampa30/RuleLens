@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { EvidenceChunk } from "@/types/api";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { AlertTriangle, ChevronDown, ChevronUp, Copy, Check } from "lucide-react";
 
 interface UnknownViewProps {
   unknownReason?: string | null;
@@ -23,7 +23,7 @@ export const UnknownView: React.FC<UnknownViewProps> = ({
       .slice(0, 3)
       .map(
         (c) =>
-          `  - ${c.source_file}${c.section_path?.length ? ` (${c.section_path.join(" > ")})` : ""}: "${c.text.slice(0, 120)}..."`
+          `  - ${c.source_file}${c.section_path?.length ? ` (${c.section_path.join(" > ")}` : ""}): "${c.text.slice(0, 120)}..."`
       )
       .join("\n");
 
@@ -55,11 +55,11 @@ Source: Verified university academic regulations corpus. Zero AI extrapolation.
       {/* 1. Header: VERIFICATION REPORT · UNKNOWN */}
       <div className="flex flex-wrap items-baseline justify-between gap-4 pb-5 border-b border-slate-200 dark:border-slate-800">
         <div className="space-y-1">
-          <div className="text-[11px] font-mono uppercase tracking-widest text-slate-400 dark:text-slate-500">
+          <div className="text-[11px] font-mono uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold">
             Verification Report
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-amber-600 dark:bg-amber-500 inline-block" />
+            <span className="w-2.5 h-2.5 rounded-full bg-amber-600 dark:bg-amber-400 inline-block shadow-xs shadow-amber-500/50" />
             <span className="text-sm font-bold tracking-tight text-amber-800 dark:text-amber-400">
               UNKNOWN
             </span>
@@ -73,52 +73,79 @@ Source: Verified university academic regulations corpus. Zero AI extrapolation.
         {/* Secondary Action Tool */}
         <button
           onClick={handleCopyInquiryBrief}
-          className="text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors underline underline-offset-4 cursor-pointer no-print"
+          className="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#A0A5B1] hover:text-slate-900 dark:hover:text-white transition-colors underline underline-offset-4 cursor-pointer no-print"
         >
-          {copiedBrief ? "Inquiry note copied" : "Copy inquiry note"}
+          {copiedBrief ? <Check className="w-3.5 h-3.5 text-amber-500" /> : <Copy className="w-3.5 h-3.5" />}
+          <span>{copiedBrief ? "Inquiry note copied" : "Copy inquiry note"}</span>
         </button>
       </div>
 
-      {/* 2. Formal No Determination & Your Result */}
-      <div className="space-y-4">
+      {/* 2. Formal No Determination & Elevated Result Card */}
+      <div className="space-y-6">
         <div className="space-y-1">
           <h2 className="text-xl sm:text-2xl font-serif font-medium text-slate-950 dark:text-slate-50 tracking-tight">
             No authoritative rule found.
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-[#A0A5B1]">
             The supplied rulebook does not establish an answer to this question.
           </p>
         </div>
 
-        <div className="pt-3">
-          <div className="text-xs font-mono uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-2">
-            Your Result
-          </div>
-          <div className="text-lg sm:text-xl text-slate-900 dark:text-slate-100 leading-relaxed font-normal max-w-4xl">
-            {answer ||
-              "The supplied university rulebook does not establish a rule for this question."}
+        {/* THE ELEVATED ANSWER CARD WITH AMBIENT AMBER GLOW */}
+        <div className="relative group/answer pt-1">
+          {/* Ambient amber radial glow */}
+          <div
+            className="absolute -inset-1.5 sm:-inset-2.5 rounded-3xl bg-gradient-to-r from-amber-500/20 via-amber-400/10 to-yellow-500/20 dark:from-amber-500/25 dark:via-amber-400/15 dark:to-yellow-500/20 blur-xl sm:blur-2xl -z-10 pointer-events-none opacity-85 transition-opacity"
+            aria-hidden="true"
+          />
+
+          {/* Elevated Glassmorphic Card */}
+          <div className="relative rounded-xl sm:rounded-2xl border border-amber-500/25 dark:border-white/[0.08] bg-white/95 dark:bg-[#191d24]/85 backdrop-blur-md p-6 sm:p-8 lg:p-9 shadow-lg shadow-amber-950/5 dark:shadow-2xl dark:shadow-black/60 space-y-4 animate-in fade-in zoom-in-[0.98] duration-300">
+            {/* Overline Label + Caution Icon */}
+            <div className="flex items-center justify-between">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/60 border border-amber-200/80 dark:border-amber-800/50">
+                <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                <span className="text-[11px] font-mono uppercase tracking-widest font-bold text-amber-800 dark:text-amber-300">
+                  YOUR RESULT
+                </span>
+              </div>
+              <span className="text-[11px] font-mono text-amber-700/80 dark:text-amber-400/80 hidden sm:inline-flex items-center gap-1">
+                <span>Deterministic No Determination</span>
+              </span>
+            </div>
+
+            {/* Primary Result Text: 22–24px, medium weight, clean sans-serif */}
+            <div className="text-xl sm:text-2xl text-slate-900 dark:text-white leading-relaxed font-medium font-sans tracking-tight max-w-4xl">
+              {answer || "The supplied university rulebook does not establish an answer to this question."}
+            </div>
+
+            {/* Subdued footer status */}
+            <div className="pt-2 flex flex-wrap items-center justify-between gap-2 border-t border-slate-100 dark:border-white/[0.06] text-xs font-mono text-slate-500 dark:text-[#A0A5B1]">
+              <span>No matching statutory policy clause exists in corpus</span>
+              <span className="text-[11px] text-slate-400 dark:text-slate-500">Zero Hallucination Guarantee</span>
+            </div>
           </div>
         </div>
 
-        {/* Why This Is Unknown */}
+        {/* 3. Subdued Rationale: Why This Is Unknown */}
         <div className="pt-4 border-t border-slate-200/80 dark:border-slate-800/80 space-y-1.5">
-          <div className="text-[11px] font-mono uppercase tracking-wider font-semibold text-slate-500">
+          <div className="text-[11px] font-mono uppercase tracking-wider font-semibold text-slate-500 dark:text-[#A0A5B1]">
             Why This Is Unknown
           </div>
-          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-[#A0A5B1] leading-relaxed max-w-3xl">
             The supplied corpus was comprehensively searched using BM25 lexical scan and dense vector semantic retrieval. While related academic provisions were audited, none codify a governing policy for this specific situation. RuleLens will not infer or invent a policy beyond the verified corpus.
-            {unknownReason && <span className="ml-1.5 font-mono text-slate-400">[{unknownReason}]</span>}
+            {unknownReason && <span className="ml-1.5 font-mono text-slate-400 dark:text-slate-500">[{unknownReason}]</span>}
           </p>
         </div>
       </div>
 
-      {/* 3. Compact Evidence Audit (10 related passages inspected) */}
+      {/* 4. Compact Evidence Audit (10 related passages inspected) */}
       {relatedEvidence.length > 0 && (
         <div className="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-3">
           <button
             type="button"
             onClick={() => setShowRelated(!showRelated)}
-            className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider font-semibold text-slate-600 dark:text-[#A0A5B1] hover:text-slate-900 dark:hover:text-slate-100 transition-colors cursor-pointer"
           >
             <span>Evidence Audit · {relatedEvidence.length} related passages inspected</span>
             {showRelated ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -126,7 +153,7 @@ Source: Verified university academic regulations corpus. Zero AI extrapolation.
 
           {showRelated && (
             <div className="space-y-3 pt-2 animate-in fade-in-50 duration-150">
-              <p className="text-xs text-slate-500 italic">
+              <p className="text-xs text-slate-500 dark:text-slate-400 italic">
                 The retrieval engine audited these closely related candidate provisions, but deterministically verified that none address the specific inquiry:
               </p>
 
@@ -140,10 +167,10 @@ Source: Verified university academic regulations corpus. Zero AI extrapolation.
                       <span className="font-semibold text-slate-800 dark:text-slate-200">
                         {chunk.source_file} {chunk.page_number ? `· p. ${chunk.page_number}` : ""}
                       </span>
-                      <span className="font-mono text-[10px] text-slate-400">Chunk ID: {chunk.id}</span>
+                      <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500">Chunk ID: {chunk.id}</span>
                     </div>
                     {chunk.section_path?.length > 0 && (
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                      <div className="text-[11px] text-slate-500 dark:text-[#A0A5B1]">
                         {chunk.section_path.join(" > ")}
                       </div>
                     )}
