@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { BookOpen, Database, CheckCircle2, AlertCircle, ChevronDown, FileText } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { BookOpen, Database, CheckCircle2, AlertCircle, ChevronDown, FileText, Sun, Moon } from "lucide-react";
 import { CorpusStatus, HealthResponse } from "@/types/api";
 
 interface HeaderProps {
@@ -18,6 +18,34 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenDirectory,
 }) => {
   const [showStatusModal, setShowStatusModal] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("rulelens-theme") as "light" | "dark" | null;
+      if (saved === "dark") {
+        setTheme("dark");
+        document.documentElement.classList.add("dark");
+      } else {
+        setTheme("light");
+        document.documentElement.classList.remove("dark");
+      }
+    } catch (_) {}
+  }, []);
+
+  const toggleTheme = () => {
+    try {
+      if (theme === "light") {
+        setTheme("dark");
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("rulelens-theme", "dark");
+      } else {
+        setTheme("light");
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("rulelens-theme", "light");
+      }
+    } catch (_) {}
+  };
 
   return (
     <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-30 transition-colors">
@@ -82,6 +110,20 @@ export const Header: React.FC<HeaderProps> = ({
               <span>Index Offline</span>
             </div>
           )}
+
+          {/* Theme Toggle (Light / Dark) */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all cursor-pointer shadow-2xs"
+            title={theme === "light" ? "Switch to Dark Theme" : "Switch to Light Theme"}
+            aria-label="Toggle Theme"
+          >
+            {theme === "light" ? (
+              <Moon className="w-4 h-4 text-slate-700" />
+            ) : (
+              <Sun className="w-4 h-4 text-amber-400" />
+            )}
+          </button>
         </div>
       </div>
 
