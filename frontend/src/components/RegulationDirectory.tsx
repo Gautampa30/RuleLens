@@ -2,10 +2,9 @@
 
 import React, { useState } from "react";
 import {
-  FileText,
   Search,
-  X,
   ExternalLink,
+  X,
 } from "lucide-react";
 
 interface RegulationDirectoryProps {
@@ -105,87 +104,108 @@ export const RegulationDirectory: React.FC<RegulationDirectoryProps> = ({
   const content = (
     <div className="space-y-6">
       {/* Header / Filter Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-4">
+      <div className="flex flex-wrap items-end justify-between gap-4 pb-4 border-b border-slate-200 dark:border-slate-800">
         <div className="space-y-1">
-          <h2 className="text-xl sm:text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">
+          <div className="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">
             Regulation Library
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-serif text-slate-950 dark:text-slate-50 tracking-tight">
+            Authoritative Repository
           </h2>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            5 authoritative regulatory instruments indexed and verified by RuleLens.
+          <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
+            5 PUBLICATIONS · 9,891 INGESTED WORDS · ASHFORD UNIVERSITY STATUTES
           </p>
         </div>
 
         {/* Filter Input */}
         <div className="relative">
-          <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" />
+          <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
             value={filterText}
             onChange={(e) => setFilterText(e.target.value)}
-            placeholder="Filter documents..."
-            className="pl-8 pr-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600"
+            placeholder="Filter publications..."
+            className="pl-8 pr-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#111622] text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-[#183b56] dark:focus:border-sky-400"
           />
         </div>
       </div>
 
-      {/* Institutional Table List */}
-      <div className="border-t border-zinc-200 dark:border-zinc-800 divide-y divide-zinc-200/80 dark:divide-zinc-800/80">
-        {filteredDocs.map((doc) => (
-          <div
-            key={doc.id}
-            className="py-5 flex flex-col md:flex-row md:items-baseline justify-between gap-4 group"
-          >
-            {/* Left: Document Info */}
-            <div className="space-y-1.5 max-w-2xl">
-              <div className="flex flex-wrap items-baseline gap-2">
-                <span className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">
+      {/* Institutional Table List with Explicit Column Headers */}
+      <div className="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-[#111622] shadow-xs">
+        <div className="hidden md:grid grid-cols-12 gap-4 px-5 py-3 bg-slate-100/70 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800 text-[11px] font-mono uppercase font-bold tracking-wider text-slate-500 dark:text-slate-400">
+          <div className="col-span-5">Document Title & Code</div>
+          <div className="col-span-2">Format</div>
+          <div className="col-span-3">Provisions / Range</div>
+          <div className="col-span-2 text-right">Action</div>
+        </div>
+
+        <div className="divide-y divide-slate-200/80 dark:divide-slate-800/80">
+          {filteredDocs.map((doc, index) => (
+            <div
+              key={doc.id}
+              className={`p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center transition-colors ${
+                index % 2 === 1 ? "bg-slate-50/40 dark:bg-[#0e131d]/40" : ""
+              } hover:bg-slate-100/50 dark:hover:bg-slate-800/30`}
+            >
+              {/* Document Title & File */}
+              <div className="md:col-span-5 space-y-1">
+                <div className="font-semibold text-sm text-slate-900 dark:text-slate-100">
                   {doc.title}
-                </span>
-                <span className="font-mono text-xs text-zinc-400">
-                  ({doc.code})
-                </span>
-                <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+                </div>
+                <div className="text-[11px] font-mono text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                  <span>{doc.code}</span>
+                  <span>·</span>
+                  <span>{doc.filename}</span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1 pt-0.5">
+                  {doc.description}
+                </p>
+              </div>
+
+              {/* Format */}
+              <div className="md:col-span-2">
+                <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
                   {doc.format}
                 </span>
               </div>
-              <div className="text-[11px] font-mono text-zinc-400">
-                <span>File: {doc.filename}</span>
-                <span className="mx-2">·</span>
-                <span>Provisions: {doc.clauseRange}</span>
+
+              {/* Provisions Range */}
+              <div className="md:col-span-3 text-xs font-mono text-slate-600 dark:text-slate-400">
+                {doc.clauseRange}
+              </div>
+
+              {/* Action Button */}
+              <div className="md:col-span-2 md:text-right pt-1 md:pt-0">
+                <button
+                  onClick={() => {
+                    onSelectQuery(doc.sampleQuery);
+                    if (onClose) onClose();
+                  }}
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-[#183b56] dark:text-sky-400 hover:underline underline-offset-4 cursor-pointer"
+                >
+                  <span>Test query</span>
+                  <ExternalLink className="w-3 h-3" />
+                </button>
               </div>
             </div>
+          ))}
 
-            {/* Right: Sample Query Action */}
-            <div className="shrink-0 pt-1 md:pt-0">
-              <button
-                onClick={() => {
-                  onSelectQuery(doc.sampleQuery);
-                  if (onClose) onClose();
-                }}
-                className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline flex items-center gap-1 cursor-pointer"
-              >
-                <span>Test query</span>
-                <ExternalLink className="w-3 h-3" />
-              </button>
+          {filteredDocs.length === 0 && (
+            <div className="py-8 text-center text-xs text-slate-400 font-mono">
+              No regulation document matches &ldquo;{filterText}&rdquo;
             </div>
-          </div>
-        ))}
-
-        {filteredDocs.length === 0 && (
-          <div className="py-8 text-center text-xs text-zinc-400">
-            No regulation document matches &ldquo;{filterText}&rdquo;
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
-      <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 font-mono">
-        <span>Total Ingested Words: 9,891 · 5 Statutory Instruments</span>
+      <div className="pt-2 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-mono">
+        <span>5 authoritative publications indexed · Grounded in codified corpus</span>
         {onClose && (
           <button
             onClick={onClose}
-            className="text-xs text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white underline cursor-pointer"
+            className="text-xs text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white underline cursor-pointer"
           >
-            Close Directory
+            Close Repository
           </button>
         )}
       </div>
@@ -193,16 +213,16 @@ export const RegulationDirectory: React.FC<RegulationDirectoryProps> = ({
   );
 
   if (isInline) {
-    return <section id="regulation-library" className="py-12">{content}</section>;
+    return <section id="regulation-library" className="py-6">{content}</section>;
   }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/40 backdrop-blur-xs">
-      <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 space-y-6">
+      <div className="bg-white dark:bg-[#111622] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl max-w-5xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 space-y-6">
         <div className="flex justify-end">
           <button
             onClick={onClose}
-            className="p-1.5 rounded-md text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer"
+            className="p-1.5 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>

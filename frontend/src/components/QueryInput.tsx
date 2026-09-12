@@ -4,12 +4,8 @@ import React, { useState, useRef } from "react";
 import {
   Search,
   Loader2,
-  CheckCircle2,
-  HelpCircle,
-  AlertTriangle,
   X,
-  CornerDownLeft,
-  Sparkles,
+  ArrowRight,
 } from "lucide-react";
 
 interface QueryInputProps {
@@ -121,12 +117,21 @@ export const QueryInput: React.FC<QueryInputProps> = ({
       : EXAMPLE_QUERIES.filter((ex) => ex.category === activeCategory);
 
   return (
-    <div id="query-section" className="w-full space-y-6">
-      {/* Editorial Search Bar */}
+    <div id="query-section" className="w-full space-y-4">
+      {/* Label / Eyebrow */}
+      <div className="flex items-center justify-between text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 px-1">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#183b56] dark:bg-sky-400" />
+          <span className="font-semibold text-slate-700 dark:text-slate-300">Ask RuleLens</span>
+        </div>
+        <span>Codified Statute Verification</span>
+      </div>
+
+      {/* Premium Verification Control */}
       <form onSubmit={handleSubmit} className="relative w-full">
-        <div className="relative flex items-center bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl focus-within:border-zinc-900 dark:focus-within:border-zinc-300 focus-within:ring-1 focus-within:ring-zinc-900 dark:focus-within:ring-zinc-300 transition-all shadow-xs">
-          <div className="pl-4 pr-2 text-zinc-400">
-            <Search className="w-5 h-5 text-zinc-400" />
+        <div className="relative flex items-center bg-white dark:bg-[#111622] border border-slate-300 dark:border-slate-700 rounded-xl focus-within:border-[#183b56] dark:focus-within:border-sky-500 focus-within:ring-1 focus-within:ring-[#183b56] dark:focus-within:ring-sky-500 transition-all shadow-xs">
+          <div className="pl-4 pr-2 text-slate-400">
+            <Search className="w-5 h-5 text-slate-400" />
           </div>
 
           <input
@@ -134,9 +139,9 @@ export const QueryInput: React.FC<QueryInputProps> = ({
             type="text"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            placeholder="Ask an academic regulation question..."
+            placeholder="Ask an academic regulation question (e.g. tuition deadlines, probation GPA, withdrawal authority)..."
             disabled={isLoading}
-            className="w-full py-3.5 pr-32 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 text-sm sm:text-base font-normal bg-transparent focus:outline-none disabled:opacity-60"
+            className="w-full py-4 pr-36 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 text-sm sm:text-base font-normal bg-transparent focus:outline-none disabled:opacity-60"
           />
 
           {question && !isLoading && (
@@ -146,7 +151,7 @@ export const QueryInput: React.FC<QueryInputProps> = ({
                 setQuestion("");
                 inputRef.current?.focus();
               }}
-              className="p-1.5 rounded-md text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 mr-1 cursor-pointer"
+              className="p-1.5 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 mr-1 cursor-pointer"
               title="Clear inquiry"
             >
               <X className="w-4 h-4" />
@@ -156,7 +161,7 @@ export const QueryInput: React.FC<QueryInputProps> = ({
           <button
             type="submit"
             disabled={isLoading || !question.trim()}
-            className="absolute right-1.5 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-white text-white dark:text-zinc-900 disabled:bg-zinc-200 dark:disabled:bg-zinc-800 disabled:text-zinc-400 dark:disabled:text-zinc-600 font-medium text-xs sm:text-sm transition-all flex items-center gap-1.5 cursor-pointer disabled:cursor-not-allowed"
+            className="absolute right-1.5 px-5 py-2.5 rounded-lg bg-[#183b56] hover:bg-[#112a3e] dark:bg-sky-500 dark:hover:bg-sky-400 text-white dark:text-slate-950 disabled:bg-slate-200 dark:disabled:bg-slate-800 disabled:text-slate-400 dark:disabled:text-slate-600 font-semibold text-xs sm:text-sm tracking-wide transition-all flex items-center gap-1.5 cursor-pointer disabled:cursor-not-allowed shadow-xs"
           >
             {isLoading ? (
               <>
@@ -164,67 +169,70 @@ export const QueryInput: React.FC<QueryInputProps> = ({
                 <span>Verifying...</span>
               </>
             ) : (
-              <span>Verify Rule</span>
+              <>
+                <span>VERIFY RULE</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </>
             )}
           </button>
         </div>
       </form>
 
       {/* Subtle Verified Corpus Line */}
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-zinc-500 dark:text-zinc-400 font-normal px-1">
-        <span>241 verified passages · 13 policy claims · 5 source publications</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400 font-normal px-1">
+        <span className="font-mono text-[11px]">241 verified passages · 13 policy claims · 5 source publications</span>
         <button
           type="button"
           onClick={() => setShowAllExamples(!showAllExamples)}
-          className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors underline cursor-pointer"
+          className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors underline cursor-pointer"
         >
-          {showAllExamples ? "Hide example library" : "Explore test cases"}
+          {showAllExamples ? "Hide test cases" : "Explore canonical test cases"}
         </button>
       </div>
 
       {/* Understated Primary Inline Prompts */}
       {!showAllExamples && (
-        <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-zinc-600 dark:text-zinc-400">
-          <span className="text-zinc-400 dark:text-zinc-500">Try a question:</span>
+        <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-slate-600 dark:text-slate-400 px-1">
+          <span className="text-slate-400 dark:text-slate-500">Try a question:</span>
           <button
             type="button"
             onClick={() => handleSelectQuery("When is the tuition payment deadline?")}
-            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+            className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors underline cursor-pointer font-medium"
           >
             &ldquo;When is tuition due?&rdquo;
           </button>
-          <span className="text-zinc-300 dark:text-zinc-700">·</span>
+          <span className="text-slate-300 dark:text-slate-700">·</span>
           <button
             type="button"
             onClick={() => handleSelectQuery("Who approves a late course withdrawal?")}
-            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+            className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors underline cursor-pointer font-medium"
           >
             &ldquo;Who approves a late course withdrawal?&rdquo;
           </button>
-          <span className="text-zinc-300 dark:text-zinc-700">·</span>
+          <span className="text-slate-300 dark:text-slate-700">·</span>
           <button
             type="button"
             onClick={() => handleSelectQuery("What is the deadline for submitting a military leave request?")}
-            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors underline cursor-pointer"
+            className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors underline cursor-pointer font-medium"
           >
             &ldquo;Is there a military leave deadline?&rdquo;
           </button>
         </div>
       )}
 
-      {/* Expanded Clean Category Navigation (Scenario Explorer) */}
+      {/* Expanded Category Navigation (Scenario Explorer) */}
       {showAllExamples && (
-        <div className="pt-2 space-y-3 border-t border-zinc-200 dark:border-zinc-800">
-          <div className="flex items-center gap-4 overflow-x-auto pb-1 text-xs font-medium text-zinc-500 scrollbar-none">
+        <div className="pt-3 space-y-3 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex items-center gap-4 overflow-x-auto pb-1 text-xs font-medium text-slate-500 scrollbar-none">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setActiveCategory(cat.id)}
-                className={`whitespace-nowrap transition-colors cursor-pointer pb-1 border-b-2 ${
+                className={`whitespace-nowrap pb-1.5 transition-colors cursor-pointer border-b-2 ${
                   activeCategory === cat.id
-                    ? "border-zinc-900 dark:border-zinc-100 text-zinc-900 dark:text-zinc-100"
-                    : "border-transparent hover:text-zinc-800 dark:hover:text-zinc-300"
+                    ? "text-slate-900 dark:text-slate-100 border-[#183b56] dark:border-sky-400 font-semibold"
+                    : "border-transparent hover:text-slate-800 dark:hover:text-slate-300"
                 }`}
               >
                 {cat.label}
@@ -234,25 +242,32 @@ export const QueryInput: React.FC<QueryInputProps> = ({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1">
             {filteredExamples.map((ex) => (
-              <button
+              <div
                 key={ex.id}
-                type="button"
                 onClick={() => handleSelectQuery(ex.query)}
-                className="group flex items-baseline justify-between p-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/60 hover:border-zinc-400 dark:hover:border-zinc-600 text-left text-xs transition-colors cursor-pointer"
+                className="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111622] hover:border-slate-400 dark:hover:border-slate-600 transition-all cursor-pointer flex items-center justify-between gap-3 text-xs group"
               >
-                <span className="text-zinc-800 dark:text-zinc-200 font-medium group-hover:text-zinc-950 dark:group-hover:text-white">
-                  {ex.query}
-                </span>
-                <span className={`text-[10px] uppercase font-mono tracking-wider ml-2 shrink-0 ${
-                  ex.expectedState === "ANSWERABLE"
-                    ? "text-emerald-700 dark:text-emerald-400"
-                    : ex.expectedState === "CONTRADICTORY"
-                    ? "text-rose-700 dark:text-rose-400"
-                    : "text-amber-700 dark:text-amber-400"
-                }`}>
+                <div className="space-y-0.5">
+                  <div className="font-medium text-slate-800 dark:text-slate-200 group-hover:text-slate-950 dark:group-hover:text-white">
+                    {ex.label}
+                  </div>
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono">
+                    &ldquo;{ex.query}&rdquo;
+                  </div>
+                </div>
+
+                <span
+                  className={`text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded ${
+                    ex.expectedState === "ANSWERABLE"
+                      ? "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800"
+                      : ex.expectedState === "UNKNOWN"
+                      ? "bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800"
+                      : "bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-800"
+                  }`}
+                >
                   {ex.expectedState}
                 </span>
-              </button>
+              </div>
             ))}
           </div>
         </div>
@@ -260,4 +275,3 @@ export const QueryInput: React.FC<QueryInputProps> = ({
     </div>
   );
 };
-
