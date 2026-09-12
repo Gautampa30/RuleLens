@@ -8,44 +8,56 @@ interface HeaderProps {
   health: HealthResponse | null;
   corpusStatus: CorpusStatus | null;
   healthLoading: boolean;
+  onOpenDirectory?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   health,
   corpusStatus,
   healthLoading,
+  onOpenDirectory,
 }) => {
   const [showStatusModal, setShowStatusModal] = useState(false);
 
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-30 transition-colors">
+    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-30 transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo & Brand */}
+        {/* Logo & Academic Registry Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-700 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
-            <BookOpen className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 via-indigo-950 to-indigo-900 border border-indigo-700/30 flex items-center justify-center text-white shadow-md shadow-indigo-950/20">
+            <BookOpen className="w-5 h-5 text-indigo-300" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-slate-100">
+              <span className="font-extrabold text-lg tracking-tight text-slate-900 dark:text-slate-100">
                 RuleLens
               </span>
-              <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                v1.0
+              <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                Ashford Registry
               </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Evidence-Grounded Academic Regulation Assistant
+              Authoritative Academic Regulations & Policy Invariants
             </p>
           </div>
         </div>
 
-        {/* Live Corpus & Index Status Pill */}
-        <div className="flex items-center gap-2">
+        {/* Directory Button & Live Corpus Status Pill */}
+        <div className="flex items-center gap-2 sm:gap-3">
+          {onOpenDirectory && (
+            <button
+              onClick={onOpenDirectory}
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 border border-indigo-200 dark:border-indigo-800/80 transition-all cursor-pointer shadow-2xs"
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Browse Rulebooks (§)</span>
+            </button>
+          )}
+
           {healthLoading ? (
             <div className="flex items-center gap-2 text-xs text-slate-400 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 animate-pulse">
               <div className="w-2 h-2 rounded-full bg-slate-400" />
-              <span>Checking corpus engine...</span>
+              <span>Checking corpus...</span>
             </div>
           ) : health?.index_ready ? (
             <button

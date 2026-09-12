@@ -7,6 +7,7 @@ import { AnswerCard } from "@/components/AnswerCard";
 import { ContradictionView } from "@/components/ContradictionView";
 import { UnknownView } from "@/components/UnknownView";
 import { EvidenceTrace } from "@/components/EvidenceTrace";
+import { RegulationDirectory } from "@/components/RegulationDirectory";
 import { StateBadge } from "@/components/StateBadge";
 import {
   checkBackendHealth,
@@ -29,6 +30,8 @@ import {
   AlertOctagon,
   ShieldCheck,
   Search,
+  Scale,
+  Building2,
 } from "lucide-react";
 
 export default function Home() {
@@ -40,6 +43,7 @@ export default function Home() {
   const [response, setResponse] = useState<QueryResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
 
   // Load backend status on mount
   useEffect(() => {
@@ -95,22 +99,30 @@ export default function Home() {
         health={health}
         corpusStatus={corpusStatus}
         healthLoading={healthLoading}
+        onOpenDirectory={() => setIsDirectoryOpen(true)}
       />
 
-      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-8">
+      {/* Official Directory Modal */}
+      <RegulationDirectory
+        isOpen={isDirectoryOpen}
+        onClose={() => setIsDirectoryOpen(false)}
+        onSelectQuery={(q) => handleSearch(q)}
+      />
+
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 space-y-8">
         {/* Intro / Hero section */}
         <section className="text-center space-y-3 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800/80 text-xs font-semibold text-indigo-700 dark:text-indigo-300 mb-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
-            <span>Deterministic Three-State Verification Architecture</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-800 dark:text-slate-200 mb-1">
+            <Building2 className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+            <span>Ashford University Academic Registry & Secretariat</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50">
-            Authoritative Academic Regulations Assistant
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 dark:text-slate-50 font-serif">
+            Official Academic Regulation Enquiry System
           </h1>
 
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
-            Query university policy with zero hallucinations. Every answer is deterministically verified and grounded strictly in verbatim corpus provisions, classifying each query into exactly one of three states.
+            Ground student petitions and academic compliance strictly in codified university statute. Every response is deterministically verified with verbatim clause citations, conflict detection, and zero LLM hallucination.
           </p>
         </section>
 
@@ -205,41 +217,81 @@ export default function Home() {
 
         {/* Empty State / Three States Architecture Guide */}
         {!response && !isLoading && !error && (
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
-            <div className="p-5 rounded-2xl border border-emerald-200/60 dark:border-emerald-950 bg-emerald-50/30 dark:bg-emerald-950/10 space-y-2">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-                <h3 className="font-bold text-sm text-emerald-900 dark:text-emerald-300">
-                  1. ANSWERABLE
-                </h3>
-              </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                When clear, unambiguous regulatory provisions exist. Returns precise answers with verbatim citations, document source, section breadcrumb, and page number.
-              </p>
+          <section className="space-y-4 pt-2">
+            <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium px-1">
+              <span className="uppercase tracking-wider font-bold">Codified Decision Standards</span>
+              <span>Auditable University Statute</span>
             </div>
 
-            <div className="p-5 rounded-2xl border border-amber-200/60 dark:border-amber-950 bg-amber-50/30 dark:bg-amber-950/10 space-y-2">
-              <div className="flex items-center gap-2">
-                <HelpCircle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
-                <h3 className="font-bold text-sm text-amber-900 dark:text-amber-300">
-                  2. UNKNOWN
-                </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div 
+                onClick={() => handleSearch("When is the tuition payment deadline?")}
+                className="group p-5 rounded-2xl border border-emerald-200/80 dark:border-emerald-900/60 bg-emerald-50/40 dark:bg-emerald-950/20 space-y-3 cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-700 transition-all shadow-xs"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+                    <h3 className="font-bold text-sm text-emerald-950 dark:text-emerald-200">
+                      1. ANSWERABLE
+                    </h3>
+                  </div>
+                  <span className="text-[10px] font-semibold text-emerald-700 dark:text-emerald-300 opacity-0 group-hover:opacity-100 transition-opacity">Try →</span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  When clear, unambiguous regulatory provisions exist. Returns precise answers with verbatim citations, document source, section breadcrumb, and page number.
+                </p>
+                <div className="pt-2 border-t border-emerald-100 dark:border-emerald-900/40">
+                  <span className="text-[11px] text-emerald-800 dark:text-emerald-300 font-mono">
+                    &ldquo;When is the tuition payment deadline?&rdquo;
+                  </span>
+                </div>
               </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                When the policy manual does not state a rule. Guaranteed zero hallucination: explicitly refuses to extrapolate or invent uncodified rules.
-              </p>
-            </div>
 
-            <div className="p-5 rounded-2xl border border-rose-200/60 dark:border-rose-950 bg-rose-50/30 dark:bg-rose-950/10 space-y-2">
-              <div className="flex items-center gap-2">
-                <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400" />
-                <h3 className="font-bold text-sm text-rose-900 dark:text-rose-300">
-                  3. CONTRADICTORY
-                </h3>
+              <div 
+                onClick={() => handleSearch("What is the deadline for submitting a military leave request?")}
+                className="group p-5 rounded-2xl border border-amber-200/80 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 space-y-3 cursor-pointer hover:border-amber-400 dark:hover:border-amber-700 transition-all shadow-xs"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <HelpCircle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+                    <h3 className="font-bold text-sm text-amber-950 dark:text-amber-200">
+                      2. UNKNOWN
+                    </h3>
+                  </div>
+                  <span className="text-[10px] font-semibold text-amber-700 dark:text-amber-300 opacity-0 group-hover:opacity-100 transition-opacity">Try →</span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  When the policy manual does not state a rule. Guaranteed zero hallucination: explicitly refuses to extrapolate or invent uncodified rules.
+                </p>
+                <div className="pt-2 border-t border-amber-100 dark:border-amber-900/40">
+                  <span className="text-[11px] text-amber-800 dark:text-amber-300 font-mono">
+                    &ldquo;What is the military leave deadline?&rdquo;
+                  </span>
+                </div>
               </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                When multiple official provisions mandate conflicting rules for the same situation. Surfaces both passages side-by-side without guessing.
-              </p>
+
+              <div 
+                onClick={() => handleSearch("Who approves a late course withdrawal?")}
+                className="group p-5 rounded-2xl border border-rose-200/80 dark:border-rose-900/60 bg-rose-50/40 dark:bg-rose-950/20 space-y-3 cursor-pointer hover:border-rose-400 dark:hover:border-rose-700 transition-all shadow-xs"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400" />
+                    <h3 className="font-bold text-sm text-rose-950 dark:text-rose-200">
+                      3. CONTRADICTORY
+                    </h3>
+                  </div>
+                  <span className="text-[10px] font-semibold text-rose-700 dark:text-rose-300 opacity-0 group-hover:opacity-100 transition-opacity">Try →</span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  When multiple official provisions mandate conflicting rules for the same situation. Surfaces both passages side-by-side without guessing.
+                </p>
+                <div className="pt-2 border-t border-rose-100 dark:border-rose-900/40">
+                  <span className="text-[11px] text-rose-800 dark:text-rose-300 font-mono">
+                    &ldquo;Who approves a late course withdrawal?&rdquo;
+                  </span>
+                </div>
+              </div>
             </div>
           </section>
         )}
